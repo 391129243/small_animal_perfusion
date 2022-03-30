@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+ 	<ImageView 
+	    android:id="@+id/disconnect_img"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/disconnect"
+	    android:contentDescription="@null"
+	    android:visibility="visible"/>
+	<TextView 
+	    android:id="@+id/artery_disconnect_txt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/disconnect_img"
+	    android:layout_alignTop="@id/disconnect_img"
+	    android:text="@string/disconnect_img_artery"
+	    android:textSize="14sp"
+	    android:textStyle="bold"
+	    android:textColor="@color/white"/>
+	<TextView 
+	    android:id="@+id/vein_disconnect_txt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/disconnect_img"
+	    android:layout_alignBottom="@id/disconnect_img"
+	    android:text="@string/disconnect_img_vein"
+	    android:textSize="14sp"	    
+	    android:textStyle="bold"
+	    android:textColor="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/common_main_content_bg">
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:src="@drawable/zero_icon"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/zero_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_xlarge_30sp" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentBottom="true" >
+
+<!-- 		<Button  -->
+<!-- 		    style="@style/style_preset_activity_btn" -->
+<!-- 		    android:id="@+id/param_correct_complete_btn" -->
+<!-- 		    android:layout_marginTop="24dp" -->
+<!-- 		    android:layout_centerInParent="true" -->
+<!-- 		    android:gravity="center" -->
+<!-- 		    android:text="@string/pre_perfusion" -->
+<!-- 		    android:textColor="@color/white" -->
+<!-- 		    android:enabled="false" -->
+<!-- 		    android:background="@drawable/sys_preset_btn_unable_bg" -->
+<!-- 	    /> -->
+		<ImageView  
+	  	    android:id="@+id/param_correct_complete_btn"
+	  	    android:layout_width="68dp"
+	  	    android:layout_height="68dp"
+	  	    android:padding="16dp"	      
+	    	android:layout_marginBottom="24dp" 
+  	    	android:layout_marginRight="24dp" 
+		    android:layout_alignParentBottom="true" 
+	  	    android:layout_alignParentRight="true" 
+	  	    android:enabled="false"
+	 	    android:src="@drawable/next_btn_src_selector"
+	 	    android:background="@drawable/oval_next_btn_normal_bg"
+	 	    android:contentDescription="@null"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@id/ll_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_a" />
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent" >
+
+               <TextView
+                    android:id="@+id/hint_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"            
+                    android:gravity="center_vertical"       
+                    android:text="@string/preset_turn_left"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_large_22sp" />
+                <ImageView
+                    android:id="@+id/iv_zero_op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hint_one"
+                    android:contentDescription="@null"
+                    android:src="@drawable/zero_arrow" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_b" />
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/turn_left_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:gravity="center_vertical"     
+                    android:text="@string/preset_turn_right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_large_22sp" />
+                <ImageView
+                    android:id="@+id/iv_zero_op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/turn_left_hint"
+                    android:contentDescription="@null"
+                    android:src="@drawable/zero_arrow" />
+
+
+            </RelativeLayout>
+             <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_c" />
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/turn_right_waring_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/preset_turn_right_hint"
+            android:textSize="24sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal">
+	        <RelativeLayout
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="5"
+	            android:background="@drawable/zero_bg_left" >
+	
+	            <TextView
+	                android:id="@+id/artery_zero_pressure_title"
+	                style="@style/style_title_text2"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="55dp"
+	                android:layout_marginTop="35dp"
+	                android:text="@string/hepatic_artery"
+	                android:textSize="@dimen/font_size_xlarge_30sp" />
+	
+	            <TextView
+	                android:id="@+id/mAZeroTitleTxt"
+	                style="@style/style_title_text2"
+	                android:layout_below="@id/artery_zero_pressure_title"
+	                android:layout_marginLeft="55dp"
+	                android:layout_marginTop="30dp"
+	                android:text="@string/zero_pressure"
+	                android:textSize="@dimen/font_size_normal_18sp" />
+	
+	            <TextView
+	                android:id="@+id/param_hepatic_artery_zero_pressure_txt"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:text="@string/string_null"
+	                android:textColor="@color/white"
+	                android:textSize="@dimen/font_size_xlarge_40sp" />
+	
+	            <TextView
+	                android:id="@+id/mAZeroTitleTxt_ok"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginRight="60dp"
+	                android:layout_marginTop="40dp"
+	                android:text="@string/preset_zero_pressure_success"
+	                android:textColor="@color/green"
+	                android:textSize="@dimen/font_size_large_24sp"
+	                android:visibility="invisible" />
+	
+	            <Button
+	                android:id="@+id/sys_preset_param_artery_zero_img"
+	                android:layout_width="136dp"
+	                android:layout_height="48dp"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginBottom="40dp"
+	                android:background="@drawable/common_btn_zero_bg_selector"
+	                android:contentDescription="@null"
+	                android:gravity="center"
+	                android:text="@string/zero_text"
+	                android:textColor="@color/white"
+	                android:textSize="@dimen/font_size_large_24sp" />
+	        </RelativeLayout>
+	
+	        <RelativeLayout
+	            android:id="@+id/sys_preset_vein_zero_layout"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="5"
+	            android:background="@drawable/zero_bg_right" >
+	
+	            <TextView
+	                android:id="@+id/vein_zero_pressure_title"
+	                style="@style/style_title_text2"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="55dp"
+	                android:layout_marginTop="35dp"
+	                android:text="@string/portal_vein"
+	                android:textSize="@dimen/font_size_xlarge_30sp" />
+	
+	            <TextView
+	                android:id="@+id/mVZeroTitleTxt"
+	                style="@style/style_title_text2"
+	                android:layout_below="@id/vein_zero_pressure_title"
+	                android:layout_marginLeft="55dp"
+	                android:layout_marginTop="30dp"
+	                android:text="@string/zero_pressure"
+	                android:textSize="@dimen/font_size_normal_18sp" />
+	
+	            <TextView
+	                android:id="@+id/param_vein_zero_pressure_txt"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:text="@string/string_null"
+	                android:textColor="@color/white"
+	                android:textSize="@dimen/font_size_xlarge_40sp" />
+	
+	            <TextView
+	                android:id="@+id/mVZeroTitleTxt_ok"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginRight="60dp"
+	                android:layout_marginTop="40dp"
+	                android:text="@string/preset_zero_pressure_success"
+	                android:textColor="@color/green"
+	                android:textSize="@dimen/font_size_large_24sp"
+	                android:visibility="invisible" />
+	
+	            <Button
+	                android:id="@+id/sys_preset_param_vein_zero_img"
+	                android:layout_width="136dp"
+	                android:layout_height="48dp"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginBottom="40dp"
+	                android:background="@drawable/common_btn_zero_bg_selector"
+	                android:contentDescription="@null"
+	                android:gravity="center"
+	                android:text="@string/zero_text"
+	                android:textColor="@color/white"
+	                android:textSize="@dimen/font_size_large_24sp" />
+	        </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

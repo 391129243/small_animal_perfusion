@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_connect">连接</string>
+    <string name="app_name">Bio_Console</string>
+	<string name="sys_setting">系统设置</string>
+	<string name="settings">设置</string>
+	<string name="english">English</string>
+	<string name="chinese">简体中文</string>
+	<string name="sys_version">版本</string>
+	<string name="set_flow">流量(mL/min)</string>
+	<string name="time">时间(HH:mm:ss)</string>
+	<!-- 主屏 -->
+	<string name="mode_liver_perfusion">肝&#160;脏&#160;灌&#160;注</string>
+	<string name="mode_kidney_perfusion">肾&#160;脏&#160;灌&#160;注</string>
+	<string name="display_pump_speed">泵速(RPM)</string>
+
+	<!-- 显示 -->
+	<string name="right_kidney_artery_target_speed">右肾动脉泵速</string>
+	<string name="left_kidney_artery_target_speed">左肾动脉泵速</string>
+	<string name="hepatic_artery_target_speed">肝动脉泵速</string>
+	<string name="portal_vein_target_speed">门静脉泵速</string>
+	<string name="hepatic_artery_pressure">肝动脉压力(mmHg)</string>
+	<string name="portal_vein_pressure">门静脉压力(mmHg)</string>
+	<string name="hepatic_artery_flow">肝动脉流量(mL/min)</string>
+	<string name="portal_vein_flow">门静脉流量(mL/min)</string>
+	<string name="preset_perfusion_left_kidney_pressure">左肾动脉压力(mmHg)</string>
+	<string name="preset_perfusion_right_kidney_pressure">右肾动脉压力(mmHg)</string>
+	<string name="preset_perfusion_left_kidney_flow">左肾动脉流量(mL/min)</string>
+	<string name="preset_perfusion_right_kidney_flow">右肾动脉流量(mL/min)</string>
+	<string name="preset_mode_pulse">搏动</string>
+	<string name="preset_mode_const_pressure">恒压</string>
+	<string name="preset_mode_const_flow">恒流</string>
+	<string name="mean_pressure">平均压(mmHg)</string>
+	<string name="systolic_pressure">收缩压(mmHg)</string>
+	<string name="diastolic_pressure">舒张压(mmHg)</string>
+	<string name="target_pressure">目标压力(mmHg)</string>
+	<string name="target_vein_flow">门静脉目标流量(mL/min)</string>
+	<string name="target_artery_flow">肝动脉目标流量(mL/min)</string>
+	<string name="target_flow">目标流量(mL/min)</string>	
+	<string name="hepatic_artery">肝动脉</string>
+	<string name="portal_vein">门静脉</string>
+	<string name="left_kidney_artery">左肾动脉</string>
+	<string name="right_kidney_artery">右肾动脉</string>
+	<string name="cm">气泡(mm)</string>
+	<string name="pulse_rate">脉率</string>
+	<string name="temperature">温度(℃)</string>
+	<string name="title_perfusion_param_pulserate">左肾/右肾动脉 脉率</string>
+	<string name="string_null">---</string>
+	<string name="string_text_division">/</string>
+	<string name="zero_value">00</string>
+	<string name="zero">0</string>
+	<string name="colon">:</string>
+	<string name="stop">停止</string>
+	<string name="restart">重启</string>
+	<string name="set_pumpspeed">设置泵速</string>
+	<string name="pump_speed">泵速</string>
+	<string name="data_record">灌注数据</string>
+	<string name="screenshot">截屏</string>
+	<string name="main_exitperfusion">退出</string>
+	<string name="bloodgas">血气</string>	
+	<string name="bile">胆汁(drops)/(mL)</string>
+	<!-- 阻力指数 -->
+	<string name="resistant_index">阻力指数</string>
+	
+	<!-- record -->
+	<string name="record_title_artery_mean_pressure">肝动脉压力(mmHg)</string>
+	<string name="record_title_vein_mean_pressure">门静脉压力(mmHg)</string>
+	<string name="record_title_artery_mean_flow">肝动脉流量(ml/min)</string>
+	<string name="record_title_vein_mean_flow">门静脉流量(ml/min)</string>
+	<string name="record_title_artery_dia_pressure">肝动脉舒张压(mmHg)</string>
+	<string name="record_title_artery_sys_pressure">肝动脉收缩压(mmHg)</string>
+	<string name="record_title_artery_resistindex">肝动脉阻力指数</string>
+	<string name="record_title_left_kidney_artery_dia_pressure">左肾动脉舒张压(mmHg)</string>
+	<string name="record_title_left_kidney_artery_sys_pressure">左肾动脉收缩压(mmHg)</string>	
+	<string name="record_title_left_kidney_artery_resistindex">左肾动脉阻力指数</string>
+	<string name="record_title_artery_ehbf">每100g肝动脉流量(mL/min/100g)</string>
+	<string name="record_title_vein_ehbf">每100g门静脉流量(mL/min/100g)</string>
+	<string name="record_title_vein_resistindex">门静脉阻力指数</string>
+	<string name="record_title_right_kidney_artery_resistindex">右肾动脉阻力指数</string>
+	<string name="record_title_artery_speed">肝动脉泵速(RPM)</string>
+	<string name="record_title_vein_speed">门静脉泵速(RPM)</string>
+	<string name="record_title_left_kidney_artery_speed">左肾动脉泵速(RPM)</string>
+	<string name="record_title_right_kidney_artery_speed">右肾动脉泵速(RPM)</string>
+	<!-- -bile -->
+	<string name="record_title_bile_total">总量(Drop)</string>	
+	<string name="record_chart_total_bile_title">总胆汁(Drop)</string>		
+	<string name="record_chart_perhour_hour_title">胆汁生成量(Drop/per hour)</string>		
+	<string name="record_title_trend_bile_total">每小时胆汁分泌趋势</string>
+	<string name="record_title_trend_bile_perhour">胆汁分泌(mL/per hour)</string>
+	<string name="record_title_trend_bile_totle">总胆汁分泌(mL/per hour)</string>
+	
+	<!-- settings -->
+	<string name="save">保存</string>
+	<string name="liver_weight">输入肝脏质量(g)</string>
+	<string name="liver_number">输入肝脏ID</string>
+	<string name="current_target_temp">当前温度</string>
+	<string name="set_target_temp">设置目标温度</string>
+	<string name="success_zero_hepatic_artery_pressure">肝动脉压力调零成功</string>
+	<string name="success_zero_hepatic_artery_flow">肝动脉流量调零成功</string>
+	<string name="success_zero_portal_vein_pressure">门静脉压力调零成功</string>
+	<string name="success_zero_portal_vein_flow">门静脉流量调零成功</string>
+	<string name="success_zero_left_kidney_artery_pressure">左肾动脉压力调零成功</string>
+	<string name="success_zero_left_kidney_artery_flow">左肾动脉流量调零成功</string>
+	<string name="success_zero_right_kidney_artery_pressure">右肾脉压力调零成功</string>
+	<string name="success_zero_right_kidney_artery_flow">右肾脉流量调零成功</string>	
+	
+	<string name="screenshot_succee">截屏成功</string>
+	
+		
+	<!-- guideseeting -->
+	<string name="system_preset">系统预设</string>
+	<string name="please_input_the_weight_of_liver">请输入肝动脉质量(g)</string>
+	<string name="please_input_the_livernumber">请输入肝动脉ID</string>
+	<string name="next">下一步</string>
+	<string name="done">完成</string>
+	<string name="complete">结束</string>
+	<string name="preset_pattern_left_target_artery_pressure">左肾动脉目标压力(mmHg)</string>
+	<string name="preset_pattern_right_target_artery_pressure">右肾动脉目标压力(mmHg)</string>
+	<string name="preset_pattern_left_target_artery_flow">左肾动脉目标流量(mL/min)</string>
+	<string name="preset_pattern_right_target_artery_flow">右肾动脉目标流量(mL/min)</string>
+	<string name="hepatic_artery_target_pressure">肝动脉目标压力(mmHg)</string>
+	<string name="portal_vein_target_pressure">门静脉目标压力(mmHg)</string>
+	<string name="portal_vein_target_flow">门静脉目标流量(mL/min)</string>
+	<string name="zero_pressure">压力调零(mmHg)</string>
+	<string name="bottom_pressure">Bottom Pressure(mmHg)</string>
+	<string name="zero_art_flow">肝动脉流量调零(mL/min)</string>
+	<string name="zero_vein_flow">门静脉流量调零(mL/min)</string>
+		
+	<!-- 语言 -->
+	<string name="language">语言</string>
+	<!-- 版本 -->
+	<string name="version_update">检查更新</string>
+	<string name="version_newest">最新版本</string>
+	<string name="version_updates">更新版本</string>
+	<string name="update_immediately">现在更新</string>
+	<string name="update_later">稍后</string>
+	<string name="prompt">提示</string>
+	<string name="update_error">更新错误</string>
+	<string name="internet_connect_unavailable">网络不可用</string>
+	<string name="checking_version">检查更新</string>
+	<string name="download_version">正在下载</string>
+	<string name="update_cancel">取消下载</string>
+	<string name="fail_to_link_server">连接服务器失败,请重新尝试.</string>
+	<string name="fail_to_update">更新失败,请重新尝试.</string>
+	
+	<!-- 报警记录 -->
+	<string name="alarm_info">报警</string>
+	<string name="alarm_time">报警时间</string>
+	<string name="alarm_info_detail">报警信息详情</string>
+	<string name="pump_type">类型</string>
+	<string name="alarm_level">报警类型</string>
+	<string name="id">ID</string>
+	<string name="alarm">报警</string>
+	<string name="chart_no_data">无数据</string>
+	<string name="alarm_select_time_title">选择时间:</string>
+	
+	<!-- 信息记录 -->
+	<string name="msg_index">序号</string>
+	<string name="msg_time">时间</string>
+	<string name="serial_data">数据</string>
+	<string name="serial_trend">趋势</string>	
+	<string name="record_rb_title_bile">胆汁记录</string>
+	<string name="record_rb_title_perfusion">灌注记录</string>
+
+	<string name="error_input_lower_speed">输入的泵速不得低于400r/min</string>
+	<string name="error_left_kidney_artery_line">左肾动脉管路有问题，请检查</string>
+	<string name="error_right_kidney_artery_line">右肾动脉管路有问题，请检查</string>	
+	<string name="error_hepatic_artery_line">肝动脉管路有问题，请检查</string>
+	<string name="error_portal_vein_line">门静脉管路有问题，请检查</string>	
+	<string name="error_speed_is_null">请输入泵速值</string>
+	<string name="error_liver_id_is_null">ID为空</string>
+	<string name="error_liver_weight_is_null">重量为空</string>
+	<string name="error_left_kidnet_weight_is_null">左肾动脉重量为空</string>
+	<string name="error_right_kidney_weight_is_null">右肾动脉重量为空</string>
+	<string name="error_liver_name_repeated">ID重复</string>
+	<string name="error_pre_one_zero_fail">肝动脉压力调零失败</string>
+	<string name="error_pre_left_kidney_artery_zero_fail">左肾动脉压力调零失败</string>	
+	<string name="error_pre_right_kidney_artery_zero_fail">右肾脉压力调零失败</string>
+	<string name="error_flow_one_zero_fail">肝动脉流量调零失败</string>
+	<string name="error_flow_two_zero_fail">门静脉流量调零失败</string>
+	<string name="error_target_pre_one_null">请输入肝动脉的目标压力</string>
+	<string name="error_target_art_pre_format_error">肝动脉目标压力值格式错误</string>
+	<string name="error_target_vein_pre_format_error">门静脉目标压力值格式错误</string>
+    <string name="error_pre_one_max_less_than_min">肝动脉的压力报警上限值不得低于报警下限值</string>
+	<string name="error_pre_two_max_less_than_min">门静脉的压力报警上限值不得低于报警下限值</string>
+	<string name="error_flow_one_max_less_than_min">肝动脉的流量报警上限值不得低于报警下限值</string>
+	<string name="error_flow_two_max_less_than_min">门静脉的流量报警上限值不得低于报警下限值</string>	
+	<string name="error_pre_left_kidney_artery_max_less_than_min">左肾动脉的压力报警上限值不得低于报警下限值</string>
+	<string name="error_pre_right_kidney_artery_max_less_than_min">右肾动脉的压力报警上限值不得低于报警下限值</string>
+	<string name="error_flow_left_kidney_artery_max_less_than_min">左肾动脉的流量报警上限值不得低于报警下限值</string>
+	<string name="error_flow_right_kidney_artery_max_less_than_min">右肾动脉的流量报警上限值不得低于报警下限值</string>		
+	
+	
+	<!-- 肝动脉恒定压力常温不超过100，冷灌注不超过40 -->
+	<string name="error_max_value_normal_perfusion_target_const_artery_pre">常温灌注, 肝动脉恒定压力不得超过100mmHg</string>
+	<string name="error_max_value_cold_perfusion_target_const_artery_pre">冷灌注, 肝动脉目标压力不得超过40mmHg</string>
+	
+	<string name="error_value_cold_perfusion_target_pre_one">冷灌注, 肝动脉目标压力不能为空</string>
+	<string name="error_target_pre_one_min_null">请输入肝动脉最小目标压力值</string>
+	<string name="error_target_pre_one_max_null">请输入肝动脉最大目标压力值</string>
+	<string name="error_target_pre_one_min_max_compare">肝动脉的最大目标压力值不应小于最小压力值</string>
+	<!-- 肝动脉搏动模式灌注目标最大值的限值 -->
+	<string name="error_target_pre_one_max_limit">肝动脉目标压力最大值不应超过120mmHg</string>
+	<string name="error_target_pre_one_min_limit">肝动脉目标压力最小值不应超过100mmHg</string>
+	<string name="error_target_pre_one_min_max_difference">肝动脉目标压力最大值和最小值差值不应超过 40mmHg</string>
+	<!-- 门静脉目标压力值/流量 -->
+	<string name="error_target_pre_two_null">请输入门静脉目标压力值</string>
+	<string name="error_target_flow_two_null">请输入门静脉目标流量值</string>
+	<string name="error_max_normal_target_pre_vein_max_tip">常温灌注,门静脉的目标压力不应超过14mmHg</string>
+	<string name="error_max_value_cold_perfusion_vein_target_pre">冷灌注,门静脉的目标压力不应超过8mmHg</string>
+	<string name="error_max_value_vein_target_flow">门静脉目标流量不应超过1500ml/min</string>
+	<!-- 恒流目标流量不能为空 -->
+	<string name="error_value_vein_target_flow_null">门静脉目标流量不能为空</string>
+	<string name="error_value_vein_target_pressure_null">门静脉目标压力不能为空</string>
+	<string name="error_value_end_with_decimal">数值格式错误</string>
+	<!-- 常温关注的最小、最大目标值不能为空 -->
+	<string name="error_value_normal_perfusion_target_pre_one_min">常温灌注, 肝动脉最小目标压力值不能为空</string>
+	<string name="error_value_normal_perfusion_target_pre_one_max">常温灌注, 肝动脉最大目标压力值不能为空</string>
+	
+	<!-- 警报设置 -->
+	<string name="error_upper_limit_of_the_hepatic_artery_flow">肝动脉血流警告的上限不应超过1000mL/min</string>
+	<string name="error_upper_limit_of_the_vein_flow">门静脉血流警告的上限不应超过 2000mL/min</string>
+	<!-- 肝动脉流量的警报下限不得低于0ml/min -->
+	<string name="error_lower_limit_of_the_hepatic_artery_flow">肝动脉血流警告的下限不应低于0mL/min</string>
+	<!-- 门静脉流量的警报下限不得低于0ml/min -->
+	<string name="error_lower_limit_of_the_vein_flow">门静脉血流警告的下限不应低于0mL/min</string>	
+	<string name="error_upper_limit_of_the_hepatic_artery_pressure">肝动脉压力警告的上限不应超过100mmHg</string>
+	<string name="error_lower_limit_of_the_hepatic_artery_pressure">肝动脉压力警告的下限不应超过0mmHg</string>
+	<!-- 常温灌注下，门静脉压力警报上限值不得大于14mmHg -->
+	<string name="error_upper_limit_of_the_vein_pressure_nmp">常温灌注,门静脉压力警告的上限不应超过14mmHg</string>
+	<!-- 常温灌注下，门静脉压力警报上限值不得大于8mmHg -->
+	<string name="error_upper_limit_of_the_vein_pressure_hmp">冷灌注,门静脉压力警告的上限不应超过8mmHg</string>
+	<string name="error_lower_limit_of_the_vein_pressure">门静脉压力警告的下限不应超过 0mmHg</string>	
+	
+		
+	<!-- 泵速设置提示 -->
+	<string name="error_upper_limit_of_the_artery_speed">肝动脉的泵速警告的上限不得高于3000r/min</string>
+	<string name="error_upper_limit_of_the_vein_speed">门静脉的泵速警告的上限不得高于3000r/min</string>
+	<string name="error_lower_limit_of_the_artery_speed">肝动脉的泵速警告的下限不得低于1500r/min</string>
+	<string name="error_lower_limit_of_the_vein_speed">门静脉的泵速警告的下限不得低于1200r/min</string>	
+	<string name="error_upper_set_artery_speed">肝动脉的泵速不应超过 3000r/min</string>
+	<string name="error_lower_set_artery_speed">肝动脉的泵速不应小于 lower than 0r/min</string>
+	<string name="error_upper_set_vein_speed">门静脉的泵速不应超过 3000r/min</string>
+	<string name="error_lower_set_vein_speed">门静脉的泵速不应小于 0r/min</string>
+	
+				
+	<string name="error_target_pre_vein_min_tip">门静脉目标压力不应低于0mmHg</string>
+	<string name="error_target_pre_artery_min_tip">肝动脉目标压力不应低于0mmHg</string>
+	<string name="error_target_flow_zero_artery_tip">肝动脉目标流量不应低于 0mL/min</string>
+	<string name="error_target_flow_zero_vein_tip">门静脉流目标量不应低于0mL/min</string>
+	<string name="error_target_temp_empty">请设置灌注目标温度</string>
+	<string name="error_target_temp_max_tip">目标温度不能高于37℃</string>
+	<string name="error_target_temp_min_tip">目标温度不能低于0℃</string>
+	<!-- 报警语 -->
+	<string name="disconnect_pump_artery">肝动脉断连</string>
+	<string name="disconnect_pump_vein">门静脉断连</string>
+	<string name="disconnect_pump_artrey_pressure">肝动脉压力断连</string>
+	<string name="disconnect_pump_vein_pressure">门静脉压力断连</string>	
+	<string name="disconnect_pump_left_kidney_artery">左肾动脉断连</string>
+	<string name="disconnect_pump_right_kidney_artery">右肾动脉断连</string>
+	<string name="disconnect_pump_left_kidney_artrey_pressure">左肾动脉压力断连</string>
+	<string name="disconnect_pump_right_kidney_pressure">右肾动脉压力断连</string>	
+	<!-- 同时压力信息断连 -->
+	<string name="disconnect_pump_artery_vein_pressure">肝动脉/门静脉 压力断连</string>
+	<string name="disconnect_pump_left_right_kidney_artery_pressure">左肾动脉/右肾脉 压力断连</string>
+	<string name="disconnect_pump_artrey_flow">肝动脉流量断连</string> 
+	<string name="abnormal_pump_artery_flow">肝动脉流量异常</string>
+	<string name="abnormal_pump_vein_flow">门静脉流量异常</string>
+	<string name="disconnect_pump_vein_flow">门静脉流量断连</string> 
+	<string name="disconnect_pump_left_kidney_artrey_flow">左肾动脉流量断连</string> 
+	<string name="abnormal_pump_left_kidney_artery_flow">左肾动脉流量异常</string>
+	<string name="abnormal_pump_right_kidney_artery_flow">右肾动脉流量异常</string>
+	<string name="disconnect_pump_right_kidney_artery_flow">右肾动脉流量断连</string> 	
+	
+	
+	<!-- 同时流量信息断连 -->
+	<string name="disconnect_pump_artery_vein_flow">肝动脉/门静脉流量断连</string>
+	<!-- 同时断连 -->
+	<string name="disconnect_pump_artery_vein">肝动脉/门静脉断连</string>
+	<string name="disconnect_pump_left_right_artery">左肾动脉/右肾动脉断连</string>
+	<!-- 同时气泡 -->
+	<string name="error_bubble_one">肝动脉气泡</string>
+	<string name="error_bubble_two">门静脉气泡</string>
+	<string name="error_bubble_artery_vein">肝动脉/门静脉气泡</string>
+	<string name="error_artery_backflow">肝动脉反流</string>
+	<string name="error_vein_backflow">门静脉反流</string>
+	<string name="error_artery_vein_backflow">肝动脉/门静脉 反流</string>	
+	<!-- kidney -->
+	<string name="error_bubble_left_kidney_artery">左肾动脉气泡</string>
+	<string name="error_bubble_right_kidney_artery">右肾动脉气泡</string>
+	<string name="error_bubble_left_right_kidney_artery">左肾动脉/右肾脉气泡</string>
+	<string name="error_backflow_left_kidney_artery">左肾动脉反流</string>
+	<string name="error_backflow_right_kidney_artery">右肾动脉反流</string>
+	<string name="error_backflow_left_right_kidney_artery">左肾动脉/右肾脉 反流</string>	
+	
+	
+	<!-- 水温过高报警 -->
+	<string name="error_temp_over">水温过高</string>
+	<string name="error_temp_abnormal">温度异常</string>
+	<!-- 液位报警 -->
+	<string name="error_low_water_reservoir">液位过低</string>
+	<!-- 急停报警 -->
+	<string name="error_emergency_stop">系统急停</string>
+	<!-- 断电报警 -->
+	<string name="error_ac_power_off">交流电断连</string>
+	<!-- 通信中断报警 -->
+	<string name="error_system_communication_interrupt">通信中断</string>	
+	<!-- 安卓扇热异常 -->
+	<string name="error_android_heat_dissipation">散热异常(显示屏)</string>
+	<!-- 电源扇热异常 -->
+	<string name="error_power_heat_dissipation">散热异常(电源)</string>
+	<!-- 半导体扇热异常 -->
+	<string name="error_semi_heat_dissipation">散热异常(半导体)</string>	
+	<!-- 管路未关紧 -->
+	<string name="error_artery_pre_close">肝动脉压力管路未夹紧</string>
+	<string name="error_vein_pre_close">门静脉压力管路未夹紧</string>
+	<string name="error_artery_vein_pre_close">肝动脉/门静脉管路未夹紧</string>
+	
+	<string name="error_flow_artery_low_flow">肝动脉流量过低</string>
+	<string name="error_flow_artery_high_flow">肝动脉流量过高</string>
+	<string name="error_flow_vein_low_flow">门静脉流量过低</string>
+	<string name="error_flow_vein_high_flow">门静脉流量过高</string>
+	<string name="error_pre_artery_low_pre">肝动脉压力过低</string>
+	<string name="error_pre_artery_high_pre">肝动脉压力过高</string>
+	<string name="error_pre_vein_low_pre">门静脉压力过低</string>
+	<string name="error_pre_vein_high_pre">门静脉压力过高</string>
+	<!-- kidney -->
+	<string name="error_flow_left_kidney_artery_low_flow">左肾肝动脉流量过低</string>
+	<string name="error_flow_left_kidney_artery_high_flow">左肾动脉流量过高</string>
+	<string name="error_flow_right_kidney_artery_low_flow">右肾动脉流量过低</string>
+	<string name="error_flow_right_kidney_artery_high_flow">右肾动脉流量过高</string>
+	<string name="error_pre_left_kidney_artery_low_pre">左肾动脉压力过低</string>
+	<string name="error_pre_left_kidney_artery_high_pre">左肾动脉压力过高</string>
+	<string name="error_pre_right_kidney_artery_low_pre">右肾动脉压力过低</string>
+	<string name="error_pre_right_kidney_artery_high_pre">右肾动脉压力过高</string>	
+	
+	
+	<!-- 同时高流量警报 -->
+	<string name="alert_pump_artery_vein_high_flow">肝动脉/门静脉流量过高</string>
+	<string name="alert_pump_artery_vein_low_flow">肝动脉/门静脉流量过低</string>
+	<!-- 同时高压 -->
+	<string name="alert_pump_artery_vein_high_pressure">肝动脉/门静脉压力过高</string>
+	<string name="alert_pump_artery_vein_low_pressure">肝动脉/门静脉压力过低 </string>
+	
+	<string name="loading">载入中</string>
+	<string name="sereial_log_title">信息记录</string>
+	
+	<string name="bioindex_log_title">血液生化记录</string>
+	<string name="patient_id">病人 ID</string>
+	<string name="operator_id">操作者 ID</string>
+	<!-- 详情 -->
+	<string name="parameter">观察子ID</string>
+	<string name="result">观察值</string>
+	<string name="result_type">观察标识符</string>
+	<string name="unit">单位</string>
+	<string name="reference_range">参考范围</string>
+	<string name="user_define_access_check">用户定义的访问检查</string>
+	<string name="result_type_detail">详细信息</string>	
+	<string name="date_time">日期时间</string>
+	<string name="specimen_id">样本序号</string>
+	<string name="specimen_source">样本来源</string>
+
+
+	<!-- 预灌注 -->
+	<string name="pre_perfusion">预灌注</string>
+	<string name="end_prefusion">结束预灌注</string>
+	<string name="pump_speed_set">设置泵速</string>
+	<string name="custom_pumpspeed">自定义泵速</string>
+	<string name="low_pumpspeed">600</string>
+	<string name="mid_pumpspeed">800</string>
+	<string name="high_pumpspeed">1000</string>
+	<string name="large_high_pumpspeed">1200</string>	
+	<string name="pre_temp_4">4</string>
+	<string name="pre_temp_8">8</string>
+	<string name="pre_temp_18">18</string>
+	<string name="pre_temp_25">25</string>
+	<string name="pre_temp_37">37</string>	
+	<string name="custom_temp">自定义温度</string>	
+	<string name="custom_flow">自定义流量</string>	
+	<string name="custom_pressure">自定义压力</string>	
+	<!-- 血气分析结果 -->
+	<string name="blood_gas">血气</string>
+	<string name="blood_oxygen">血氧</string>
+	<string name="electrolyte">电解液</string>
+	<string name="metabolite">代谢物</string>
+	<string name="others">其他</string>
+	<string name="time_detect">检测时间</string>
+	<string name="ph">pH</string>
+	<string name="pCO2">pCO2</string>
+	<string name="pO2">pO2</string>
+	<string name="hct">Hct</string>
+	<string name="sO2">sO2(est),r</string>
+	<string name="Na">Na+</string>
+	<string name="K">K+</string>
+	<string name="Ca">Ca++</string>
+	<string name="Cl">Cl+</string>
+	<string name="Glu">Glu</string>
+	<string name="Lac">Lac</string>
+	<string name="acid_base_status">Acid Base</string>
+	<string name="ASAT">AST</string>
+	<string name="ALAT">ALT</string>
+	<string name="Bicarbonate">HCO3-</string>
+	<string name="sampling_time">采样时间</string>
+	
+	<string name="set_item_temp">目标温度(℃)</string>
+	<string name="set_item_timer">时间设置</string>
+	<string name="set_item_date">日期设置</string>
+	<string name="set_close_temp_control">温度控制</string>
+	
+	<!-- pattern Activity -->
+	
+	<string name="min">min</string>
+	<string name="max">max</string>
+	<string name="constant_pressure">恒定压力</string>	
+	<string name="btn_temp">温度</string>
+	<string name="btn_lock">锁屏</string>
+	<string name="btn_unlock">解锁</string>
+	<string name="btn_perfusion">灌注</string>
+	<string name="btn_bloodgas">血气</string>
+	<string name="btn_alarm">报警</string>
+	<string name="btn_record">记录</string>
+
+	<!-- preset activity -->
+	<string name="param_correct_hint">旋转连接到大气的肝动脉和门静脉压力传感器，单击零按钮</string>
+	<string name="unit_bubble">mm</string>
+	<!-- main perfusion activity-->
+	<string name="perfusion_art_pre_title">肝动脉压力</string>
+	<string name="perfusion_left_kidney_art_pre_title">左肾动脉压力</string>
+	<string name="perfusion_right_kidney_art_pre_title">右肾动脉压力</string>
+	<string name="perfusion_art_pre_sec_title">收缩压/舒张压(平均压)</string>
+	<!-- 收缩压/舒张压 -->
+	<string name="perfusion_art_tar_pre_title">肝动脉目标压力</string>
+	<string name="perfusion_left_kidney_art_tar_pre_title">左肾动脉目标压力</string>
+	<string name="perfusion_right_kidney_art_tar_pre_title">右肾动脉目标压力</string>
+	<string name="perfusion_art_tar_sec_pre_title">Max/Min</string>
+	<string name="perfusion_art_real_tar_flow_title">肝动脉流量/每100g流量</string>
+	<string name="perfusion_left_kidney_art_real_tar_flow_title">左肾动脉流量/每100g流量</string>	
+	<string name="perfusion_art_speed_title">肝动脉泵速</string>
+	<string name="perfusion_left_kidney_art_speed_title">左肾动脉泵速</string>	
+	<string name="perfusion_left_right_kidney_art_speed_title">左肾/右肾动脉泵速</string>	
+	<string name="perfusion_art_pulse_rate">肝动脉脉率</string>
+	<string name="perfusion_left_kidney_art_pulse_rate">左肾动脉脉率</string>	
+	<string name="perfusion_title_left_kidney_art_tarflow">左肾动脉目标流量</string>
+	<string name="perfusion_title_right_kidney_art_tarflow">右肾动脉目标流量</string>
+	<string name="perfusion_vein_real_tar_pre_title">门静脉压力/目标压力</string>
+	<string name="perfusion_right_kidney_artery_real_tar_pre_title">右肾动脉收缩压/舒张压(平均压)</string>	
+	<string name="perfusion_vein_real_tar_flow_title">门静脉流量/每100g流量</string>
+	<string name="perfusion_right_kidney_artery_real_tar_flow_title">右肾动脉流量/每100g流量</string>	
+	<string name="perfusion_vein_speed_title">门静脉泵速</string>
+	<string name="perfusion_right_kidney_artery_speed_title">右肾动脉泵速</string>
+	<string name="perfusion_bubble_bile_title">肝动脉/门静脉 气泡</string>
+	<string name="perfusion_percent_flow_title">肝动脉/门静脉流量比例</string>
+	<string name="perfusion_title_resistance_index">肝动脉/门静脉阻力指数</string>
+	<string name="perfusion_title_kidney_resistance_index">左肾动脉/右肾动脉阻力指数</string>
+	<string name="perfusion_ebile_title">胆汁</string>
+	<string name="perfusion_error_disconnect">Error1</string>
+	<string name="perfusion_error_abnormal">Error2</string>
+	<string name="perfusion_error_pumpspeed">泵速不能超过 3000r/min</string>
+	<string name="perfusion_system_state_running">运行中</string>
+	<string name="perfusion_system_state_stop">停止运行</string>	
+	<string name="blood_gas_sampltime">采样</string>
+	<string name="dialog_title_sample_time">提示</string>
+	<string name="setting_sub_title_perfusion">灌注设置</string>
+	<string name="setting_sub_title_alert">预警设置</string>
+	<string name="setting_sub_title_system">系统设置</string>
+	<string name="error_sample_time">重新选择采样时间</string>
+	
+
+	<string name="preset_pvp">PVP</string>
+	<string name="preset_hap">HAP</string>
+	<string name="preset_pvf">PVF</string>
+	<string name="preset_haf">HAF</string>
+	<string name="preset_rap">RAP</string>
+	<string name="preset_lap">LAP</string>
+	<string name="preset_sensor_line_title">连接状态</string>
+  	<string name="preset_alert_msg_sensor_check">异常</string>
+  	<string name="preset_alert_msg_sensor_ok">正常</string>
+	<string name="preset_sensor_title">传感器</string>
+
+	<string name="preset_sensor_artery_pressure">肝动脉压力传感器</string>
+    <string name="preset_sensor_vein_pressure">门静脉压力传感器</string>
+    <string name="preset_sensor_artery_flow">肝动脉流量传感器</string>
+    <string name="preset_sensor_vein_flow">门静脉流量传感器</string>
+    <string name="preset_sensor_left_artery_flow">左肾动脉流量传感器</string>
+    <string name="preset_sensor_right_artery_flow">右肾动脉流量传感器</string>
+    <string name="preset_sensor_left_artery_pressure">左肾动脉压力传感器</string>
+    <string name="preset_sensor_right_artery_pressure">右肾动脉压力传感器</string>
+    <string name="preset_sensor_temperature">温度传感器</string>
+	<string name="zero_text">调零</string>
+	<string name="preset_turn_right_hint">提示:调零成功3s后，顺时针转动三通旋塞至连接管路</string>
+	<string name="preset_param_liver_hint">输入肝脏的重量和ID</string>
+	<string name="preset_param_kidney_hint">输入肾脏的重量和ID</string>
+	<string name="preset_turn_left">逆时针转动三通旋塞，打开压力传感器至大气压</string>
+	<string name="preset_turn_right">成功调零后，顺时针转动三通旋塞至连接管路</string>
+	<string name="preset_zero_procedure">流程:</string>
+	<string name="preset_how_to_zero">阀门向右旋转-单击零按钮-阀门向左旋转</string>
+	<string name="preset_zero_pressure_success">压力调零成功</string>
+	<string name="preset_artey_mode">肝动脉灌注模式</string>
+	<string name="preset_vein_mode">门静脉灌注模式</string>
+	<string name="preset_left_kidney_artery_mode">左肾动脉灌注模式</string>
+	<string name="preset_right_kidney_artery_mode">右肾动脉灌注模式</string>
+	<string name="preset_artery_const_pressure">恒压</string>
+	<string name="preset_artery_pulse_pressure">搏动</string>
+	<string name="preset_vein_const_pressure">恒压</string>
+	<string name="preset_vein_const_flow">恒流</string>
+	<string name="preset_temp_mode">灌注温度模式</string>
+	<string name="preset_temp_normal_mode">常温灌注</string>
+	<string name="preset_temp_cold_mode">冷灌注</string>		
+	<!-- setting -->
+	<string name="setting_kidney_num">肾脏ID</string>
+	<string name="setting_liver_num">肝脏ID</string>
+	<string name="setting_kidney_weight">左肾脏重量(g)</string>
+	<string name="setting_kidney_right_weight">右肾脏重量(g)</string>
+	<string name="setting_liver_weight">肝脏重量(g)</string>
+	<string name="setting_current_temp">当前目标温度</string>
+	<string name="setting_current_flow">当前流量(ml/min)</string>
+	<string name="setting_current_pressure">当前压力(mmHg)</string>
+	<string name="setting_set_target_flow">目标流量(ml/min)</string>
+	<string name="setting_set_target_min_pressure">最小目标压(mmHg)</string>
+	<string name="setting_set_target_max_pressure">最大目标压(mmHg)</string>
+	<string name="setting_set_target_pressure">目标压(mmHg)</string>
+	<string name="setting_set_target_time">目标温度</string>
+	<string name="setting_init_temp">37.0</string>
+	<string name="setting_init_pressure">0.0</string>
+	<string name="setting_init_flow">0.0</string>
+	<string name="setting_init_artery_speed">1500</string>
+	<string name="setting_init_vein_speed">1200</string>
+	<string name="setting_end_perfusion">结束灌注</string>
+	<string name="setting_alert_save_ok">保存成功</string>
+	<string name="set_current_pressure">当前压力:</string>
+	<string name="set_current_flow">当前流速:</string>
+	<string name="set_prealarm">报警设置</string>
+	<string name="set_pre_up">压力升至:</string>
+	<string name="set_pre_down">压力降至:</string>
+	<string name="set_flow_up">流量升至:</string>
+	<string name="set_flow_down">流量降至:</string>
+	<string name="set_speed_limit">泵速报警:</string>	
+	<string name="set_save_sucess">保存成功</string>	 
+	<!-- 气泡急停 -->
+	<string name="setting_title_item_bubble_stop">气泡停止功能</string>
+	
+	<!-- bloodgas -->
+	<string name="bloodgas_toast_input_imcomplete">请输入完整的参数值</string>
+	
+	<!-- title -->
+	<string name="title_alt_chart">ALT</string>
+	<!-- unit -->
+	<string name="unit_speed">(r/min)</string>
+	<string name="unit_alt">U/L</string>
+	<string name="unit_ast">U/L</string>
+	<string name="unit_glu">mmol/L</string>
+	<string name="unit_pco2">mmHg</string>
+	<string name="unit_po2">mmHg</string>
+	<string name="unit_hct">%</string>
+	<string name="unit_pressure">mmHg</string>
+    <string name="unit_resistance">mmHg/mL/min</string>
+	<string name="unit_flow_pecent">(mL/min)/(ml/min/100g)</string>
+	<string name="unit_flow">(mL/min)</string>
+	<string name="unit_perhour_bile">(Drop/hour)</string>
+    <string name="flow_unit">(mL/min)/(ml/min/100g)</string>
+    <string name="unit_degree">(℃)</string>
+		
+	<string name="popup_delete">删除</string>
+	<string name="popup_edit">编辑</string>	
+	<string name="disconnect_img_artery">A</string>
+	<string name="disconnect_img_vein">V</string>
+	
+	<!-- record history-->
+	<string name = "excel_name">灌注记录</string>
+	<string name = "record_pufersion_history_title">灌注历史</string>
+	<string name = "record_output">导出记录</string>
+	<string name = "record_perfusion_id">灌注ID</string>
+	<string name = "record_perfusion_duration">灌注时长</string>
+	<string name = "record_perfusion_export_check">导出确认</string>
+	<string name = "record_perfusion_weight">肝脏质量(g)</string>
+	<string name = "record_perfusion_left_kidney_weight">左肾重量(g)</string>	
+	<string name = "record_perfusion_right_kidney_weight">右肾重量(g)</string>	
+	<string name = "record_perfusion_to">To</string>
+	<string name = "record_perfusion_search">查询</string>
+	<string name = "record_perfusion_delete">删除</string>
+	<string name = "record_perfusion_export_hint">是否确认导出选定的记录?</string>
+	<string name = "record_perfusion_delete_hint">是否确定删除选定的记录?</string>
+	<string name = "perfusion_const_pressure">恒定压力</string>
+	<string name = "perfusion_pulse_pressure">搏动压力</string>
+	<string name = "perfusion_const_flow">恒定流速</string>
+	<string name = "toast_export_record_success">导出成功</string>
+	<string name = "toast_delete_record_success">删除成功</string>
+	<string name = "toast_export_record_fail">导出失败</string>
+	<string name = "toast_delete_record_fail">删除失败</string>
+	<string name = "toast_usb_nofound">U盘找不到</string>
+	<string name = "toast_fail_create_exportdir">在U盘中创建导出文件夹失败</string>
+	<string name = "usb_state">U盘状态:</string>
+	<string name = "hint_usb_plung">U盘已插入</string>
+	<string name = "hint_usb_detached">U盘已拔出</string>
+	<string name = "toast_endtime_not_earlier_than_begin">结束时间不得早于起始时间</string>
+	
+	<!-- 系统设置 -->
+	<string name="system_set_title">系统设置</string>
+	<string name="system_set_time">时间</string>
+	<string name="system_set_zone">设置日期,设置时间</string>
+	<string name="system_set_wifi">设置WIFI</string>
+	<string name="system_set_export">导出记录</string>
+	<string name="system_set_disinfection_mode">消毒模式</string>
+	<string name="system_set_export_content">导出灌注记录</string>
+	<!-- wlan -->
+	<string name = "wlan_title">WLAN</string>
+	<string name = "wlan_close">关闭</string>
+	<string name = "wlan_open">打开</string>
+	<string name = "wlan_connect">已连接</string>
+	<string name = "wlan_connecting">正在连接</string>
+	<string name = "wlan_encrypted">加密</string>
+	<string name = "wlan_save">保存</string>
+	<string name = "wlan_status_title">状态</string>
+	<string name = "wlan_signal_strength_title">信号强度</string>
+	<string name = "wlan_security_title">加密</string>
+	<string name = "wlan_searching">查询可用wifi(…, &#8230;)</string>
+	<string name = "wlan_turn_off_status_hint">查看可用的网络，请打开Wi-Fi</string>
+	<string name = "password">密码</string>
+	<string name = "dialog_wifi_checkbox_pwd">显示密码</string>
+	<string name = "dialog_wifi_checkbox_advanced">高级选项</string>
+	<string name = "toast_wifi_null">Wifi密码不能为空</string>	
+	<string name = "toast_wifi_length">Wifi密码长度不能超过8位</string>	
+	<!-- Date time -->
+	<string name = "date_title">日期和时间</string>
+	<string name = "time_set_time">设置时间</string>
+	<string name = "time_set_date">设置日期</string>
+	<string name = "time_select_time_zone">选择时区</string>
+	<string name = "time_timezone_title">选择时区</string>
+	<!-- 关于我们 -->
+	<string name = "module_aboutus_title">关于我们</string>
+	
+		
+	<!-- dialog title-->
+	<string name = "dialog_title_choice_date">日期</string>
+	<string name = "dialog_title_choice_time">时间</string>
+	<string name = "dialog_export_record">正在从数据库导出记录</string>
+	<string name = "dialog_delete_record">正在从数据库删除记录</string>	
+	<string name = "dialog_title_change_artery_mode">肝动脉模式</string>
+	<string name = "dialog_title_change_left_kidney_artery_mode">左肾动脉模式</string>
+	<string name = "dialog_title_change_right_kidney_artery_mode">右肾动脉模式</string>
+	<string name = "dialog_title_change_vein_mode">门静脉模式</string>
+	<string name = "dialog_title_blood_gas_time">采样时间</string>
+	<string name = "dialog_title_set_temp">设置目标温度</string>
+	<string name = "dialog_title_set_artery_speed">设置肝动脉泵速</string>
+	<string name = "dialog_title_set_vein_speed">设置门静脉泵速</string>
+	<string name = "dialog_forget">忘记</string>
+	<string name = "dialog_title_warning">警告</string>
+	
+	<!-- dialog message -->
+	<string name = "dialog_msg_perfusion_add_bloodgas_sampletime">是否确定保存当前时间作为血气的采样时间?</string>
+	<string name = "dialog_msg_perfusion_exit_perfusion">确定要退出灌注?</string>
+	<string name = "dialog_restart_message">确定要重启灌注系统？</string>
+	<string name = "dialog_stop_message">确定要停止灌注系统？</string>
+	<string name = "dialog_preset_notice_dialog_message">请确认压力传感器已旋至最初位置</string>
+	<string name = "dialog_notice_cistern">请确认水箱已装满水！</string>
+	<string name = "dialog_notice_emergencystop">系统急停</string>	
+	<string name = "dialog_notice_low_battery">电量不足，请充电！</string>
+	<string name = "dialog_notice_disinfection">确定使用水箱消毒模式？</string>
+	<string name = "dialog_notice_zero_artery_pressure">请确定逆时针转动三通旋塞，打开肝动脉压力传感器至大气压</string>
+	<string name = "dialog_notice_zero_vein_pressure">请确定逆时针转动三通旋塞，打开门静脉压力传感器至大气压</string>
+	<string name = "dialog_notice_zero_left_kidney_artery_pressure">请确定逆时针转动三通旋塞，打开左肾动脉压力传感器至大气压</string>
+	<string name = "dialog_notice_zero_right_kidney_artery_pressure">请确定逆时针转动三通旋塞，打开右肾脉压力传感器至大气压</string>
+	<string name = "dialog_notice_zero_flow">流量调零前，请停止运行</string>		
+	<!-- 泵速 alarm -->
+	<string name = "alarm_msg_pump_artery_speed">肝动脉泵速异常</string>
+	<string name = "alarm_msg_pump_vein_speed">门静脉泵速异常</string>
+	<string name = "alarm_msg_pump_artery_vein_speed">肝动脉/门静脉 泵速异常</string>
+	<string name = "alarm_msg_pump_left_kidney_artery_speed">左肾动脉泵速异常</string>
+	<string name = "alarm_msg_pump_right_kidney_artery_speed">右肾动脉泵速异常</string>
+	<string name = "alarm_msg_pump_left_right_kidney_artery_speed">左肾动脉/右肾脉 泵速异常</string>	
+	
+	
+	
+	
+	<string name = "alarm_msg_battery_low">电池电量过低</string>
+	<!-- about -->
+	<string name= "about_copyright">CopyRight © 2017-2021 丁沃生版权所有</string>	
+	<string name= "about_software_model">Devocean-Liver&#038;Kidney 3000</string>
+	<string name= "about_software_name">Liver&#038;Kidney Perfusion System Software(离体肝肾灌注系统软件)</string>
+	<string name= "about_title_version">版本:</string>
+	<string name= "about_title_model">型号:</string>	
+	<string name= "about_title_production_date">生产日期:</string>		
+	<string name= "filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	
+	<string name = "number_0">0</string>
+	<string name = "number_200">200</string>
+	<string name = "number_400">400</string>
+	<string name = "number_600">600</string>
+	<string name = "number_800">800</string>
+	<string name = "number_1000">1000</string>
+	<string name = "number_1200">1200</string>
+	<string name = "number_4">4</string>
+	<string name = "number_6">6</string>
+	<string name = "number_8">8</string>
+	<string name = "number_12">12</string>
+	<string name = "number_20">20</string>
+	<string name = "number_40">40</string>
+	<string name = "number_60">60</string>
+	<string name = "number_80">80</string>	
+	<string name = "number_100">100</string>
+	<string name = "system_set_disinfect">Disinfecting mode is not available</string>
+	
+	
+	<!-- kidney -->
+	<string name="error_target_left_kidney_pre_null">请输入左肾动脉的目标压力</string>
+	<string name="error_target_left_kieney_pre_value_format_error">左肾动脉目标压力数值格式错误</string>
+	<string name="error_target_right_kieney_pre_value_format_error">右肾动脉目标压力数值格式错误</string>
+	<string name="error_max_value_normal_perfusion_target_const_left_kidney_artery_pre">常温灌注, 左肾动脉恒定压力不得超过100mmHg</string>
+	<string name="error_max_value_cold_perfusion_target_const_left_kidney_artery_pre">冷灌注, 左肾动脉目标压力不得超过40mmHg</string>
+	<string name="error_target_left_kidney_pre_min_null">请输入左肾动脉最小目标压力值</string>
+	<string name="error_target_left_kidney_pre_max_null">请输入左肾动脉最大目标压力值</string>
+	<string name="error_target_left_kidney_pre_max_limit">左肾动脉目标压力最大值不应超过120mmHg</string>
+	<string name="error_target_left_kidney_pre_min_limit">左肾动脉目标压力最小值不应超过100mmHg</string>
+	<string name="error_target_left_kidney_pre_min_max_compare">左肾动脉的最大目标压力值不应小于最小压力值</string>
+	<string name="error_target_left_kidney_pre_min_max_difference">左肾动脉目标压力最大值和最小值差值不应超过 40mmHg</string>
+	<string name="error_target_left_kidney_flow_null">请输入左肾动脉目标流量值</string>	
+	<string name="error_max_value_left_kidney_target_flow">左肾动脉目标流量不应超过1500ml/min</string>
+	<string name="error_value_cold_perfusion_left_kidney_target_pre">冷灌注, 左肾肝动脉目标压力不能为空</string>
+	<string name="error_value_left_kidney_artery_target_flow_null">左肾动脉目标流量不能为空</string>	
+	<string name="error_value_normal_perfusion_left_kidney_target_pre_min_null">常温灌注, 左肾动脉最小目标压力值不能为空</string>
+	<string name="error_value_normal_perfusion_left_kidney_target_pre_max_null">常温灌注, 左肾动脉最大目标压力值不能为空</string>	
+	<string name="error_upper_limit_of_left_kidney_artery_pressure_nmp">常温灌注，左肾动脉压力警告的上限不应超过100mmHg</string>
+	<string name="error_upper_limit_of_left_kidney_artery_pressure_hmp">冷灌注，左肾动脉压力警告的上限不应超过40mmHg</string>
+	<string name="error_lower_limit_of_left_kidney_artery_pressure">左肾动脉压力警告的下限不应超过0mmHg</string>
+	<string name="error_lower_limit_of_left_kidney_artery_flow">左肾动脉血流警告的下限不应低于0mL/min</string>	
+	<string name="error_upper_limit_of_left_kidney_artery_flow">左肾动脉血流警告的上限不应超过1000mL/min</string>
+	<string name="error_upper_limit_of_left_kidney_artery_speed">左肾动脉的泵速警告的上限不得高于3000r/min</string>
+	<string name="error_lower_limit_of_left_kidney_artery_speed">左肾动脉的泵速警告的下限不得低于1500r/min</string>
+
+		
+		
+	<string name="error_target_right_kidney_pre_null">请输入右肾脉目标压力值</string>
+	<string name="error_target_right_kidney_pre_min_null">请输入右肾动脉最小目标压力值</string>
+	<string name="error_target_right_kidney_pre_max_null">请输入右肾动脉最大目标压力值</string>
+	<string name="error_target_right_kidney_pre_max_limit">右肾动脉目标压力最大值不应超过120mmHg</string>
+	<string name="error_target_right_kidney_pre_min_limit">右肾动脉目标压力最小值不应超过100mmHg</string>
+	<string name="error_target_right_kidney_pre_min_max_compare">右肾动脉的最大目标压力值不应小于最小压力值</string>	
+	<string name="error_target_right_kidney_pre_min_max_difference">右肾动脉目标压力最大值和最小值差值不应超过 40mmHg</string>
+	<string name="error_max_value_normal_perfusion_target_const_right_kidney_artery_pre">常温灌注, 右肾动脉恒定压力不得超过100mmHg</string>
+	<string name="error_max_value_cold_perfusion_target_const_right_kidney_artery_pre">冷灌注, 右肾动脉目标压力不得超过40mmHg</string>
+	<string name="error_upper_limit_of_right_kidney_artery_pressure_nmp">常温灌注,右肾动脉压力警告的上限不应超过100mmHg</string>
+	<!-- 常温灌注下，门静脉压力警报上限值不得大于8mmHg -->
+	<string name="error_upper_limit_of_right_kidney_artery_pressure_hmp">冷灌注,右肾动脉压力警告的上限不应超过40mmHg</string>
+	<string name="error_target_right_kidney_flow_null">请输入右肾脉目标流量值</string>
+	<string name="error_max_value_right_kidney_target_flow">右肾动脉目标流量不应超过1500ml/min</string>
+	<string name="error_value_right_kidney_artery_target_flow_null">右肾动脉目标流量不能为空</string>
+	<string name="error_value_right_kidney_artery_target_pressure_null">右肾动脉目标压力不能为空</string>
+	<string name="error_value_normal_perfusion_right_kidney_target_pre_min_null">常温灌注, 右肾动脉最小目标压力值不能为空</string>
+	<string name="error_value_normal_perfusion_right_kidney_target_pre_max_null">常温灌注, 右肾动脉最大目标压力值不能为空</string>	
+	<string name="error_upper_limit_of_right_kidney_artery_pressure">右肾动脉压力警告的上限不应超过100mmHg</string>
+	<string name="error_lower_limit_of_right_kidney_artery_pressure">右肾动脉压力警告的下限不应超过0mmHg</string>
+	<string name="error_lower_limit_of_right_kidney_artery_flow">门静脉血流警告的下限不应低于0mL/min</string>	
+	<string name="error_upper_limit_of_right_kidney_artery_flow">右肾动脉血流警告的上限不应超过 1000mL/min</string>	
+	<string name="error_upper_limit_of_right_kidney_artery_speed">右肾动脉的泵速警告的上限不得高于3000r/min</string>
+	<string name="error_lower_limit_of_right_kidney_artery_speed">右肾动脉的泵速警告的下限不得低于1500r/min</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    <!-- 左边是肝动脉 -->
+    <View
+        android:id="@+id/record_content_divider_line"
+	    android:layout_width="1dp"
+	    android:layout_height="fill_parent"
+	    android:layout_centerHorizontal="true" 
+	    android:background="@color/black"/>
+    <LinearLayout 
+        android:id="@+id/record_chart_left_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/record_content_divider_line"
+        android:orientation="vertical"> 
+        <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/record_chart_artery_pressure_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:padding="4dp"/>
+ 
+    	<com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/record_chart_artery_flow_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:padding="4dp"/>      
+	        
+    	<com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/record_chart_artery_resistindex_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:padding="4dp"/>  
+    </LinearLayout>
+    <!-- 右边是门静脉 -->
+    <LinearLayout 
+        android:id="@+id/record_chart_right_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/record_content_divider_line"
+        android:orientation="vertical">
+       <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/record_chart_vein_pressure_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:padding="4dp"/>
+    
+    	<com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/record_chart_vein_flow_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:padding="4dp"/>
+    	<com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/record_chart_vein_resistindex_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:padding="4dp"/> 
+    </LinearLayout>
+
+</RelativeLayout>
+

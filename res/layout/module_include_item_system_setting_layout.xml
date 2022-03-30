@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <TextView 
+        style ="@style/style_setting_perfusion_title_txt"
+        android:id="@+id/item_system_setting_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/setting_title_item_bubble_stop"/>
+	<CheckBox 
+	    android:id="@+id/item_system_setting_check"
+	    style="@style/bubble_checkbox_style"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:clickable="false"
+	    android:focusable="false"
+	    android:layout_marginTop="12dp"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

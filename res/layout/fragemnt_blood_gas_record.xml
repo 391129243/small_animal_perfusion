@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/black">
+   	<View  	    
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+   	
+   	<!-- 左边布局 -->
+	<RelativeLayout 
+	    android:id="@+id/blood_gas_left_layout"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="113dp"
+        android:layout_toLeftOf="@id/line">
+        <!-- 测量信息 -->
+	    <RelativeLayout 
+	        android:id="@+id/sample_info_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="162dp"
+	        android:paddingTop="14dp"
+	        android:gravity="center_vertical">
+	        <ImageView 
+	            android:id="@+id/blood_gas_img"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/ic_blood_gas"
+		        android:contentDescription="@null"/>
+
+		    <GridLayout
+		        android:id="@+id/sample_info_content_layout"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:layout_alignBottom="@+id/blood_gas_img"
+		        android:layout_toRightOf="@id/blood_gas_img"
+		        android:columnCount="2"
+		        android:padding="12dp"
+		        android:rowCount="2" >
+				
+				<TextView
+		            android:id="@+id/blood_gas_time_title_txt" 
+		            android:text="@string/time_detect" />
+	        	<TextView
+		            android:id="@+id/blood_gas_time_content_txt"	
+		            android:layout_marginLeft="20dp"	                        	            
+		            android:text="@string/string_null" />				
+				
+				<TextView
+		            android:id="@+id/blood_gas_sample_id_title_txt"	          
+		            android:layout_marginTop="8dp"
+		            android:text="@string/specimen_id" />
+		        
+		        <TextView
+		            android:id="@+id/blood_gas_sample_id_content_txt"
+		            android:layout_marginLeft="20dp"	
+		            android:layout_marginTop="8dp" 
+		            android:text="@string/string_null" />		        
+		    </GridLayout>
+	    </RelativeLayout>
+	    
+	    <!-- 血气 -->
+	    <RelativeLayout 
+	        android:id="@+id/blood_gas_info_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="108dp"
+	        android:paddingRight="52dp"
+	        android:paddingTop="4dp"
+	        android:paddingBottom="4dp"
+	        android:layout_below="@id/sample_info_layout">
+	        
+	        <TextView 
+	            android:id="@+id/blood_gas_title_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:text="@string/blood_gas"
+	            android:textColor="@color/color_blood_gas_module_title"
+	            android:textSize="@dimen/font_size_small_14sp"/>
+	        <ListView 
+	            android:id="@+id/blood_gas_listview"
+	            android:layout_width="428dp"
+	            android:layout_height="fill_parent"
+	            android:layout_toRightOf="@id/blood_gas_title_txt"
+	            android:layout_marginLeft="36dp"
+	            android:divider="@drawable/dash_line"
+	            android:dividerHeight="1dp"
+	            android:background="@drawable/shape_import_blood_gas_layout_bg">	            
+	        </ListView>
+	    </RelativeLayout>
+	    
+	    <!-- 血氧 -->
+	    <RelativeLayout 
+	        android:id="@+id/blood_oxygen_info_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="72dp"
+	        android:paddingRight="52dp"
+	        android:paddingTop="4dp"
+	        android:paddingBottom="4dp"
+	        android:layout_marginTop="32dp"
+	        android:layout_below="@id/blood_gas_info_layout">
+	        
+	        <TextView 
+	            android:id="@+id/blood_oxygen_title_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:text="@string/blood_oxygen"
+	            android:textColor="@color/color_blood_gas_module_title"
+	            android:textSize="@dimen/font_size_small_14sp"/>
+	        <ListView 
+	            android:id="@+id/blood_oxygen_listview"
+	            android:layout_width="428dp"
+	            android:layout_height="fill_parent"
+	            android:layout_toRightOf="@id/blood_oxygen_title_txt"
+	            android:layout_marginLeft="36dp"
+	            android:divider="@drawable/dash_line"
+	            android:dividerHeight="1dp"
+	            android:background="@drawable/shape_import_blood_gas_layout_bg">	            
+	        </ListView>
+	    </RelativeLayout>
+	    
+	    <!-- 电解质 -->
+	    <RelativeLayout 
+	        android:id="@+id/electrolyte_info_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="144dp"
+	        android:paddingRight="52dp"
+	        android:paddingTop="4dp"
+	        android:paddingBottom="4dp"
+	        android:layout_marginTop="32dp"
+	        android:layout_below="@id/blood_oxygen_info_layout">
+	        
+	        <TextView 
+	            android:id="@+id/electrolyte_title_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:text="@string/electrolyte"
+	            android:textColor="@color/color_blood_gas_module_title"
+	            android:textSize="@dimen/font_size_small_14sp"/>
+	        <ListView 
+	            android:id="@+id/electrolyte_listview"
+	            android:layout_width="428dp"
+	            android:layout_height="fill_parent"
+	            android:layout_toRightOf="@id/electrolyte_title_txt"
+	            android:layout_marginLeft="20dp"
+	            android:divider="@drawable/dash_line"
+	            android:dividerHeight="1dp"
+	            android:background="@drawable/shape_import_blood_gas_layout_bg">	            
+	        </ListView>
+	    </RelativeLayout>
+	    
+	    <!-- 代谢物 -->
+	    <RelativeLayout 
+	        android:id="@+id/metabolite_info_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="144dp"
+	        android:paddingRight="52dp"
+	        android:paddingTop="4dp"
+	        android:paddingBottom="4dp"
+	        android:layout_marginTop="32dp"
+	        android:layout_below="@id/electrolyte_info_layout">
+	        
+	        <TextView 
+	            android:id="@+id/metabolite_title_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:text="@string/metabolite"
+	            android:textColor="@color/color_blood_gas_module_title"
+	            android:textSize="@dimen/font_size_small_14sp"/>
+	        <ListView 
+	            android:id="@+id/metabolite_listview"
+	            android:layout_width="428dp"
+	            android:layout_height="fill_parent"
+	            android:layout_toRightOf="@id/metabolite_title_txt"
+	            android:layout_marginLeft="20dp"
+	            android:divider="@drawable/dash_line"
+	            android:dividerHeight="1dp"
+	            android:background="@drawable/shape_import_blood_gas_layout_bg">	            
+	        </ListView>
+	    </RelativeLayout>
+	</RelativeLayout>
+	
+	<!-- 右边布局 -->
+	<RelativeLayout 
+	    android:id="@+id/blood_gas_right_layout"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="113dp"
+        android:layout_toRightOf="@id/line">
+	    
+	    <!-- 酸碱状态 -->
+	    <RelativeLayout 
+	        android:id="@+id/acid_base_status_info_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="216dp"
+	        android:paddingTop="4dp"
+	        android:paddingBottom="4dp"
+	        android:layout_marginTop="102dp">
+	        
+	        <TextView 
+	            android:id="@+id/acid_base_status_title_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:text="@string/acid_base_status"
+	            android:textColor="@color/color_blood_gas_module_title"
+	            android:textSize="@dimen/font_size_small_14sp"/>
+	        <ListView 
+	            android:id="@+id/acid_base_status_listview"
+	            android:layout_width="450dp"
+	            android:layout_height="fill_parent"
+	            android:layout_toRightOf="@id/acid_base_status_title_txt"
+	            android:layout_marginLeft="36dp"
+	            android:divider="@drawable/dash_line"
+	            android:dividerHeight="1dp"
+	            android:background="@drawable/shape_import_blood_gas_layout_bg">	            
+	        </ListView>
+	    </RelativeLayout>
+	    <ImageView
+	        android:id="@+id/srollview_img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/blood_gas_scrollview_img"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="12dp"
+	        android:contentDescription="@null"
+	        android:layout_centerHorizontal="true"/>
+	    <!-- 其他状态 -->
+	    <RelativeLayout 
+	        android:id="@+id/other_info_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="4dp"
+	        android:paddingBottom="4dp"
+	        android:layout_marginTop="32dp"
+	        android:layout_below="@id/acid_base_status_info_layout"
+	        android:layout_above="@id/srollview_img">
+	        
+	        <TextView 
+	            android:id="@+id/others_title_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:text="@string/others"
+	            android:textColor="@color/color_blood_gas_module_title"
+	            android:textSize="@dimen/font_size_small_14sp"/>
+	        <ListView 
+	            android:id="@+id/others_listview"
+	            android:layout_width="450dp"
+	            android:layout_height="fill_parent"
+	            android:layout_toRightOf="@id/others_title_txt"
+	            android:layout_marginLeft="54dp"	            
+	            android:background="@drawable/shape_others_blood_gas_layout_bg">	            
+	        </ListView>
+	    </RelativeLayout>
+	    
+	</RelativeLayout>
+
+</RelativeLayout>

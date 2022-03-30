@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" 
+	xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout 
+        android:id="@+id/setting_perfusion_left_layout"
+        android:layout_width="78dp"
+        android:layout_height="fill_parent">
+        <!-- 门静脉 灌注模式 恒压 搏动 -->
+		<TextView 
+		    android:id="@+id/liver_setting_common_txt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="136dp"
+		    android:background="@drawable/shape_setting_perfusion_title_bg"/>
+		<View 
+		    android:id="@+id/line_one"
+		    style="@style/horizontal_line"
+		    android:layout_height="4dp"
+		    android:layout_below="@id/liver_setting_common_txt"/>
+		<TextView 
+		    android:id="@+id/liver_setting_art_txt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="192dp"
+		    android:layout_below="@id/line_one"
+		    android:gravity="center"
+		    android:text="@string/left_kidney_artery"
+		    android:textSize="18sp"
+		    android:textColor="@color/white"
+		    android:textStyle="bold"
+		    android:background="@drawable/shape_setting_perfusion_title_bg"/>
+		<View 
+		    android:id="@+id/line_two"
+		    style="@style/horizontal_line"
+		    android:layout_height="4dp"
+		    android:layout_below="@id/liver_setting_art_txt"/>
+		<TextView 
+		    android:id="@+id/liver_setting_vein_txt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="192dp"
+		    android:layout_below="@id/line_two"
+		    android:gravity="center"
+		    android:text="@string/right_kidney_artery"
+		    android:textSize="18sp"
+		    android:textColor="@color/white"
+		    android:textStyle="bold"
+		    android:background="@drawable/shape_setting_perfusion_title_bg"/>
+		<View 
+		    android:id="@+id/line_three"
+		    style="@style/horizontal_line"
+		    android:layout_height="4dp"
+		    android:layout_below="@id/liver_setting_vein_txt"/>
+    </RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/setting_perfusion_right_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/setting_perfusion_left_layout" >
+
+	    <RelativeLayout
+	        android:id="@+id/setting_perfusion_right_id_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="68dp" 
+	        android:paddingLeft="12dp">
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_livernum_title"
+	            style="@style/style_setting_perfusion_title_txt"
+	            android:layout_width="166dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/setting_kidney_num" />
+
+	       <TextView
+	            android:id="@+id/setting_perfusion_liver_et"
+	            android:layout_width="268dp"
+	            android:layout_height="38dp"
+	            android:layout_centerVertical="true"
+	            android:gravity="center"
+	            android:maxLength="20"
+	            android:textColor="@color/blue"
+	            android:textSize="24sp"
+	            android:layout_toRightOf="@id/setting_perfusion_livernum_title" >
+	        </TextView>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:id="@+id/setting_perfusion_right_weight_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="68dp" 
+	        android:layout_below="@id/setting_perfusion_right_id_layout"
+	        android:paddingLeft="12dp">
+	       <!-- 左肾重量 -->
+	        <TextView
+	            android:id="@+id/setting_perfusion_weight_title"
+	            style="@style/style_setting_perfusion_title_txt"
+	            android:layout_centerVertical="true"
+	            android:text="@string/setting_kidney_weight" />
+
+
+	        <com.gidi.bio_console.view.SystemKeyBoardEditText 
+	            style="@style/style_setting_perfusion_edit"
+		        android:id="@+id/setting_perfusion_weight_et"
+	            android:layout_marginLeft="24dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/setting_perfusion_weight_title"
+	            android:inputType="numberDecimal"
+	            android:maxLength="4"
+	            custom:outSideCancel="true"
+           		custom:keyDrawable="@drawable/btn_keyboard_key"
+           		custom:xmlLayoutResId="@xml/keyboard_numbers"/>
+	         <!-- 	右肾重量 -->
+	        <TextView
+	            android:id="@+id/setting_perfusion_right_kidney_weight_title"
+	            style="@style/style_setting_perfusion_title_txt"
+	            android:layout_toRightOf="@id/setting_perfusion_weight_et"
+	            android:layout_marginLeft="24dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/setting_kidney_right_weight" />
+
+
+	        <com.gidi.bio_console.view.SystemKeyBoardEditText 
+	            style="@style/style_setting_perfusion_edit"
+		        android:id="@+id/setting_perfusion_right_kidney_weight_et"
+	            android:layout_marginLeft="24dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/setting_perfusion_right_kidney_weight_title"
+	            android:inputType="numberDecimal"
+	            android:maxLength="4"
+	            custom:outSideCancel="true"
+           		custom:keyDrawable="@drawable/btn_keyboard_key"
+           		custom:xmlLayoutResId="@xml/keyboard_numbers"/>
+	    </RelativeLayout>
+
+	    <View
+	        android:id="@+id/setting_perfusion_first_divider"
+	        style="@style/horizontal_line"
+	        android:layout_height="4dp"
+	        android:layout_below="@id/setting_perfusion_right_weight_layout"/>
+
+	    <RelativeLayout
+	        android:id="@+id/setting_perfusion_artery_flow_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="62dp"
+	        android:layout_below="@id/setting_perfusion_first_divider"
+	        android:paddingLeft="12dp"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp">
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_curflow_title"
+	            style="@style/style_setting_perfusion_title_txt"
+	            android:layout_centerVertical="true"
+	            android:text="@string/setting_current_flow" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_art_curflow_txt"
+	            style="@style/style_parent_setting_edit_bg"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:textColor="@color/blue"
+	            android:layout_toRightOf="@id/setting_perfusion_curflow_title"/>
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_artery_zero_flow_img"
+	            style="@style/style_btn_zero"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:layout_toRightOf="@id/setting_perfusion_art_curflow_txt" />
+	        
+	        <!-- 肝动脉压力 -->
+	         <TextView
+	            android:id="@+id/setting_perfusion_art_curpre_title"
+	            style="@style/style_setting_perfusion_title_txt"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:layout_toRightOf="@id/setting_perfusion_artery_zero_flow_img"
+	            android:text="@string/setting_current_pressure" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_art_curpre_txt"
+	            style="@style/style_parent_setting_edit_bg"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:textColor="@color/blue"
+	            android:layout_toRightOf="@id/setting_perfusion_art_curpre_title" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_artery_zero_pre_img"
+	            style="@style/style_btn_zero"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:layout_toRightOf="@id/setting_perfusion_art_curpre_txt" />
+	        
+	    </RelativeLayout>
+	    
+	    <View 
+	        android:id="@+id/setting_perfusion_devider_mode_line"
+	        style="@style/horizontal_line"
+	        android:layout_below="@id/setting_perfusion_artery_flow_layout"/>
+	    <RelativeLayout
+	        android:id="@+id/setting_perfusion_artery_pressure_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="128dp"
+	        android:layout_below="@id/setting_perfusion_devider_mode_line"
+	        android:paddingLeft="12dp"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp"
+	        android:paddingRight="12dp">
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_art_mode_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            custom:title_text="@string/preset_left_kidney_artery_mode"
+	            custom:content_text="@string/preset_artery_const_pressure"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="#8a8a8a">	            
+	        </com.gidi.bio_console.view.TitleContentText>
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_art_constp_mode_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_perfusion_art_mode_txt"
+	           	android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_pressure"
+	            custom:content_text="@string/preset_artery_const_pressure"
+	            android:visibility="gone"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_artery">	            
+	        </com.gidi.bio_console.view.TitleContentText>	 
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_art_const_flow_value_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_perfusion_art_mode_txt"
+	           	android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_flow"
+	            android:visibility="gone"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_artery">	            
+	        </com.gidi.bio_console.view.TitleContentText>           
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_art_pulse_max_mode_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_perfusion_art_mode_txt"
+	            android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_max_pressure"	            
+	            custom:content_text="@string/preset_artery_const_pressure"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_artery">	            
+	        </com.gidi.bio_console.view.TitleContentText>	
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_art_pulse_min_mode_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_perfusion_art_mode_txt"
+	            android:layout_toRightOf="@id/setting_perfusion_art_pulse_max_mode_txt"
+	            android:layout_marginLeft="24dp"
+	            android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_min_pressure"	            
+	            custom:content_text="@string/preset_artery_const_pressure"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_artery">	            
+	        </com.gidi.bio_console.view.TitleContentText>	
+	        <ImageView 
+	            android:id="@+id/artery_mode_arrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:src="@drawable/arrow_down"
+	            android:contentDescription="@null"/>
+	    </RelativeLayout>
+
+	    <View
+	        android:id="@+id/setting_perfusion_second_divider"
+	        style="@style/horizontal_line"
+	        android:layout_height="4dp"
+	        android:layout_below="@id/setting_perfusion_artery_pressure_layout" />
+
+	    <RelativeLayout
+	        android:id="@+id/setting_perfusion_vein_flow_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="62dp"
+	        android:layout_below="@id/setting_perfusion_second_divider"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp" 
+	        android:paddingLeft="12dp">
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_vein_curflow_title"
+	            style="@style/style_setting_perfusion_title_txt"
+	            android:layout_centerVertical="true"
+	            android:text="@string/setting_current_flow" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_vein_curflow_txt"
+	            style="@style/style_parent_setting_edit_bg"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:textColor="@color/blue"
+	            android:layout_toRightOf="@id/setting_perfusion_vein_curflow_title" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_vein_zero_flow_img"
+	            style="@style/style_btn_zero"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:layout_toRightOf="@id/setting_perfusion_vein_curflow_txt" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_vein_curpre_title"
+	            style="@style/style_setting_perfusion_title_txt"
+	             android:layout_marginLeft="24dp"
+	            android:layout_toRightOf="@id/setting_perfusion_vein_zero_flow_img"
+	            android:layout_centerVertical="true"
+	            android:text="@string/setting_current_pressure" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_vein_curpre_txt"
+	            style="@style/style_parent_setting_edit_bg"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:textColor="@color/blue"
+	            android:layout_toRightOf="@id/setting_perfusion_vein_curpre_title" />
+
+	        <TextView
+	            android:id="@+id/setting_perfusion_vein_zero_pre_img"
+	            style="@style/style_btn_zero"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="24dp"
+	            android:layout_toRightOf="@id/setting_perfusion_vein_curpre_txt" />
+
+	    </RelativeLayout>
+	    <View 
+	        android:id="@+id/setting_perfusion_devider_vein_mode_line"
+	        style="@style/horizontal_line"
+	        android:layout_below="@id/setting_perfusion_vein_flow_layout"/>
+	    <RelativeLayout
+	        android:id="@+id/setting_perfusion_vein_mode_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="128dp"
+	        android:layout_below="@id/setting_perfusion_devider_vein_mode_line"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp"
+	        android:paddingLeft="12dp">
+			<!-- 门静脉灌注模式 -->
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_vein_mode_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            custom:title_text="@string/preset_right_kidney_artery_mode"
+	            custom:content_text="@string/preset_vein_const_pressure"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="#8a8a8a">	            
+	        </com.gidi.bio_console.view.TitleContentText>
+	        <!-- 目标压力 -->
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_const_pre_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_perfusion_vein_mode_txt"
+				android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_pressure"	            
+	            custom:content_text="@string/preset_vein_const_pressure"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_vein_params">	            
+	        </com.gidi.bio_console.view.TitleContentText>	
+	        <!-- 目标流量 -->
+ 			<com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_target_flow_txt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/setting_perfusion_vein_mode_txt"
+				android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_flow"	            
+	            custom:content_text="@string/preset_vein_const_flow"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_vein"
+	            android:visibility="gone">	            
+	        </com.gidi.bio_console.view.TitleContentText>	
+	        <!-- 右肾动脉目标最大最小压 -->
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_right_kideny_art_pulse_max_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            android:layout_below="@id/setting_perfusion_vein_mode_txt"
+	            android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_max_pressure"	            
+	            custom:content_text="@string/preset_artery_const_pressure"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_artery">	            
+	        </com.gidi.bio_console.view.TitleContentText>	
+	        <com.gidi.bio_console.view.TitleContentText
+	            android:id="@+id/setting_perfusion_right_kidney_art_pulse_min_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            android:layout_below="@id/setting_perfusion_vein_mode_txt"
+	            android:layout_toRightOf="@id/setting_perfusion_right_kideny_art_pulse_max_tv"
+	            android:layout_marginLeft="24dp"
+	            android:layout_marginTop="12dp"
+	            custom:title_text="@string/setting_set_target_min_pressure"	            
+	            custom:content_text="@string/preset_artery_const_pressure"
+	            custom:title_text_color="#141313"
+	            custom:content_text_color="@color/color_artery">	            
+	        </com.gidi.bio_console.view.TitleContentText>	
+	        <ImageView 
+	            android:id="@+id/vein_mode_arrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:src="@drawable/arrow_down"
+	            android:contentDescription="@null"/>
+	    </RelativeLayout>
+	    <View
+	        android:id="@+id/setting_perfusion_four_divider"
+	        style="@style/horizontal_line"
+	        android:layout_height="4dp"
+	        android:layout_below="@id/setting_perfusion_vein_mode_layout"/>
+	</RelativeLayout>
+
+</RelativeLayout>
+

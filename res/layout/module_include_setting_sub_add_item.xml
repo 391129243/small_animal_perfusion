@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/target_two_layout" 
+    android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:paddingLeft="12dp"
+   	android:background="@color/white"
+   	xmlns:custom="http://schemas.android.com/apk/res/com.gidi.bio_console">
+    <TextView        
+        style="@style/style_setting_perfusion_title_txt"
+        android:id="@+id/setting_item_title"
+        android:text="@string/target_pressure"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+    <ImageView 
+	    style="@style/style_setting_sub_img"
+        android:id="@+id/setting_sub_img"
+        android:padding="5dp"      
+		android:layout_toRightOf="@id/setting_item_title"
+		android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"/>   
+
+   <com.gidi.bio_console.view.SystemKeyBoardEditText 
+       	style="@style/style_setting_add_sub_edit"
+        android:id="@+id/setting_num_content_edit"
+       	android:layout_toRightOf="@id/setting_sub_img"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp" 
+        android:layout_marginLeft="14dp"    
+        android:gravity="center"
+        android:maxLength="5"
+        custom:outSideCancel="true"
+      	custom:keyDrawable="@drawable/btn_keyboard_key"
+      	custom:xmlLayoutResId="@xml/keyboard_numbers"/>
+    <ImageView 
+	 	style="@style/style_setting_add_img"
+        android:id="@+id/setting_add_img"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/setting_num_content_edit"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"/>
+  
+
+</RelativeLayout>

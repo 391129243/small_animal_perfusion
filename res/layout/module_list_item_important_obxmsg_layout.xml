@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp" 
+    android:padding="2dp">
+    <!-- 观察项目 -->
+    <TextView 
+        style="@style/style_item_important_obxmessage"
+        android:id="@+id/obser_subid_txt"
+        android:layout_centerVertical="true"
+        android:text="@string/ph"/>
+
+    <TextView 
+        style="@style/style_item_important_obxmessage"
+        android:id="@+id/observe_value_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="136dp"/>
+    
+    <TextView 
+        style="@style/style_item_important_obxmessage"
+        android:id="@+id/frag_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="240dp"/>
+    <TextView 
+        style="@style/style_item_important_obxmessage"
+        android:id="@+id/unit_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="280dp"/>   
+</RelativeLayout>

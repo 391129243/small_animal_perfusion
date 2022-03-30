@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/system_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg_selector"
+    android:clickable="true"
+    android:paddingLeft="24dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" >
+    
+    <ImageView 
+        android:id="@+id/system_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:src="@drawable/system_set_time"/>
+
+    <LinearLayout 
+        android:id="@+id/system_item_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/system_item_img"
+        android:layout_marginLeft="48dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+        <TextView 
+	        android:id="@+id/system_item_title_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="111"
+	        android:clickable="false"
+	        android:textColor="@color/blue"
+	        android:textSize="20sp"/>
+	    <!-- 加密还是已连接 -->
+	    <TextView 
+	        android:id="@+id/system_item_title_content_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="4dp"
+	        android:text="加密"
+	        android:clickable="false"
+	        android:textSize="14sp"
+	        android:visibility="visible"
+	        android:textColor="@color/gray"/>
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/next_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:src="@drawable/arrow_next"
+        android:contentDescription="@null"/>
+</RelativeLayout>

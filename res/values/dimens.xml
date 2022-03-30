@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 字体定义 -->
+
+    <dimen name="font_size_tiny_12sp">12sp</dimen>
+    <dimen name="font_size_small_14sp">14sp</dimen>
+    <dimen name="font_size_normal_16sp">16sp</dimen>
+    <dimen name="font_size_normal_18sp">18sp</dimen> 
+    <dimen name="font_size_normal_19sp">19sp</dimen>
+    <dimen name="font_size_large_20sp">20sp</dimen>
+    <dimen name="font_size_large_22sp">22sp</dimen>
+    <dimen name="font_size_large_24sp">24sp</dimen>
+    <dimen name="font_size_xlarge_26sp">26sp</dimen>
+    <dimen name="font_size_xlarge_28sp">28sp</dimen>  
+    <dimen name="font_size_xlarge_30sp">30sp</dimen>
+    <dimen name="font_size_xlarge_40sp">40sp</dimen>
+    
+    <!-- ************************* 通用 ******************** -->
+    <dimen name="margin_litter">2dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>   
+                 
+    <dimen name="top_bar_default_height">64dp</dimen>
+    <dimen name="bottom_bar_default_height">72dp</dimen>
+    <dimen name="top_bar_height">82dp</dimen>
+    <dimen name="buttom_bar_height">52dp</dimen>       
+    <dimen name="custom_dialog_width">240dp</dimen>
+    <dimen name="custom_toast_dialog_height">120dp</dimen>
+    
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="custom_viewgroup_item_text">16sp</dimen>
+    <dimen name="height_list_title">50dp</dimen>
+    
+    <dimen name="keyboard_height">134dp</dimen>
+    <dimen name="key_height">50dp</dimen>   <!--这里是代表一行的高度。-->
+    <dimen name="keyboard_horizontalGap">0px</dimen>
+    <dimen name="keyboard_verticalGap">0px</dimen>
+    <dimen name="key_height_double">50dp</dimen>  <!--大小是key_height的两倍-->
+</resources>

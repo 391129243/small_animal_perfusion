@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+      	android:layout_width="156dp"
+      	android:layout_height="fill_parent"
+      	android:layout_alignParentRight="true">
+        <Button
+            style="@style/style_perfusion_right_btn"
+		    android:id="@+id/unlock_tv"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentBottom="true"
+            android:layout_marginBottom="202dp"
+		    android:text="@string/btn_unlock"
+		    android:textColor="@color/white"
+		    android:drawableLeft="@drawable/right_bar_tab_lock_pressed"
+		    android:background="@drawable/shape_perfusion_right_btn_pressed_bg" />
+    </RelativeLayout>
+	
+
+</RelativeLayout>

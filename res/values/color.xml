@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">	#1C86EE</color>
+    <color name="gray">#C9C9C9</color>
+    <color name="red">#FF0000</color>
+    <color name="darkred">#8B0000</color>
+    <color name="green">#00B06F</color>
+    <color name="seagreen">#2E8B57</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="orange">#FFA500</color>
+    <color name="purple">#800080</color>
+	<color name="green_text">#86ff05</color>
+    <color name="color_bar">#175B88</color>
+    <color name="color_common_line">#8DB6CD</color>
+    <color name="common_sys_bg">#B0C4DE</color>
+    <color name="common_dis_bg">#A2B5CD</color>
+    <color name="common_set_bg">#C9C9C9</color>
+    <color name="common_sys_title_color">#4F4F4F</color>
+    <color name="common_sys_btn_bg_color">#C9C9C9</color>
+    <color name="common_stroke_color">#9C9C9C</color>
+    <color name="common_text_bg">#B5CDE0</color>
+    <color name="common_normal_color">#12ff00</color>
+    <color name="progress_color">#175B88</color>
+    <color name="alert_color">#FF0000</color>
+    <color name="alarm_color">#FFFF00</color>
+    <color name="normal_color">#009943</color>
+    <color name="deep_blue">#36648B</color>
+    <color name="date_color">#65b0fc</color>
+    <!-- TEXT COLOR -->
+    <color name="color_text_temp_cold">#32CD32</color>
+    <color name="color_text_temp_normal">#FFFF00</color>
+    
+    <!-- bg color -->
+    <color name="color_bg_setall">#152731</color>
+    <color name="color_setall_item_txt">#ABB2B5</color>
+    <color name="color_item_pressed_bg">#D7D8E5</color>
+    
+    <!-- title bg -->
+    <color name="common_color_title_top">#041237</color>
+    <color name="common_color_title_mid">#031337</color>
+    <color name="common_color_title_bottom">#02143A</color>
+    <color name="common_color_main_content_top">#051D49</color>
+    <color name="common_color_main_content_mid">#11508A</color> 
+    <color name="common_color_main_content_bottom">#165074</color>   
+    <!-- 图表的背景 -->
+    <color name="color_bg_chart">#000000</color>
+    
+    <color name="color_common_btn">#7EC0EE</color>
+    <!-- AxesColor color -->
+    <color name="color_axescolor">#38B0DE</color>
+    <!-- Label Color -->
+    <color name="color_label">#2DA7E0</color>
+    <!-- Art Wave Color-->
+    <color name="color_artery_wave">#E38031</color>
+    <color name="color_bubble">#436EEE</color>
+    <color name="color_artery">#FF7256</color>
+    <color name="color_vein">#2DA7E0</color>
+    <color name="color_chart_bg">#FCFCFC</color>
+    <color name="color_artery_chart">#F39700</color>
+    <color name="color_vein_chart">#2DA7E0</color>
+    <color name="color_artery_flow_chart_wave">#FFd800</color>
+    <color name="color_artery_pressure_chart_wave">#F6FF00</color>
+    <color name="color_vein_flow_chart_wave">#66FF00</color>
+    <color name="color_vein_pressure_chart_wave">#00FF0C</color>
+    <color name="color_bottom_bar_txt">#4E89B5</color>
+    <color name="color_accent">#2ed184</color>
+    
+    <!--  -->
+    <color name="color_unpressed_title">#2B2B2B</color>
+    <color name="color_pressed__title">#175B88</color>
+    <color name="color_time">#4F94CD</color>
+    <color name="color_temp">#5C8ECA</color>
+    <color name="color_mean_dia_sys">#E38031</color>
+    <color name="color_artery_pressure_flow">#C34228</color>
+    <color name="color_vein_params">#3173AA</color>
+    <color name="color_vein_title">#4794A8</color>
+    <color name="color_dialog_bg">#E8E7E6</color>
+    
+    <!-- 报警信息 -->
+    <!-- 奇数 -->
+    <color name="color_alarm_msg_odd">#B1C0D5</color>
+    <!-- 偶数 -->
+    <color name="color_alarm_msg_even">#FFFFFF</color>
+    <color name="color_alarm_artery">#DE6531</color>
+    <color name="color_alarm_vein">#183177</color>
+    <color name="color_alarm_level">#F70D0D</color>
+    
+    <!-- 信息记录 -->
+    <color name="color_msg">#CECED0</color>
+    <color name="color_msg_item">#88888A</color>
+    <color name="color_list_title_bg">#54626E</color>
+    <color name="color_serial_msg_odd_bg">#E3E3E5</color>
+    <color name="color_serial_msg_even_bg">#F3F3F3</color>
+    
+    <!-- 设置 -->
+    <color name="color_setting_bg">#1F1D2E</color>
+    <color name="color_setting_item_bg">#262435</color>
+	<color name="color_list_devider">#67747c</color>
+	
+	<!-- 自定义ViewGroup -->
+	<color name="item_text_normal">#FFFFFF</color>
+    <color name="custom_item_text_normal">#5B5B5B</color>  
+    <color name="custom_item_text_selected">#4e89b5</color> 
+    <color name="goods_item_btn_bg_normal">#ffffff</color>  
+    <color name="goods_item_btn_bg_selected">#ff8000</color>  
+    <color name="goods_item_btn_bg_border">#838B83</color>  
+   
+	<!-- 血气 -->
+	<color name="color_blood_gas_bg">#1B3549</color>
+	<color name="color_blood_gas_module_title">#4AD970</color>
+	<color name="color_general_msg">#999999</color>
+	<color name="color_blood_gas_list_title">#383838</color>
+	<color name="color_blood_gas_item_odd">#C6D0E2</color>
+	<color name="color_blood_gas_item_even">#C6D0E2</color>
+	<color name="color_custom_edit_bg">#4A5D6C</color>
+	<color name="color_blood_gas_edit_bg">#E9E9E9</color>
+	
+	
+	<color name="color_main_bg">#1C2127</color>
+	<color name="color_main_bottom_bg">#15517B</color>
+	<!-- 标题背景色 -->
+	<color name="color_title_bg">#069DD5</color>
+	<color name="color_bg_item_pressed">#EAEAEA</color>
+	
+	
+	<color name="color_perfusion_right_bg">#15517B</color>
+	<color name="color_perfusion_bottom_normal_btn_bg">#153045</color>
+	<color name="color_perfusion_bottom_pressed_btn_bg">#069DD5</color>
+	<color name="color_perfusion_right_normal_btn_bg">#CFDCE4</color>
+	<color name="color_perfusion_right_pressed_btn_bg">#069DD5</color>
+	<color name="color_perfusion_right_btn_text_normal">#041836</color>
+	
+	<color name="color_perfusion_content_bg">#152736</color>
+	<color name="color_perfusion_art_content_txt">#F6FF00</color>
+	<color name="color_perfusion_vein_pre">#00FF0C</color>
+	<color name="color_perfusion_vein_flow">#66FF00</color>
+	<color name="color_syspreset_bg">#393939</color>
+	<color name="color_title">#379AD3</color>
+	
+	<!-- setting sub title -->
+	<color name="color_preset_btn_enable">#334C43</color>
+	<color name="color_setting_sub_normal">#D4D7DB</color>
+	<!-- 预设 -->
+	<color name="color_preset_param_edit">#101010</color>
+	<color name="color_preset_artery_mode_normal">#F18414</color>
+	<color name="color_preset_vein_mode_normal">#069dd5</color>
+	<color name="color_preset_artery_pattern_bg">#F19A1E</color>
+	<color name="color_preset_vein_pattern_bg">#63B8FF</color>
+	<color name="color_preset_nmp_temp_mode_pressed">#FFD700</color>
+		
+	<!-- 设置 -->
+	<color name="color_set_artery_title">#F1A946</color>
+	<color name="color_set_vein_title">#4087EE</color>
+	<color name="color_set_edit_title">#141313</color>
+	<color name="color_set_add_sub_bg">#E0E0E8</color>
+	<color name="color_set_perfusion_startcolor">#1E86B8</color>
+	<color name="color_set_perfusion_center">#155D90</color>
+	<color name="color_set_perfusion_endcolor">#0E4073</color>
+	
+	<!-- 设置温度对话框 -->
+	<color name="color_dialog_temp_btn_pressed">#2E9DD1</color>
+	<color name="color_dialog_temp_btn_normal">#1B3549</color>
+</resources>

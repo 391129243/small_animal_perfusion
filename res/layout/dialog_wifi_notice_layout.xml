@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/dialog_common_bg"
+        android:orientation="vertical">
+        <!-- 标题 -->
+        <TextView 
+            android:id="@+id/tv_dialog_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="@string/prompt"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray"
+            android:contentDescription="@null"/>
+
+        <!--提示内容-->
+        <LinearLayout
+            android:id="@+id/li_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="vertical">
+ 
+            <TextView
+                android:id="@+id/tv_dialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="left"
+                android:text="@string/prompt"
+                android:textColor="#666666"
+                android:textSize="10sp" />    
+         </LinearLayout>   
+         
+       	<RelativeLayout 
+       	    android:id="@+id/dialog_wifi_layout"
+       	    android:layout_width="fill_parent"
+       	    android:layout_height="42dp">
+       	    <TextView
+	            android:id="@+id/dialog_forget_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:paddingRight="8dp"
+	            android:paddingLeft="24dp"
+	            android:layout_centerVertical="true"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:text="@string/dialog_forget"
+	            android:textColor="@color/blue" 
+	            android:textSize="18sp"/>
+       	   <TextView
+	            android:id="@+id/dialog_cancel_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="8dp"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_gravity="center"
+	            android:layout_marginRight="8dp"
+	            android:gravity="center"
+	            android:lines="1"
+	            android:text="@string/dialog_cancel"
+	            android:textColor="@color/blue" 
+	            android:textSize="18sp"/>
+       	  <TextView
+	            android:id="@+id/dialog_ok_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="8dp"
+	            android:paddingBottom="8dp"
+	            android:paddingLeft="24dp"
+	            android:paddingRight="24dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@id/dialog_cancel_button"
+	            android:layout_marginRight="18dp"	           
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:text="@string/dialog_connect"
+	            android:textColor="@color/blue" 
+	            android:textSize="18sp"/>
+ 
+       </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

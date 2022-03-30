@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 声明公共属性 -->
+	<attr name="layout_bg_color" format="color"></attr>
+	<attr name="title_text" format="string"></attr>
+	<attr name="title_text_color" format="color"></attr>  
+	<attr name="uint_text" format="string"></attr>
+	<attr name="content_text" format="string"></attr> 
+	<attr name="content_text_color" format="color"></attr> 
+	<attr name="leftcontent_text" format="string"></attr>
+    <attr name="rightcontent_text" format="string"></attr>
+	<attr name="content_text_size" format="dimension"></attr>
+	<attr name="content_image" format="reference"></attr>
+	<attr name="unit_img_visible" format="boolean"></attr>
+    <attr name="unit_img" format="reference"/>
+	
+
+    <attr name="xmlLayoutResId" format="reference"/>
+    <attr name="isRandom" format="boolean"/>
+    <attr name="keyDrawable" format="reference"/>
+    
+    <declare-styleable name="SystemKeyboard">
+        <attr name="xmlLayoutResId"/>
+        <attr name="keyDrawable"/>
+        <attr name="isRandom"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SystemKeyBoardEditText">
+        <attr name="xmlLayoutResId"/>
+        <attr name="keyDrawable"/>
+        <attr name="outSideCancel" format="boolean"/>
+        <attr name="space" format="boolean"/>
+        <attr name="isRandom"/>
+    </declare-styleable>
+    
+   <declare-styleable name="RulerView">
+        <!--最大刻度的颜色-->
+        <attr name="mMaxScaleColor" format="color"/>
+        <!--中间刻度的颜色-->
+        <attr name="mMidScaleColor" format="color"/>
+        <!--最小刻度的颜色-->
+        <attr name="mMinScaleColor" format="color"/>
+        <!--底线的颜色-->
+        <attr name="mBottomLineColor" format="color"/>
+        <!--最大刻度的宽度-->
+        <attr name="mMaxScaleWidth" format="dimension"/>
+        <!--中间刻度的宽度-->
+        <attr name="mMidScaleWidth" format="dimension"/>
+        <!--最小刻度的宽度-->
+        <attr name="mMinScaleWidth" format="dimension"/>
+        <!--底线的宽度-->
+        <attr name="mBottomLineWidth" format="dimension"/>
+        <!--最大刻度的高度占控件的高度比例-->
+        <attr name="mMaxScaleHeightRatio" format="float"/>
+        <!--中间刻度的高度占控件的高度比例-->
+        <attr name="mMidScaleHeightRatio" format="float"/>
+        <!--最小刻度的高度占控件的高度比例-->
+        <attr name="mMinScaleHeightRatio" format="float"/>
+        <!--是否显示刻度值-->
+        <attr name="isShowScaleValue" format="boolean"/>
+        <!--是否刻度渐变 包括刻度值和刻度线及下面的线-->
+        <attr name="isScaleGradient" format="boolean"/>
+        <!--刻度值颜色-->
+        <attr name="mScaleValueColor" format="color"/>
+        <!--刻度值文字大小-->
+        <attr name="mScaleValueSize" format="dimension"/>
+        <!--刻度值间隔-->
+        <attr name="mScaleSpace" format="dimension"/>
+        <!-- 当前值-->
+        <attr name="mCurrentValue" format="integer"/>
+        <!--最大值-->
+        <attr name="mMaxValue" format="integer"/>
+        <!--最小值-->
+        <attr name="mMinValue" format="integer"/>
+        <!--刻度基数-->
+        <attr name="mScaleBase" format="integer"/>
+        <!--中间图标-->
+        <attr name="mMiddleImg" format="reference"/>
+    </declare-styleable>
+
+	
+	<declare-styleable name="ScaleView">
+	    <!--正常刻度的颜色-->
+        <attr name="commonScaleColor" format="color"/>
+        <!-- 最大刻度值的颜色 -->
+        <attr name="maxScaleColor" format="color"></attr>
+	    <!-- 最大刻度 -->
+        <attr name="max_scale_view" format="integer" />
+        <attr name="min_scale_view" format="integer" />
+        <!-- 高度 -->
+        <attr name="height_scale_view" format="dimension" />
+        <attr name="width_scale_view" format="dimension"></attr>
+
+	</declare-styleable>
+	<declare-styleable name="VeinScaleView">
+	    <!-- 最大刻度 -->
+	    <!--正常刻度的颜色-->
+        <attr name="common_scaleColor" format="color"/>
+        <attr name="max_scaleColor" format="color"></attr>
+        <attr name="max_vein_scale_view" format="integer" />
+        <attr name="min_vein_scale_view" format="integer" />
+        <!-- 高度 -->
+        <attr name="height_vein_scale_view" format="dimension" />
+        <attr name="width_vein_scale_view" format="dimension"></attr>
+
+	</declare-styleable>
+	
+	
+	<declare-styleable name="FScaleView">	    
+	    <!--正常刻度的颜色-->
+        <attr name="commonFscaleColor" format="color"/>
+        <attr name="maxFscaleColor" format="color"></attr>
+        <!-- 最大刻度 -->
+        <attr name="scale_view_max" format="float" />
+        <attr name="scale_view_min" format="float" />
+        <!-- 高度 -->
+        <attr name="scale_view_height" format="dimension" />
+        <attr name="scale_view_width" format="dimension"></attr>
+	</declare-styleable>
+	
+	
+	<declare-styleable name="CustomViewGroup">
+        <attr name="isSelector" format="boolean" />
+        <attr name="normal_drawable" format="reference" />
+        <attr name="selected_drawable" format="reference" />
+        <attr name="normal_textColor" format="color" />
+        <attr name="selected_textColor" format="color" />
+        <attr name="itemTextSize" format="dimension" />
+        <attr name="horInterval" format="dimension" />
+        <attr name="verInterval" format="dimension" />
+        <attr name="horPadding" format="dimension" />
+        <attr name="verPadding" format="dimension" />
+    </declare-styleable>
+    
+	<!-- 自定义标题栏 -->
+	<declare-styleable name="CustomTitleBar">
+	    <attr name="title_text_color"></attr>
+	    <attr name="title_background_color" format="color"></attr>
+        <attr name="title_txt" format="string"></attr>
+        <attr name="title_txt_right" format="string"></attr>
+        <attr name="title_txt_right_color" format="color"></attr> 
+        <attr name="right_txt_visible" format="boolean" />           
+	</declare-styleable>
+	
+	<declare-styleable name="CustomParasTextView">
+        <attr name="title_text"/>
+        <attr name="uint_text"/>
+        <attr name="sectitleText" format="string"></attr>
+        <attr name="secondcontent_text" format="string"></attr>
+		<attr name="leftcontent_text" />
+    	<attr name="rightcontent_text" />
+        <attr name="textColor" format="color"></attr>
+     	<attr name="content_text_size"/>
+        <attr name="content_visible" format="boolean"></attr>
+        <attr name="sec_title_visible" format="boolean" /> 
+        <attr name="sec_content_visible" format="boolean" />   
+    </declare-styleable>
+    
+    <declare-styleable name="PerfusionSecParamTextView">
+        <attr name="title_text"/>
+        <attr name="content_text"/>        
+        <attr name="uint_text"/>        
+        <attr name="unit_img_visible"/>
+        <attr name="unit_img"/>
+        <attr name="text_color" format="color"></attr>      
+    </declare-styleable>
+    
+        
+    <declare-styleable name="CustomParasIconView">
+        <attr name="title_text"/>
+        <attr name="title_text_color"/>
+        <attr name="leftcontent_text" />
+    	<attr name="rightcontent_text" />
+    	<attr name="content_text_color"/>
+        <attr name="unit_img_visible"/>
+        <attr name="unit_img"/>
+    </declare-styleable>
+    
+    <!-- 血气的边界框 -->
+    <declare-styleable name = "CustomTitleEdit">
+        <attr name="title_text"></attr>
+        <attr name="title_text_color"></attr> 
+        <attr name="content_text_color"></attr>  
+        <attr name="edit_maxlength" format="integer"></attr>     
+    </declare-styleable>
+    
+    <!-- 自定义带字体的imageview -->
+    <declare-styleable name= "CustomImageButton">
+        <attr name="content_text"/>
+        <attr name="content_text_color"/>
+        <attr name="content_img" format="reference"/>
+    </declare-styleable>
+    
+    <!-- 自定义温度模式 -->
+    <declare-styleable name= "CustomTempModeButton">
+        <attr name="content_text"/>
+        <attr name="content_text_color"/>
+        <attr name="content_image" />
+    </declare-styleable>
+    
+    
+    <!-- 自定义预警设置界面的的加减的编辑框 -->
+    <declare-styleable name= "SetAlertEditText">
+        <attr name="title_text"/>
+        <attr name="title_text_color"/> 
+        <attr name="content_text"/>
+        <attr name="content_text_color"/>
+    </declare-styleable>
+    
+    <!-- 自定义断连的符号 -->
+    <declare-styleable name = "CusDisconnectImg">
+        <attr name="disconnect_img"  format="reference"/>
+        <attr name="top_txt_visible" format="boolean"/>
+        <attr name="bottom_txt_visible" format="boolean"/>
+	</declare-styleable>
+	
+    <!-- 自定义 温度显示控件-->
+    <declare-styleable name="CustomContentText">
+        <attr name="layout_bg"  format="reference"/>
+        <attr name="title_text"/>
+        <attr name="content_text"/>   
+        <attr name="title_text_color"/>
+        <attr name="content_text_color"/>            
+    </declare-styleable>
+    
+    <!-- 灌注设置中标题和内容的控件 -->
+    <declare-styleable name="TitleContentText">
+        <attr name="title_text"/>
+        <attr name="content_text"/>   
+        <attr name="title_text_color"/>
+        <attr name="content_text_color"/>            
+    </declare-styleable>
+    
+    <!-- 传感器 -->
+    <declare-styleable name="SensorStatusView">
+        <attr name="status_img" format="reference"></attr>
+        <attr name="content_text"/>
+        <attr name="content_text_color"/>
+    </declare-styleable>
+    
+    <declare-styleable name= "SystemSettingItem">
+       <attr name="title_icon" format="reference"></attr>
+       <attr name ="title_text"/>
+       <attr name ="content_text"/>
+    </declare-styleable>
+    <!-- 日期时间 -->
+    <declare-styleable name="DateTimeView">
+       <attr name ="title_text"/>
+       <attr name="content_text"/>
+       <attr name="title_text_color"/>
+       <attr name="content_text_color"/>         
+    </declare-styleable>
+    <!-- 刻度尺 -->
+    <declare-styleable name="RodHoriztalProgressBar">
+	    <attr name="progressbar_reach_color" format="reference|color" />
+	    <attr name="progressbar_unreach_color" format="reference|color" />
+	    <attr name="progressbar_reach_height" format="dimension" />
+	    <attr name="progressbar_unreach_height" format="dimension" />
+	    <attr name="progressbar_text_color" format="reference|color" />
+	    <attr name="progressbar_text_size" format="dimension" />
+	    <attr name="progressbar_text_offset" format="dimension" />
+	    <attr name="progressbar_text_offset_line" format="dimension" />
+	    <attr name="progressbar_rod_bg" format="reference|color" />
+    </declare-styleable>
+    
+    <!-- 电池电量 -->
+    <declare-styleable name = "CustomBatteryView">
+        <attr name="content_text"/>
+        <attr name="content_image"/>
+        <attr name="charging_img" format="reference"></attr>
+        <attr name="charging_img_visible" format="boolean"/>
+        <attr name="battery_level_visible" format="boolean"></attr>
+    </declare-styleable>
+</resources>

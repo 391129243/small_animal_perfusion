@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_dialog_bg"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp" >
+    <RadioGroup 
+        android:id="@+id/language_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton 
+            android:button="@null"
+            android:id="@+id/chinese_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:drawableRight="@drawable/radio_button_style"
+            android:text="@string/chinese"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/common_stroke_color"/>
+       <RadioButton 
+            android:button="@null"
+            android:id="@+id/english_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:drawableRight="@drawable/radio_button_style"
+            android:text="@string/english"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

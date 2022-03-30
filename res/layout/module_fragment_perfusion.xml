@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res/com.gidi.bio_console" >
+    <!-- 数据1 -->
+	<RelativeLayout
+	    android:id="@+id/perfusion_real_layout"
+	    android:layout_width="210dp"
+	    android:layout_height="match_parent"
+	    android:background="#1E2C36" >
+	
+	    <!-- 肝动脉压力 -->
+    	<com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_artery_pre_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:title_text="@string/perfusion_art_pre_title"
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"
+            app:sec_title_visible="true"  	
+            app:sec_content_visible ="true"
+            app:content_visible="true" 
+            app:sectitleText="@string/perfusion_art_pre_sec_title"           
+            app:uint_text="@string/unit_pressure"
+            app:textColor="@color/color_perfusion_art_content_txt">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_artery_pre_txt"
+            android:id="@+id/perfusion_real_divider_line_one"/>
+        <!-- 肝动脉流量-->
+        <com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_artery_flow_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_real_divider_line_one"
+            app:title_text="@string/perfusion_art_real_tar_flow_title"
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"	
+            app:sec_title_visible="false"  	
+            app:sec_content_visible ="false"   
+            app:content_visible="true"          
+            app:uint_text="@string/flow_unit"
+            app:textColor="@color/color_perfusion_art_content_txt">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_artery_flow_txt"
+            android:id="@+id/perfusion_real_divider_line_two"/>
+        
+        <!-- 门静脉压力 -->
+        <com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_vein_pre_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_real_divider_line_two"
+            app:title_text="@string/perfusion_vein_real_tar_pre_title"
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"	
+            app:sec_title_visible="false"   
+            app:sec_content_visible ="false"    
+            app:content_visible="true"             
+            app:uint_text="@string/unit_pressure"
+            app:textColor="@color/color_perfusion_vein_pre">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_vein_pre_txt"
+            android:id="@+id/perfusion_real_divider_line_three"/>
+        
+        <!-- 门静流量 -->
+        <com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_vein_flow_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_real_divider_line_three"
+            app:title_text="@string/perfusion_vein_real_tar_flow_title"
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"	
+            app:sec_title_visible="false"   
+            app:sec_content_visible ="false"  
+            app:content_visible="true"             
+            app:uint_text="@string/flow_unit"
+            app:textColor="@color/color_perfusion_vein_flow">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_vein_flow_txt"
+            android:id="@+id/perfusion_left_layout_divider_line_three"/>
+        
+        <!-- 阻力指数-->
+        <com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_resistance_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_left_layout_divider_line_three"
+            app:title_text="@string/perfusion_title_resistance_index"
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"	
+            app:sec_title_visible="false" 	     
+            app:sec_content_visible ="false"   
+            app:content_visible="true"     
+            app:uint_text="@string/unit_resistance"             
+            app:textColor="@color/color_perfusion_art_content_txt">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_resistance_txt"
+            android:id="@+id/perfusion_left_layout_divider_line_four"/>
+        <com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_flow_percent_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_left_layout_divider_line_four"
+            app:title_text="@string/perfusion_percent_flow_title"
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"	
+            app:sec_title_visible="false" 	     
+            app:sec_content_visible ="false"   
+            app:content_visible="true"     
+            app:content_text_size="24dp"   
+            android:visibility="invisible"       		
+            app:textColor="@color/color_perfusion_art_content_txt">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+        
+	</RelativeLayout>
+	<!-- 数据2 -->
+	<View 
+	    style="@style/vertical_line"
+	    android:id="@+id/perfusin_left_divider_line"
+	    android:layout_toRightOf="@id/perfusion_real_layout"/>
+	<RelativeLayout
+	    android:id="@+id/perfusion_left_two_layout"
+	    android:layout_width="186dp"
+	    android:layout_height="match_parent"
+	    android:layout_toRightOf="@id/perfusin_left_divider_line"
+	    android:background="#1E2C36" >
+	
+	    <!-- 肝动脉目标压力 -->
+    	<com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_artery_tar_pre_txt"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            app:title_text="@string/perfusion_art_tar_pre_title"
+            app:sec_title_visible="true"
+            app:sec_content_visible ="false"  
+            app:content_visible="true"   
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"		            
+            app:uint_text="@string/unit_pressure"
+            app:content_text_size="30dp"  
+            app:textColor="@color/color_perfusion_art_content_txt">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_artery_tar_pre_txt"
+            android:id="@+id/perfusion_left_two_layout_divider_line_one"/>
+        <!-- 肝动脉脉率 -->
+        <com.gidi.bio_console.view.CustomSecParamText 
+            android:id="@+id/perfusion_artery_pulse_rate_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_left_two_layout_divider_line_one"
+            app:title_text="@string/perfusion_art_pulse_rate"
+            app:content_text="@string/string_null"     
+            app:unit_img_visible ="false"    
+            app:text_color="@color/color_perfusion_art_content_txt">          
+        </com.gidi.bio_console.view.CustomSecParamText>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_artery_pulse_rate_txt"
+            android:id="@+id/perfusion_second_left_layout_pulse_divider_line"/>
+        <!-- 肝动脉泵速-->
+        <com.gidi.bio_console.view.CustomSecParamText 
+            android:id="@+id/perfusion_artery_speed_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_second_left_layout_pulse_divider_line"
+            app:title_text="@string/perfusion_art_speed_title"
+            app:content_text="@string/string_null"           
+            app:uint_text="@string/unit_speed"
+            app:unit_img_visible ="false" 
+            app:text_color="@color/color_perfusion_art_content_txt">          
+        </com.gidi.bio_console.view.CustomSecParamText>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_artery_speed_txt"
+            android:id="@+id/perfusion_left_two_layout_divider_line_two"/>
+        
+        <!--温度-->
+
+        <com.gidi.bio_console.view.CustomParasTextView 
+            android:id="@+id/perfusion_temp_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_left_two_layout_divider_line_two"
+            app:title_text="@string/temperature"
+            app:sec_title_visible="false"
+            app:sec_content_visible ="false"  
+            app:content_visible="true"   
+            app:leftcontent_text="@string/string_null"
+            app:rightcontent_text="@string/string_null"		            
+            app:textColor="@color/white">          
+        </com.gidi.bio_console.view.CustomParasTextView>
+
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_temp_txt"
+            android:id="@+id/perfusion_left_two_layout_divider_line_four"/>
+
+        <com.gidi.bio_console.view.CustomSecParamText 
+            android:id="@+id/perfusion_vein_speed_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_left_two_layout_divider_line_four"
+            app:title_text="@string/perfusion_vein_speed_title"
+            app:content_text="@string/string_null"	            
+            app:uint_text="@string/unit_speed"
+            app:unit_img_visible ="false" 
+            app:text_color="@color/color_perfusion_vein_flow"/>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_vein_speed_txt"
+            android:id="@+id/perfusion_left_two_layout_divider_line_five"/>
+        <com.gidi.bio_console.view.CustomParasIconView
+            android:id="@+id/perfusion_artery_ebile_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfusion_left_two_layout_divider_line_five"
+            app:title_text="@string/bile"
+            app:leftcontent_text="@string/string_null"  
+            app:rightcontent_text="@string/string_null"     
+            app:unit_img_visible ="true"      
+            app:unit_img="@drawable/bile_zero"
+            android:visibility="gone"
+            app:title_text_color="@color/white"
+            app:content_text_color="@color/white">          
+        </com.gidi.bio_console.view.CustomParasIconView>       
+	</RelativeLayout>
+	<View 
+	    style="@style/vertical_line"
+	    android:id="@+id/perfusin_left_two_divider_line"
+	    android:layout_toRightOf="@id/perfusion_left_two_layout"/>	
+	<!-- 肝动脉和门静脉压力图表 -->
+	<RelativeLayout 
+	    android:id="@+id/perfusion_chart_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_toRightOf="@id/perfusin_left_two_divider_line">
+        <!-- 肝动脉压力 -->
+	    <LinearLayout
+		    android:id="@+id/perfusion_art_pressure_chart"  
+		    style="@style/style_chart"	
+		    android:layout_height="190dp"   >  
+   		</LinearLayout>
+        <View 
+            style="@style/horizontal_line"            
+            android:layout_below="@id/perfusion_art_pressure_chart"
+            android:id="@+id/perfusion_chart_layout_divider_line_one"/>
+        <!-- 肝动脉流量 -->
+		<LinearLayout
+		    android:id="@+id/perfusion_art_flow_chart" 
+		    style="@style/style_chart"	 	    
+	        android:layout_below="@id/perfusion_chart_layout_divider_line_one"
+	        android:layout_marginTop="8dp"/>
+	    <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_art_flow_chart"
+            android:id="@+id/perfusion_chart_layout_divider_line_two"/>
+	    <!-- 门静脉压力 -->
+	    <LinearLayout
+		    android:id="@+id/perfusion_vein_pressure_chart"  
+		    android:layout_below="@id/perfusion_chart_layout_divider_line_two"
+		    style="@style/style_chart">  
+   		</LinearLayout>
+        <View 
+            style="@style/horizontal_line"
+            android:layout_below="@id/perfusion_vein_pressure_chart"
+            android:id="@+id/perfusion_chart_layout_divider_line_three"/>
+        <!-- 门静脉流量 -->
+		<LinearLayout
+		    android:id="@+id/perfusion_vein_flow_chart" 
+		    style="@style/style_chart"	 	     
+	        android:layout_below="@id/perfusion_chart_layout_divider_line_three"
+	        android:layout_marginTop="4dp">
+	   </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

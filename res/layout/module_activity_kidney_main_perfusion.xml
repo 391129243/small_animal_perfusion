@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/main_perfusion_layout"
+    xmlns:custom="http://schemas.android.com/apk/res/com.gidi.bio_console">
+ <!-- 标题 -->
+	<RelativeLayout	    
+	    android:id="@+id/main_perfusion_title_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/top_bar_default_height"
+	    android:background="@drawable/common_main_title_bg"> 
+	    <LinearLayout 
+	        android:id="@+id/function_title_layout"
+	        android:layout_width="262dp"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+	        <ImageView 
+	            android:id="@+id/function_title_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/function_title_perfusion"/>
+	        <TextView 
+		        android:id="@+id/title_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical"
+		        android:textSize="28sp"
+		        android:textStyle="bold"
+		        android:textColor="@color/color_title"/> 
+	    </LinearLayout> 
+	    <com.gidi.bio_console.view.DateTimeView 
+	        android:id="@+id/sys_time_ll"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="8dp"
+	        custom:title_text_color="@color/date_color"
+	        custom:content_text_color="@color/white">	        
+	    </com.gidi.bio_console.view.DateTimeView>
+		<!-- 系统运行状态显示 -->
+		<TextView
+	        android:id="@+id/top_bar_system_status_img"
+	        android:layout_width="88dp"
+	        android:layout_height="52dp"
+	        android:layout_toLeftOf="@id/sys_time_ll"
+	        android:layout_centerVertical="true"
+	        android:background="@color/red"
+	        android:gravity="center"
+	        android:text="@string/perfusion_system_state_stop"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/font_size_large_20sp"
+	        android:textStyle="bold" />
+		
+		<!-- 音量 -->
+		<ImageView 
+		    android:id="@+id/top_bar_volume_img"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:paddingRight="24dp"
+		    android:paddingLeft="16dp"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@id/top_bar_system_status_img"
+		    android:src="@drawable/volume_ctrl_normal_bg_selector"
+		    android:contentDescription="@null"/>		
+		<!-- 电量 -->
+		<com.gidi.bio_console.view.CustomBatteryView 	    
+			android:id="@+id/top_bar_battery_img"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_toLeftOf="@id/top_bar_volume_img"
+		    custom:content_image="@drawable/battery_10"
+		    custom:content_text="10%"
+		    custom:charging_img="@drawable/battery_charging"
+		    custom:charging_img_visible="false"
+		    custom:battery_level_visible="true"
+		    android:contentDescription="@null"/>
+		<ImageView
+	        android:id="@+id/top_bar_wifi_img"
+	        android:layout_width="44dp"
+	        android:layout_height="44dp"
+	        android:layout_centerVertical="true"
+	        android:visibility="gone"
+	        android:layout_toLeftOf="@id/top_bar_battery_img"
+	        android:layout_marginRight="2dp"
+	        android:src="@drawable/wifi_off"
+	        android:contentDescription="@null"/>
+	    <ImageView 
+	        android:id="@+id/top_bar_lock_img"
+	        android:layout_width="44dp"
+	        android:layout_height="44dp"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/top_bar_battery_img"
+	        android:layout_marginRight="16dp"
+	        android:src="@drawable/top_bar_unlock_status"
+	        android:contentDescription="@null"
+	        android:visibility="visible"/>
+
+	    <!-- 急停开关  0急停中  1正常使用 -->
+	    <ImageView 
+	        android:id="@+id/top_bar_emergency_stop_img"
+	        android:layout_width="44dp"
+	        android:layout_height="44dp"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@id/top_bar_lock_img"
+	        android:layout_marginRight="16dp"
+	        android:src="@drawable/top_bar_emergency_stop"
+	        android:contentDescription="@null"
+	        android:visibility="invisible"/>
+	    <TextView 
+	        android:id="@+id/base_alert_text"
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent"
+	        android:gravity="center_vertical"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:layout_toRightOf="@id/function_title_layout"
+	        android:layout_toLeftOf="@id/top_bar_emergency_stop_img"
+	        android:layout_marginLeft="12dp"
+	        android:layout_marginRight="22dp"/>
+
+
+	</RelativeLayout>
+ 
+
+ 
+  <!-- 右边控制栏 -->   
+  <RelativeLayout 
+      android:id="@+id/main_perfusion_right_layout"
+      android:layout_width="156dp"
+      android:layout_height="fill_parent"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/main_perfusion_title_layout"
+      android:background="@color/color_perfusion_right_bg">  
+      <ImageView 
+          android:id="@+id/main_perfusion_stop_restart_img"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="82dp"
+          android:contentDescription="@null"
+          android:src ="@drawable/right_bar_tab_pause"/>
+
+          
+      <Button 
+          style="@style/style_perfusion_right_btn"
+          android:id="@+id/main_perfusion_pumpspeed_btn"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/main_perfusion_stop_restart_img"
+          android:layout_marginTop="72dp"
+          android:text="@string/pump_speed"
+          android:background="@drawable/shape_perfusion_right_btn_enable_bg"
+          android:drawableLeft="@drawable/right_bar_tab_pump_speed_normal"/> 
+          
+     <Button 
+          style="@style/style_perfusion_right_btn"
+          android:id="@+id/main_perfusion_temp_btn"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/main_perfusion_pumpspeed_btn"
+          android:layout_marginTop="72dp"
+          android:text="@string/btn_temp"
+          android:drawableLeft="@drawable/right_bar_tab_temp_normal"/> 
+          
+
+
+     <Button 
+          style="@style/style_perfusion_right_btn"
+          android:id="@+id/main_perfusion_lock_btn"
+          android:layout_centerHorizontal="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="202dp"
+          
+          android:text="@string/btn_lock"
+          android:drawableLeft="@drawable/right_bar_tab_lock_normal"/> 
+          
+    <Button 
+          style="@style/style_perfusion_right_btn"
+          android:id="@+id/main_perfusion_exit_btn"
+          android:layout_centerHorizontal="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="82dp"
+          android:text="@string/main_exitperfusion"
+          android:drawableLeft="@drawable/right_bar_tab_exit"/>
+          
+     
+  </RelativeLayout>
+  
+   <!-- 底部功能栏 报警记录、数据记录、设置、灌注、血气 -->
+   <RelativeLayout        
+	   android:id="@+id/main_perfusion_bottom_layout"
+	   android:layout_width="fill_parent"
+	   android:layout_height="@dimen/bottom_bar_default_height"
+	   android:layout_toLeftOf="@id/main_perfusion_right_layout"
+	   android:layout_alignParentBottom="true"
+	   android:background="@color/color_main_bottom_bg">   
+        <RelativeLayout
+            android:id="@+id/ll_timer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal" >
+
+            <Chronometer
+                android:id="@+id/perfusion_chronmeter"
+                style="@style/style_CountdownView"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                style="@style/vertical_line"
+                android:id="@+id/timer_line" 
+                android:layout_toRightOf="@id/perfusion_chronmeter"/>
+
+            <ImageView
+                android:id="@+id/counter_play_img"
+                android:layout_width="42dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/timer_line"
+                android:contentDescription="@null"
+                android:src="@drawable/timer_play_selector" />
+
+            <ImageView
+                android:id="@+id/counter_reset_img"
+                android:layout_width="42dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/counter_play_img"
+                android:contentDescription="@null"
+                android:src="@drawable/timer_reset" />
+        </RelativeLayout> 
+	   <TextView	
+	       style="@style/style_perfusion_bottom_btn"       
+	       android:id="@+id/main_perfusion_alarm_img"
+	       android:layout_toRightOf="@id/ll_timer_1"
+	       android:layout_width="148dp"
+	       android:layout_marginLeft="32dp"
+	       android:layout_centerInParent="true"
+	       android:drawableLeft="@drawable/perfusion_alarm"
+	       android:drawablePadding="2dp"
+	       android:text="@string/btn_alarm"
+	       android:textStyle="bold"
+	       android:textColor="@color/white"/>
+	   <TextView
+	       	style="@style/style_perfusion_bottom_btn"
+		   	android:id="@+id/main_perfusion_record_btn"
+		   	android:layout_width="148dp"
+			android:layout_toRightOf="@id/main_perfusion_alarm_img"
+			android:layout_marginLeft="32dp"
+			android:layout_centerVertical="true"
+			android:drawableLeft="@drawable/perfusion_record"
+			android:drawablePadding="2dp"
+			android:text="@string/btn_record"
+	        android:textStyle="bold"
+	        android:textColor="@color/white"/>
+	   <TextView 
+	        style="@style/style_perfusion_bottom_btn"
+	        android:id="@+id/main_perfusion_setting_btn"
+	        android:layout_width="148dp"
+	        android:layout_toRightOf="@id/main_perfusion_record_btn"
+	 	    android:layout_marginLeft="32dp"
+	 	    android:layout_centerVertical="true"
+	        android:text="@string/settings"
+	        android:textStyle="bold"
+	        android:textColor="@color/white"
+	        android:drawableLeft="@drawable/perfusion_setting"
+	        android:drawablePadding="2dp"/> 
+	   <TextView 
+	        style="@style/style_perfusion_bottom_btn"
+	        android:id="@+id/main_perfusion_perfusion_btn"
+	        android:layout_width="164dp"
+	        android:layout_toRightOf="@id/main_perfusion_setting_btn"
+	 	    android:layout_marginLeft="32dp"
+	 	    android:layout_centerVertical="true"
+	        android:text="@string/btn_perfusion"
+	        android:textStyle="bold"
+	        android:textColor="@color/white"
+	        android:drawableLeft="@drawable/perfusion_kidney"
+	        android:drawablePadding="2dp"/>	    
+<!-- 	   <TextView 
+	        style="@style/style_perfusion_bottom_btn"
+	        android:id="@+id/main_perfusion_bloodgas_btn"
+	        android:layout_width="148dp"
+	        android:layout_toRightOf="@id/main_perfusion_perfusion_btn"
+	 	    android:layout_marginLeft="16dp"
+	 	    android:layout_centerVertical="true"
+	 	    android:visibility="invisible"
+	        android:text="@string/btn_bloodgas"
+	        android:textStyle="bold"
+	        android:textColor="@color/white"
+	        android:drawableLeft="@drawable/perfusion_blood_gas"
+	        android:drawablePadding="2dp"/>
+	  <ImageView
+	        style="@style/style_perfusion_bottom_add_gas_btn"
+		   	android:id="@+id/main_perfusion_add_bloodgas_record_img"
+			android:layout_toRightOf="@id/main_perfusion_bloodgas_btn"
+			android:layout_centerVertical="true"
+			android:visibility="invisible"
+			android:src="@drawable/selector_bottom_add_bloodgas"
+			android:contentDescription="@null"
+			android:background="@drawable/shape_oval_add_bloodgas_bg"/> -->
+	 </RelativeLayout>
+	 <FrameLayout
+	    android:id="@+id/perfusion_container_fragment"
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:layout_toLeftOf="@id/main_perfusion_right_layout"
+	    android:layout_below="@id/main_perfusion_title_layout"
+	    android:layout_above="@id/main_perfusion_bottom_layout">
+	    
+	</FrameLayout>
+</RelativeLayout>

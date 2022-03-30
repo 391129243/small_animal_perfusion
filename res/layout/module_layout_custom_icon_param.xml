@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="186dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_perfusion_content_bg" >
+    <TextView 
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:text="@string/bile"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />   
+     <ImageView 
+        android:id="@+id/unit_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="6dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/title_txt"
+        android:src="@drawable/bile_zero"
+        android:contentDescription="@null"/> 
+    <TextView 
+        android:id="@+id/left_content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_txt"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:text="@string/string_null"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        />
+    <TextView 
+        android:id="@+id/middle_content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_txt"
+        android:layout_toRightOf="@id/left_content_txt"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="/"        
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        />
+    <TextView 
+        android:id="@+id/right_content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/title_txt"
+        android:layout_toRightOf="@id/middle_content_txt"
+        android:gravity="center"
+        android:text="@string/string_null"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        />
+ 
+
+ 	
+    
+</RelativeLayout>

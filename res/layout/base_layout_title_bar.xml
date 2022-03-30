@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_default_height"
+    android:gravity="center_vertical"
+    android:background="@color/color_syspreset_bg" >
+    <LinearLayout 
+        android:id="@+id/back_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp">
+        <ImageView 
+	        android:id="@+id/bar_back_img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="8dp"
+	        android:src="@drawable/back"
+	        android:contentDescription="@null"/>
+   		 <TextView         
+	        android:id="@+id/title_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"     
+	        android:textColor="@color/white"
+	        android:textStyle="bold"
+	        android:textSize="26sp"/>
+    </LinearLayout>
+  	
+    <TextView 
+        android:id="@+id/preset_title_systime_txt"
+        android:layout_height="fill_parent"
+        android:layout_width="112dp"
+        android:padding="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="2018.02.03 12:46:32"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+    <!-- 报警、警报 -->
+    <TextView
+	     android:id="@+id/info_detail_txt" 
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"   
+	     android:layout_toRightOf="@id/back_layout"
+	     android:layout_toLeftOf="@id/preset_title_systime_txt"  
+	     android:gravity="center_vertical"
+	     android:paddingLeft="14dp"
+	     android:paddingRight="14dp"
+	     android:textStyle="bold"
+	     android:textSize="18sp"
+	     android:textColor="@color/white"
+	     android:background="@color/color_syspreset_bg"/>  
+</RelativeLayout>

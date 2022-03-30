@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@color/color_list_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <!-- 参数详情 -->
+	<TextView 
+        style="@style/serialmsg_list_title_style"
+        android:id="@+id/item_bioindex_detai_para"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/parameter"/>  
+        
+
+	<TextView 
+        style="@style/serialmsg_list_title_style"
+        android:id="@+id/item_bioindex_detail_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/result"/>  
+    <TextView 
+        style="@style/serialmsg_list_title_style"
+        android:id="@+id/item_bioindex_detail_observation_indentifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/result_type"/>     
+	<TextView 
+        style="@style/serialmsg_list_title_style"
+        android:id="@+id/item_bioindex_detail_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/unit"/>  
+    <TextView 
+        style="@style/serialmsg_list_title_style"
+        android:id="@+id/item_bioindex_detail_referencerange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/reference_range"/>  
+        
+    <TextView 
+        style="@style/serialmsg_list_title_style"
+        android:id="@+id/item_bioindex_detail_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/user_define_access_check"/>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blood_gas_bg" >
+    <RelativeLayout 
+        android:id="@+id/record_top_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioGroup
+        android:id="@+id/record_rg_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+    	<RadioButton 
+    	    style="@style/style_setting_tab"	
+    	    android:id="@+id/record_perfusion_data_rb"
+    	    android:layout_width="258dp"
+    	    android:layout_height="fill_parent"
+    	    android:checked="true"
+    	    android:gravity="center"
+    	    android:text="@string/serial_data"/>
+		<RadioButton 
+		     style="@style/style_setting_tab"	
+    	    android:id="@+id/record_bile_rb"
+    	    android:layout_width="168dp"
+    	    android:layout_height="fill_parent"
+    	    android:gravity="center"
+    	    android:text="@string/serial_trend"/>
+	</RadioGroup>
+	<TextView 
+        style="@style/serialmsg_list_title_style"
+        android:id="@+id/record_history_output_txt"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:text="@string/record_output"
+        android:textColor="@color/seach_export_txt_color_selector"
+        android:background="@drawable/common_btn_zero_bg_selector"/>
+
+<!-- 	<CheckBox  -->
+<!-- 	    style="@style/record_checkbox_style" -->
+<!-- 	    android:id="@+id/perfusion_data_trend_checkbox" -->
+<!-- 	    android:layout_width="wrap_content" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:layout_toLeftOf="@id/record_history_output_txt" -->
+<!-- 	    android: -->
+<!-- 	    android:layout_marginRight="14dp" -->
+<!-- 	    android:layout_centerVertical="true" -->
+<!-- 	    android:text="@string/serial_data"/> -->
+    </RelativeLayout>
+    <View 
+        style="@style/style_divider_line"
+        android:layout_below="@id/record_top_bar_layout"
+        android:id="@+id/divider_line"
+        android:background="@color/blue"/>
+	<FrameLayout 
+	    android:id="@+id/record_parent_container"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/divider_line">	    
+	</FrameLayout>    
+
+</RelativeLayout>

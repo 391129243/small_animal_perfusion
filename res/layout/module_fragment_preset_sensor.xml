@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom ="http://schemas.android.com/apk/res/com.gidi.bio_console" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/common_main_content_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="9" >
+        <ImageView 
+            android:id="@+id/perfusion_sensor_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sensor_liver"
+            android:contentDescription="@null"/>
+
+       <ImageView
+           android:id="@+id/sensor_bg"
+           android:layout_width="120dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="40dp"
+           android:layout_marginTop="20dp"
+           android:contentDescription="@null"
+           android:src="@drawable/icon_title_sensor" />
+
+       <TextView
+      
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/sensor_bg"
+           android:layout_alignBottom="@id/sensor_bg"
+           android:layout_gravity="center_vertical"
+           android:text="@string/preset_sensor_title"
+           android:textColor="@color/white"
+           android:textSize="@dimen/font_size_xlarge_30sp" />
+
+
+
+        <ImageView  
+	  	    android:id="@+id/next_btn"
+	  	    android:layout_width="68dp"
+	  	    android:layout_height="68dp"
+	  	    android:padding="16dp"	      
+		    android:layout_marginBottom="18dp" 
+	  	    android:layout_marginRight="48dp" 
+		    android:layout_alignParentBottom="true" 
+	  	    android:layout_alignParentRight="true" 
+	 	    android:src="@drawable/next_btn_src_selector"
+	 	    android:background="@drawable/oval_next_btn_bg_selector"
+	 	    android:contentDescription="@null"/>
+        <ImageView
+            android:id="@+id/output_img"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/main_setting"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/left_pre_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensor_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="46dp"
+			android:text="@string/preset_pvp"
+			android:textSize="16sp"
+			android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/right_pre_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/left_pre_tv"
+            android:layout_marginLeft="108dp"
+            android:layout_toRightOf="@id/left_pre_tv"
+            android:text="@string/preset_hap"
+			android:textSize="16sp"
+			android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                style="@style/vertical_line"
+                android:layout_width="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/blue" 
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/sensor_pressure_artery_txt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="118dp"
+                android:background="@drawable/circle_bg_red" />
+
+            <TextView
+                android:id="@+id/sensor_pressure_vein_txt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/sensor_pressure_artery_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/circle_bg_red" />
+
+            <TextView
+                android:id="@+id/sensor_art_flow_txt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/sensor_pressure_vein_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/circle_bg_red" />
+
+            <TextView
+                android:id="@+id/sensor_vein_flow_txt"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/sensor_art_flow_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:background="@drawable/circle_bg_red" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_line_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sensor_line_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/preset_sensor_line_title"
+                android:textColor="#2ca8ff"
+                android:drawableLeft="@drawable/sensor_ico_line"
+                android:textSize="@dimen/font_size_xlarge_26sp" />
+
+            <com.gidi.bio_console.view.PresetStatusView
+                android:id="@+id/rl_sensor_pressure_artery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                custom:status_img="@drawable/sensor_hap"
+                custom:content_text="@string/preset_sensor_artery_pressure">               
+            </com.gidi.bio_console.view.PresetStatusView>
+
+            <com.gidi.bio_console.view.PresetStatusView 
+                android:id="@+id/rl_sensor_pressure_vein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                custom:status_img="@drawable/sensor_pvp"
+                android:layout_marginTop="30dp"
+                custom:content_text="@string/preset_sensor_vein_pressure">               
+            </com.gidi.bio_console.view.PresetStatusView>     
+            
+            <com.gidi.bio_console.view.PresetStatusView 
+                android:id="@+id/rl_sensor_flow_artery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                custom:status_img="@drawable/sensor_haf"
+                custom:content_text="@string/preset_sensor_artery_flow">               
+            </com.gidi.bio_console.view.PresetStatusView>  
+           
+            <com.gidi.bio_console.view.PresetStatusView 
+                android:id="@+id/rl_sensor_flow_vein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                custom:status_img="@drawable/sensor_pvf"
+                custom:content_text="@string/preset_sensor_vein_flow">               
+            </com.gidi.bio_console.view.PresetStatusView>  
+                         
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/next_tv_alert_normal"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle_bg_green" />
+
+                <TextView
+                    android:id="@+id/next_tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/preset_alert_msg_sensor_ok"
+                    android:textColor="@color/common_normal_color"
+                    android:textSize="@dimen/font_size_large_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/next_tv_alert_unnormal"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle_bg_red" />
+
+                <TextView
+                    android:id="@+id/next_tv_unnormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/preset_alert_msg_sensor_check"
+                    android:textColor="#fe271f"
+                    android:textSize="@dimen/font_size_large_22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

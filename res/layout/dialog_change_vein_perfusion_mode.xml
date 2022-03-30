@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp" >
+	<!-- 门静脉灌注模式 -->
+   <RadioGroup 
+        android:id="@+id/dialog_vein_mode_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/dialog_vein_const_pre_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="58dp"
+            android:gravity="center_vertical"
+            android:text="@string/preset_vein_const_pressure"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_large_22sp"
+            android:button="@null"
+            android:drawableRight="@drawable/radiobutton_setting_perfusion_bg"
+            android:paddingRight="24dp"/>
+
+        <RadioButton 
+            android:id="@+id/dialog_vein_const_flow_rb"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:paddingLeft="24dp"
+            android:text="@string/preset_vein_const_flow"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_large_22sp"
+            android:button="@null"
+            android:drawableRight="@drawable/radiobutton_setting_perfusion_bg"/>
+
+    </RadioGroup>
+
+	<RelativeLayout
+	    android:id="@+id/dlg_setting_vein_layout"
+	    android:layout_below="@id/dialog_vein_mode_rg"
+	    android:layout_width="950dp"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="100dp"
+	    android:layout_marginTop="18dp">
+		<TextView 
+            style="@style/style_pre_setting_title_txt"
+            android:id="@+id/dlg_setting_vein_title"
+            android:text="@string/portal_vein_target_pressure"/>
+		<TextView 
+            style="@style/style_pre_setting_title_txt"
+            android:id="@+id/dlg_setting_vein_target_txt"
+            android:layout_width="wrap_content"
+		    android:layout_height="30dp"
+            android:layout_toRightOf="@id/dlg_setting_vein_title"
+            android:layout_marginLeft="16dp"
+            android:text="@string/string_null"
+            android:textColor="#FFD700"
+            android:textSize="26sp"/>	
+        <LinearLayout 
+            android:id="@+id/dlg_setting_vein_pressure_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dlg_setting_vein_title"
+	        android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+            <RadioGroup 
+			    android:id="@+id/dlg_set_vein_pre_radiogroup"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal">
+				<RadioButton 
+			        style="@style/preset_setting_temp_radiobutton"
+			        android:id="@+id/dlg_set_vein_pre_one_rb"
+			        android:text="@string/number_4"/>
+
+			    <RadioButton
+			        android:id="@+id/dlg_set_vein_pre_two_rb"
+			        style="@style/preset_setting_temp_radiobutton"
+			        android:layout_marginLeft="22dp"
+			        android:text="@string/number_6" />
+			   
+			    <RadioButton 
+			        style="@style/preset_setting_temp_radiobutton"
+			        android:id="@+id/dlg_set_vein_pre_three_rb"
+			        android:text="@string/number_8"
+			        android:layout_marginLeft="22dp"/>
+			   <RadioButton 
+			        style="@style/preset_setting_temp_radiobutton"
+			        android:id="@+id/dlg_set_vein_pre_third_rb"
+			        android:text="@string/number_12"
+			        android:layout_marginLeft="22dp"/>	
+		   </RadioGroup>
+		   <com.gidi.bio_console.view.SystemKeyBoardEditText 
+	            android:id="@+id/dlg_setting_vein_target_pressure_et"
+	            android:layout_width="106dp"
+	            android:layout_height="52dp"
+				android:layout_marginLeft="22dp"
+	            android:gravity="center"
+	            android:textColor="@color/color_temp_choice_selector"
+	            android:textColorHint="@color/white"
+	            android:textSize="18sp"
+	            android:inputType="numberDecimal"
+	            android:maxLength="4"
+	            android:hint="@string/custom_pressure"
+	            android:background="@drawable/temp_choice_bg_selector"
+	            custom:outSideCancel="true"
+           		custom:keyDrawable="@drawable/btn_keyboard_key"
+           		custom:xmlLayoutResId="@xml/keyboard_numbers"/> 
+        </LinearLayout>
+
+        <LinearLayout 
+                 android:id="@+id/dlg_setting_vein_flow_layout"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/dlg_setting_vein_title"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="18dp"
+                 android:visibility="gone">
+              <RadioGroup 
+			    	android:id="@+id/dlg_set_vein_flow_radiogroup"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:orientation="horizontal">
+					<RadioButton 
+			        	style="@style/preset_setting_temp_radiobutton"
+			        	android:id="@+id/dlg_set_vein_flow_one_rb"
+			        	android:text="@string/number_200"/>
+
+			    	<RadioButton
+			        	android:id="@+id/dlg_set_vein_flow_two_rb"
+			        	style="@style/preset_setting_temp_radiobutton"
+			        	android:layout_marginLeft="22dp"
+			        	android:text="@string/number_400" />
+			   
+			    	<RadioButton 
+			       	 	style="@style/preset_setting_temp_radiobutton"
+			        	android:id="@+id/dlg_set_vein_flow_three_rb"
+			        	android:text="@string/number_600"
+			        	android:layout_marginLeft="22dp"/>
+			   		<RadioButton 
+			        	style="@style/preset_setting_temp_radiobutton"
+			        	android:id="@+id/dlg_set_vein_flow_third_rb"
+			        	android:text="@string/number_800"
+			        	android:layout_marginLeft="22dp"/>	
+		   </RadioGroup>
+		   <com.gidi.bio_console.view.SystemKeyBoardEditText
+            	android:id="@+id/dlg_setting_vein_target_flow_et"
+           	 	android:layout_width="106dp"
+            	android:layout_height="52dp"		
+            	android:layout_marginLeft="22dp"
+            	android:gravity="center"
+            	android:textColor="@color/color_temp_choice_selector"
+            	android:textColorHint="@color/white"
+            	android:textSize="18sp"
+            	android:inputType="number"           
+            	android:maxLength="5"
+            	android:hint="@string/custom_flow"
+            	android:background="@drawable/temp_choice_bg_selector"
+            	custom:outSideCancel="true"
+          		custom:keyDrawable="@drawable/btn_keyboard_key"
+          		custom:xmlLayoutResId="@xml/keyboard_numbers"/>            			
+             </LinearLayout>
+      
+	</RelativeLayout>
+
+</RelativeLayout>

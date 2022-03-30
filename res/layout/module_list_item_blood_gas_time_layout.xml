@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32dp" 
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+    <TextView 
+        android:id="@+id/blood_gas_sampling_time_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+    <CheckBox
+        android:id="@+id/blood_gas_time_cb"  
+        android:layout_height="wrap_content"  
+        android:layout_width="wrap_content"  
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"  
+        android:clickable="false"  
+        android:background="@null"
+        android:button="@drawable/checkbox_blood_gas_time_selector"/>  	
+          
+
+</RelativeLayout>

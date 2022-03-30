@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:alpha="0.8"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+        <!-- 标题 -->
+        <ImageView 
+		    android:id="@+id/dialog_title_img"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_prompt"
+		    android:layout_gravity="center_horizontal"	    
+		    android:contentDescription="@null"/>
+        <TextView 
+            android:id="@+id/tv_dialog_notice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/prompt"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+
+
+        <!--提示内容-->
+        <LinearLayout
+            android:id="@+id/li_dialog_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+ 
+            <TextView
+                android:id="@+id/tv_dialog_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="left"
+                android:text="@string/prompt"
+                android:textColor="#666666"
+                android:textSize="10sp" />    
+         </LinearLayout>   
+         
+         <TextView
+            android:id="@+id/dialog_single_button"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_temp_setting_btn_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:orientation="horizontal"
+            android:text="@string/dialog_ok"
+            android:textColor="@color/color_dialog_temp_btn_selector"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

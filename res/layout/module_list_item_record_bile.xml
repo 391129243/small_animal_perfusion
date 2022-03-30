@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/color_serial_msg_odd_bg">
+    <TextView 
+        style="@style/serialmsg_list_item_style"
+        android:id="@+id/bile_time"
+        android:layout_height="wrap_content"
+        android:layout_width="248dp"
+        android:textSize="20sp"
+        android:text="@string/msg_time"/>
+    <TextView 
+        style="@style/serialmsg_list_item_style"
+        android:id="@+id/bile_total_txt"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bile_time"
+        android:layout_width="fill_parent"
+        android:textSize="20sp"
+        android:text="@string/record_title_bile_total"/>    
+
+</RelativeLayout>

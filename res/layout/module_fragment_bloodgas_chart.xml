@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    <View 
+        style="@style/vertical_line"
+        android:id="@+id/blood_gas_divider"
+        android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/bloodgas_chart_left_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/blood_gas_divider" 
+        android:orientation="vertical">
+        <!-- ph -->
+        <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_ph_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+        <View 
+ 		    style="@style/horizontal_line"/>
+        <!-- po2 -->
+        <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_po2_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+	    <View 
+ 		     style="@style/horizontal_line"/>
+        <!-- pco2 -->
+        <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_pco2_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>	    
+	    <View 
+ 		     style="@style/horizontal_line"/>
+        <!-- Bicarbonate -->
+        <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_bicarbonate_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/bloodgas_chart_right_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/blood_gas_divider"
+        android:orientation="vertical" >
+        <!-- hct -->
+        <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_hct_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+	     <View 
+ 		     style="@style/horizontal_line"/>
+	     <!-- ast -->
+	     <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_ast_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+
+  		 <View 
+ 		     style="@style/horizontal_line"/>
+  		 <!-- alt -->
+	     <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_alt_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+ 		 <View 
+ 		     style="@style/horizontal_line"/>	    
+		 <!-- glu -->
+	     <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_glu_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+ 		 <View 
+ 		     style="@style/horizontal_line"/>
+ 		 <!-- lac -->	    
+	    <com.github.mikephil.charting.charts.LineChart
+	        android:id="@+id/bloodgas_chart_lac_chart"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="2dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

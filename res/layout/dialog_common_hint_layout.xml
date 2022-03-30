@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:gravity="center_vertical" >
+    <TextView 
+        style="@style/style_title_txt"
+        android:id="@+id/common_dialog_hint_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="@string/dialog_msg_perfusion_add_bloodgas_sampletime"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

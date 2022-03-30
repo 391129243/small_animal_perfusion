@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"	    
+     android:layout_width="fill_parent"
+     android:layout_height="@dimen/top_bar_default_height"
+     android:background="@drawable/common_main_title_bg"
+     xmlns:custom="http://schemas.android.com/apk/res/com.gidi.bio_console">
+     <!-- 只有时间和标题 -->
+	<ImageView
+	     android:id="@+id/base_function_title_icon_s"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:src="@drawable/function_title_perfusion"
+         android:layout_marginLeft="14dp"
+         android:contentDescription="@null"/>
+    <TextView 
+	     android:id="@+id/base_title_text_s"
+	     android:layout_width="wrap_content"
+	     android:layout_height="fill_parent"
+         android:layout_toRightOf="@id/base_function_title_icon_s"
+	     android:gravity="center_vertical"
+	     android:layout_centerVertical="true"
+	     android:layout_marginLeft="14dp"
+	     android:textSize="28sp"
+	     android:textStyle="bold"
+	     android:textColor="@color/color_title"/>  
+	<com.gidi.bio_console.view.DateTimeView 
+        android:id="@+id/base_systime_txt_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        custom:title_text_color="@color/date_color"
+        custom:content_text_color="@color/white">	        
+    </com.gidi.bio_console.view.DateTimeView>		
+</RelativeLayout>

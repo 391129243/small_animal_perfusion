@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/custom_title_txt"
+        style="@style/style_setting_perfusion_title_txt"
+        android:layout_centerVertical="true"
+        android:text="@string/preset_artey_mode" />
+    <TextView
+        android:id="@+id/custom_content_txt"
+        style="@style/style_setting_perfusion_title_txt"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/custom_title_txt" 
+        android:textColor="#8a8a8a"
+        android:text="@string/preset_artery_const_pressure"/>    
+
+</RelativeLayout>

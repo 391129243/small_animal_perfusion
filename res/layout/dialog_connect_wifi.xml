@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="24dp"
+    android:background="@color/white">
+    <TextView 
+        android:id="@+id/dialog_wifi_ssid_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="1111"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+    <!-- 密码 -->
+    <TextView 
+        android:id="@+id/dialog_wifi_pwd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_wifi_ssid_tv"
+        android:layout_marginTop="12dp"
+        android:textColor="#9C9C9C"
+        android:textSize="14sp"
+        android:text="@string/password"/>
+    <EditText 
+        android:id="@+id/dialog_wifi_pwd_et"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:layout_below="@id/dialog_wifi_pwd_title"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+     	android:background="@null"
+        />
+	<TextView 
+	    android:id="@+id/dialog_horizon_line"
+	    style="@style/horizontal_line"
+	    android:layout_below="@id/dialog_wifi_pwd_et"
+	    android:textColor="@color/blue"/>
+	<!-- 显示密码 -->
+	<CheckBox 
+	    android:id="@+id/dialog_show_pwd_ck"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/dialog_horizon_line"
+	    android:button="@null"
+	    android:drawableLeft="@drawable/item_checkbox_selector"
+	    android:layout_marginTop="12dp"
+	    android:drawablePadding="12dp"
+	    android:textColor="@color/black"
+	    android:textSize="16sp"
+	    android:text="@string/dialog_wifi_checkbox_pwd"/>
+	
+	<!-- 高级设置 -->
+	<CheckBox 
+	    android:id="@+id/dialog_show_advanced_ck"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/dialog_show_pwd_ck"
+	    android:button="@null"
+	    android:drawableLeft="@drawable/item_checkbox_selector"
+	    android:layout_marginTop="12dp"
+	    android:drawablePadding="12dp"
+	    android:textColor="@color/black"
+	    android:textSize="16sp"
+	    android:text="@string/dialog_wifi_checkbox_advanced"/>
+</RelativeLayout>

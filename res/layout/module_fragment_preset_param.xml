@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/common_main_content_bg"
+    xmlns:custom="http://schemas.android.com/apk/res/com.gidi.bio_console">
+
+
+    <TextView
+        android:id="@+id/preset_param_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_preset_param"
+        android:drawablePadding="4dp"
+        android:layout_alignParentLeft="true"
+       	android:layout_alignParentTop="true"
+       	android:layout_marginLeft="40dp"
+       	android:layout_marginTop="20dp"
+       	android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:text="@string/preset_param_liver_hint"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_large_24sp" />
+      	    
+	<RelativeLayout 
+	    android:layout_width="700dp"
+	    android:layout_height="420dp"
+	    android:layout_centerInParent="true"
+	    android:background="@drawable/temp_choice_bg_selector">
+	       <!-- 肝脏id -->
+		<TextView
+	        android:id="@+id/setting_perfusion_livernum_title_tv"
+	        style="@style/style_setting_perfusion_title_txt"
+	        android:layout_width="206dp"
+	        android:layout_height="56dp"	
+	        android:text="@string/setting_liver_num" 
+	        android:textColor="@color/white"
+	        android:textSize ="@dimen/font_size_large_24sp"
+	        android:padding="4dp"
+	        android:layout_marginLeft="42dp"
+	        android:layout_marginTop="114dp"/>
+		<TextView
+		    style="@style/style_pre_setting_iconedit"
+		    android:id="@+id/setting_perfusion_id_prefix_tv"
+		    android:layout_width="wrap_content"			      	
+	       	android:layout_toRightOf="@id/setting_perfusion_livernum_title_tv"
+	       	android:layout_marginLeft="16dp"
+	        android:layout_marginTop="104dp"
+	       	android:text="@string/preset_param_id_prefix_liver"
+	       	android:background="@drawable/layer_preset_liverid_left_bg"/>
+		<com.gidi.bio_console.view.SystemKeyBoardEditText
+	        style="@style/style_pre_setting_iconedit"
+	       	android:id="@+id/preset_param_liver_num_et"
+	       	android:layout_width="282dp"	
+	       	android:paddingLeft="0dp"
+	       	android:layout_toRightOf="@id/setting_perfusion_id_prefix_tv"
+	       	android:layout_marginTop="104dp"
+	       	android:maxLength="15"
+	       	android:inputType="numberDecimal"
+	       	custom:outSideCancel="true"
+	        custom:keyDrawable="@drawable/btn_keyboard_key"
+	        custom:xmlLayoutResId="@xml/keyboard_numbers"
+	        android:background="@drawable/layer_preset_liverid_right_bg"/>
+		<TextView
+		    style="@style/style_setting_perfusion_title_txt"
+		    android:id="@+id/setting_perfusion_weight_title_tv"
+		    android:layout_width="206dp"
+		    android:layout_height="56dp"	
+		    android:padding="4dp"
+	        android:textColor="@color/white"
+	        android:textSize ="@dimen/font_size_large_24sp"
+	        android:layout_below="@id/setting_perfusion_livernum_title_tv"
+	        android:layout_marginLeft="42dp"
+	        android:layout_marginTop="52dp"
+		    android:text="@string/setting_liver_weight" />
+	    <!-- 肝脏重量 -->      
+		<com.gidi.bio_console.view.SystemKeyBoardEditText
+	        style="@style/style_pre_setting_iconedit"
+	       	android:id="@+id/preset_param_liver_weight_et"
+	       	android:layout_toRightOf="@id/setting_perfusion_weight_title_tv"
+	       	android:layout_alignBottom="@id/setting_perfusion_weight_title_tv"
+	       	android:layout_marginLeft="16dp"
+	       	android:layout_marginTop="52dp"
+	       	android:inputType="numberDecimal"
+	       	android:maxLength="4"
+	       	custom:outSideCancel="true"
+	        custom:keyDrawable="@drawable/btn_keyboard_key"
+	        custom:xmlLayoutResId="@xml/keyboard_numbers"/>
+		<!-- 右肾重量 -->
+		<TextView
+		    style="@style/style_setting_perfusion_title_txt"
+		    android:id="@+id/preset_param_right_kidney_weight_tv"
+		    android:layout_width="206dp"
+		    android:layout_height="56dp"	
+		    android:visibility="invisible"
+		    android:padding="4dp"
+	        android:textColor="@color/white"
+	        android:textSize ="@dimen/font_size_large_24sp"
+	        android:layout_below="@id/setting_perfusion_weight_title_tv"
+	        android:layout_marginLeft="42dp"
+	        android:layout_marginTop="52dp"
+		    android:text="@string/setting_kidney_right_weight" />
+		<com.gidi.bio_console.view.SystemKeyBoardEditText
+	        style="@style/style_pre_setting_iconedit"
+	       	android:id="@+id/preset_param_right_kidney_weight_et"
+	       	android:visibility="gone"
+	       	android:layout_toRightOf="@id/preset_param_right_kidney_weight_tv"
+	       	android:layout_alignBottom="@id/preset_param_right_kidney_weight_tv"
+	       	android:layout_marginLeft="16dp"
+	       	android:layout_marginTop="52dp"	       	
+	       	android:inputType="numberDecimal"
+	       	android:maxLength="4"
+	       	custom:outSideCancel="true"
+	        custom:keyDrawable="@drawable/btn_keyboard_key"
+	        custom:xmlLayoutResId="@xml/keyboard_numbers"/>
+	</RelativeLayout>
+ 
+
+        
+
+	<ImageView  
+  	    android:id="@+id/preset_param_next_btn"
+  	    android:layout_width="68dp"
+  	    android:layout_height="68dp"
+  	    android:padding="16dp"	      
+    	android:layout_marginBottom="24dp" 
+ 	    android:layout_marginRight="24dp" 
+	    android:layout_alignParentBottom="true" 
+  	    android:layout_alignParentRight="true" 
+  	    android:enabled="false"
+ 	    android:src="@drawable/next_btn_src_selector"
+	 	android:background="@drawable/oval_next_btn_bg_selector"
+ 	    android:contentDescription="@null"/>
+
+</RelativeLayout>

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_connect">Connect</string>
+    <string name="app_name">Bio_Console</string>
+	<string name="sys_setting">System Settings</string>
+	<string name="settings">Settings</string>
+	<string name="english">English</string>
+	<string name="chinese">简体中文</string>
+	<string name="sys_version">Versions</string>
+	<string name="set_flow">Flow(mL/Min)</string>
+    <string name="time">Time(HH:mm:ss)</string>
+	<!-- 主屏 -->
+	<string name="mode_liver_perfusion">Liver Perfusion System</string>
+	<string name="mode_kidney_perfusion">Kidney Perfusion System</string>
+	<string name="display_pump_speed">Pump Speed(RPM)</string>
+
+	<!-- 显示 -->
+	<string name="right_kidney_artery_target_speed">Right Kidney Artery Pump Speed</string>
+	<string name="left_kidney_artery_target_speed">Left Kidney Artery Pump Speed</string>
+	<string name="hepatic_artery_target_speed">Hepatic Artery Pump Speed</string>
+	<string name="portal_vein_target_speed">Portal Vein Pump Speed</string>
+	<string name="hepatic_artery_pressure">Hepatic Artery Pressure(mmHg)</string>
+	<string name="portal_vein_pressure">Portal Vein Pressure(mmHg)</string>
+	<string name="hepatic_artery_flow">Hepatic Artery Flow(mL/min)</string>
+	<string name="portal_vein_flow">Portal Vein Flow(mL/min)</string>
+	<string name="preset_perfusion_left_kidney_pressure">Left Kidney Pressure(mmHg)</string>
+	<string name="preset_perfusion_right_kidney_pressure">Right Kidney Pressure(mmHg)</string>
+	<string name="preset_perfusion_left_kidney_flow">Left Kidney Flow(mL/min)</string>
+	<string name="preset_perfusion_right_kidney_flow">Right Kidney Flow(mL/min)</string>		
+	<string name="preset_param_id_prefix_liver">Liver</string>
+	<string name="preset_param_id_prefix_kidney">Kidney</string>
+	<string name="mean_pressure">Mean Pressure(mmHg)</string>
+	<string name="systolic_pressure">SYS(mmHg)</string>
+	<string name="diastolic_pressure">DIA(mmHg)</string>
+	<string name="target_pressure">Target Pressure(mmHg)</string>
+	<string name="target_vein_flow">PV Target Flow(mL/min)</string>
+	<string name="target_artery_flow">HA Target Flow(mL/min)</string>
+	<string name="target_flow">Target Flow(mL/min)</string>	
+	<string name="hepatic_artery">Hepatic Artery</string>
+	<string name="portal_vein">Portal Vein</string>
+	<string name="left_kidney_artery">Left Kidney Artery</string>
+	<string name="right_kidney_artery">Right Kidney Artery</string>
+	<string name="cm">Bubble(mm)</string>
+	<string name="pulse_rate">Pulse Rate</string>
+	<string name="temperature">Temp(℃)</string>
+	<string name="title_perfusion_param_pulserate">LA/RA Pulse Rate</string>
+	<string name="string_null">---</string>
+	<string name="string_text_division">/</string>
+	<string name="zero_value">00</string>
+	<string name="zero">0</string>
+	<string name="colon">:</string>
+	<string name="stop">Stop</string>
+	<string name="restart">Restart</string>
+	<string name="set_pumpspeed">Set Pump Speed</string>
+	<string name="pump_speed">PUMP</string>
+	<string name="data_record">Record</string>
+	<string name="screenshot">Screenshot</string>
+	<string name="main_exitperfusion">Exit</string>
+	<string name="bloodgas">BloodGas</string>	
+	<string name="bile">Bile(drops)/(mL)</string>
+	<!-- 阻力指数 -->
+	<string name="resistant_index">Resistant Index</string>
+	
+	<!-- record -->
+	<string name="record_title_artery_mean_pressure">HA Mean Presssure(mmHg)</string>
+	<string name="record_title_vein_mean_pressure">PV Presssure(mmHg)</string>
+	<string name="record_title_artery_mean_flow">HA Flow(mL/min)</string>
+	<string name="record_title_vein_mean_flow">PV Flow(mL/min)</string>
+	<string name="record_title_artery_dia_pressure">HA DIA Presssure(mmHg)</string>
+	<string name="record_title_artery_sys_pressure">HA SYS Presssure(mmHg)</string>
+	<string name="record_title_artery_resistindex">HA ResistIndex</string>
+	<string name="record_title_left_kidney_artery_dia_pressure">LA DIA Presssure(mmHg)</string>
+	<string name="record_title_left_kidney_artery_sys_pressure">LA SYS Presssure(mmHg)</string>	
+	<string name="record_title_left_kidney_artery_resistindex">LA ResistIndex</string>		
+	<string name="record_title_artery_ehbf">HA EHBF(mL/min/100g)</string>
+	<string name="record_title_vein_ehbf">PV EHBF(mL/min/100g)</string>
+	<string name="record_title_vein_resistindex">PV ResistIndex</string>
+	<string name="record_title_right_kidney_artery_resistindex">RA ResistIndex</string>		
+	<string name="record_title_artery_speed">HA Pump Speed(RPM)</string>
+	<string name="record_title_vein_speed">PV Pump Speed(RPM)</string>
+	<string name="record_title_left_kidney_artery_speed">LA Pump Speed(RPM)</string>
+	<string name="record_title_right_kidney_artery_speed">RA Pump Speed(RPM)</string>	
+	
+	<!-- -bile -->
+	<string name="record_title_bile_total">Total(Drop)</string>	
+	<string name="record_chart_total_bile_title">Total Bile(Drop)</string>		
+	<string name="record_chart_perhour_hour_title">Bile Production(Drop/per hour)</string>		
+	<string name="screenshot_succee">Screenshot success</string>
+	<string name="record_title_trend_bile_total">Bile per hour secretion trend</string>
+	<string name="record_title_trend_bile_perhour">The bile secretion(mL/per hour)</string>
+	<string name="record_title_trend_bile_totle">Total bile secretion(mL/per hour)</string>
+	
+	<!-- settings -->
+	<string name="save">Save</string>
+	<string name="liver_weight">Input Liver Weight(g)</string>
+	<string name="liver_number">Input Liver number</string>
+	<string name="current_target_temp">Curt. Temp.</string>
+	<string name="set_target_temp">Set Target Temp.</string>
+	<string name="success_zero_hepatic_artery_pressure">zero hepatic artery pressure success</string>
+	<string name="success_zero_hepatic_artery_flow">zero hepatic artery flow success</string>
+	<string name="success_zero_portal_vein_pressure">zero portal vein pressure success</string>
+	<string name="success_zero_portal_vein_flow">zero portal vein flow success</string>
+	<string name="success_zero_left_kidney_artery_pressure">zero left kidney artery pressure success</string>	
+	<string name="success_zero_left_kidney_artery_flow">zero left kidney artery flow success</string>
+	<string name="success_zero_right_kidney_artery_pressure">zero right kidney artery pressure success</string>
+	<string name="success_zero_right_kidney_artery_flow">zero right kidney artery flow success</string>	
+	
+		
+	<!-- guideseeting -->
+	<string name="system_preset">System Pre-set</string>
+	<string name="please_input_the_weight_of_liver">Please input the liver weight(g)</string>
+	<string name="please_input_the_livernumber">Please input the liver number</string>
+	<string name="next">Next</string>
+	<string name="done">Done</string>
+	<string name="complete">Complete</string>
+	<string name="hepatic_artery_target_pressure">Hepatic Artery Target Pressure(mmHg)</string>
+	<string name="portal_vein_target_pressure">Portal Vein Target Pressure(mmHg)</string>
+	<string name="portal_vein_target_flow">Portal Vein Target Flow(mL/min)</string>
+	<string name="zero_pressure">Zero Pressure(mmHg)</string>
+	<string name="bottom_pressure">Bottom Pressure(mmHg)</string>
+	<string name="zero_art_flow">Zero Artery Flow(mL/min)</string>
+	<string name="zero_vein_flow">Zero Vein Flow(mL/min)</string>
+		
+
+	<!-- 语言 -->
+	<string name="language">Language</string>
+
+	<!-- 版本 -->
+	<string name="version_update">Check for Updates</string>
+	<string name="version_newest">Newest version</string>
+	<string name="version_updates">Update Version</string>
+	<string name="update_immediately">Update Now</string>
+	<string name="update_later">Later</string>
+	<string name="prompt">Prompt</string>
+
+	<string name="update_error">Update error</string>
+	<string name="internet_connect_unavailable">The network connection is not available</string>
+	<string name="checking_version">Checking updates</string>
+	<string name="download_version">downloading</string>
+	<string name="update_cancel">cancel download</string>
+	<string name="fail_to_link_server">Fail to link server,try again.</string>
+	<string name="fail_to_update">Fail to update version,try again.</string>
+	
+	<!-- 报警记录 -->
+	<string name="alarm_info">Alarm</string>
+	<string name="alarm_time">Alarm Time</string>
+	<string name="alarm_info_detail">Alarm information details</string>
+	<string name="pump_type">Pump type</string>
+	<string name="alarm_level">Alarm Level</string>
+	<string name="id">ID</string>
+	<string name="alarm">ALARM</string>
+	<string name="chart_no_data">No Data</string>
+	<string name="alarm_select_time_title">Select Date:</string>
+	
+	<!-- 信息记录 -->
+	<string name="msg_index">Index</string>
+	<string name="msg_time">Time</string>
+	<string name="serial_data">Data</string>
+	<string name="serial_trend">Trends</string>	
+	<string name="record_rb_title_bile">Bile Record</string>
+	<string name="record_rb_title_perfusion">Perfusion Record</string>
+
+	<string name="error_input_lower_speed">The input pump speed shall not be less than 400r/min</string>
+	<string name="error_pre_one_max_less_than_min">the max value of the pressure of pump one is not less than the min value of the pressure.</string>
+	<string name="error_pre_two_max_less_than_min">the max value of the pressure of pump two is not less than the min value of the pressure.</string>
+	<string name="error_flow_one_max_less_than_min">The upper limit of the Hepatic Artery flow warning should not be lower than the lower limit.</string>
+	<string name="error_flow_two_max_less_than_min">The upper limit of the Portal Vein flow warning should not be lower than the lower limit.</string>
+	<string name="error_pre_left_kidney_artery_max_less_than_min">The upper limit of the Left Kidney Artery pressure warning should not be lower than the lower limit.</string>
+	<string name="error_pre_right_kidney_artery_max_less_than_min">The upper limit of the Right Kidney Artery pressure warning should not be lower than the lower limit.</string>
+	<string name="error_flow_left_kidney_artery_max_less_than_min">The upper limit of the Left Kidney Artery flow warning should not be lower than the lower limit.</string>
+	<string name="error_flow_right_kidney_artery_max_less_than_min">The upper limit of the Right Kidney Artery flow warning should not be lower than the lower limit.</string>	
+	
+	
+	<string name="error_hepatic_artery_line">Hepatic Arterial line has a problem, please check</string>
+	<string name="error_portal_vein_line">Portal Vein line has a problem, please check</string>
+	<string name="error_left_kidney_artery_line">Left Kidney Arterial line has a problem, please check</string>
+	<string name="error_right_kidney_artery_line">Right Kidney Arterial line has a problem, please check</string>
+	
+	<string name="error_speed_is_null">Please input the pump speed</string>
+	<string name="error_liver_id_is_null">ID is null</string>
+	<string name="error_liver_weight_is_null">Weight is null</string>
+	<string name="error_left_kidnet_weight_is_null">Weight of Left Kidney is null</string>
+	<string name="error_right_kidney_weight_is_null">Weight of Right Kidney is null</string>		
+	<string name="error_liver_name_repeated">ID is repeated</string>
+	<string name="error_pre_one_zero_fail">The pressure of Hepatic Artery zero failed</string>
+	<string name="error_pre_two_zero_fail">The pressure of Portal Vein zero failed</string>
+	<string name="error_pre_left_kidney_artery_zero_fail">The pressure of Left Kidney Artery zero failed</string>	
+	<string name="error_pre_right_kidney_artery_zero_fail">The pressure of Right Kidney Artery zero failed</string>	
+	
+	<string name="error_flow_one_zero_fail">The flow of Hepatic Artery zero failed</string>
+	<string name="error_flow_two_zero_fail">The flow of Portal Vein zero failed</string>
+	<string name="error_target_pre_one_null">Please input the target pressure of Hepatic Artery</string>
+	<string name="error_target_art_pre_format_error">Hepatic artery pressure value format error</string>
+	<string name="error_target_vein_pre_format_error"> Portal Vein pressure value format error</string>
+	<string name="error_max_value_normal_perfusion_target_const_artery_pre">In NMP, the target pressure of Hepatic Artery can not be greater than 100mmHg</string>
+	<string name="error_max_value_cold_perfusion_target_const_artery_pre">In HMP, the target pressure of Hepatic Artery can not be greater than 40mmHg</string>
+	<string name="error_value_cold_perfusion_target_pre_one">In HMP, the target pressure of Hepatic Artery can not be null</string>
+	<string name="error_target_pre_one_min_null">Please input the min target pressure of Hepatic Artery</string>
+	<string name="error_target_pre_one_max_null">Please input the max target pressure of Hepatic Artery</string>
+	<string name="error_target_pre_one_min_max_compare">The maximum target pressure of the Hepatic Artery should not be less than the minimum pressure</string>
+	<!-- 肝动脉搏动模式灌注目标最大值的限值 -->
+	<string name="error_target_pre_one_max_limit">the maximum target pressure of Hepatic Artery should not exceed 120mmHg</string>
+	<string name="error_target_pre_one_min_limit">the minimum target pressure of Hepatic Artery should not exceed 100mmHg</string>
+	<string name="error_target_pre_one_min_max_difference">The difference between the maximun pressure and the minium pressure of the hepatic artery cannot be greater than 40mmHg</string>
+	
+	<string name="error_target_pre_two_null">Please input the target pressure of Portal Vein</string>
+	<string name="error_target_flow_two_null">Please input the target flow of Portal Vein</string>
+	<string name="error_max_normal_target_pre_vein_max_tip">In NMP,the target pressure of Portal Vein should not exceed 14 mmHg</string>
+	<string name="error_max_value_cold_perfusion_vein_target_pre">In HMP, the target pressure of Portal Vein should not exceed 8mmHg</string>
+	<string name="error_max_value_vein_target_flow">the target flow of Portal Vein should not exceed 1500mL/min</string>
+	<!-- 恒流目标流量不能为空 -->
+	<string name="error_value_vein_target_flow_null">the target flow of Portal Vein can not be null</string>
+	<string name="error_value_vein_target_pressure_null">the target pressure of Portal Vein can not be null</string>
+	<string name="error_value_end_with_decimal">Value format error</string>
+	<!-- 常温关注的最小、最大目标值不能为空 -->
+	<string name="error_value_normal_perfusion_target_pre_one_min">In NMP, the min target pressure of Hepatic Artery can not be null</string>
+	<string name="error_value_normal_perfusion_target_pre_one_max">In NMP, the max target pressure of Hepatic Artery can not be null</string>
+	
+	<!-- 警报设置 -->
+	<string name="error_upper_limit_of_the_hepatic_artery_flow">The upper limit of the Hepatic Artery flow warning should not exceed 1000mL/min</string>
+	<string name="error_upper_limit_of_the_vein_flow">The upper limit of the Portal Vein flow warning should not exceed 2000mL/min</string>
+	<!-- 肝动脉流量的警报下限不得低于0ml/min -->
+	<string name="error_lower_limit_of_the_hepatic_artery_flow">The lower limit of the Hepatic Artery flow warning should not be lower than 0mL/min</string>
+	<!-- 门静脉流量的警报下限不得低于0ml/min -->
+	<string name="error_lower_limit_of_the_vein_flow">The lower limit of the Portal Vein flow warning should not be lower than 0mL/min</string>	
+	<string name="error_upper_limit_of_the_hepatic_artery_pressure">The upper limit of the Hepatic Artery pressure warning should not exceed 100mmHg</string>
+	<string name="error_lower_limit_of_the_hepatic_artery_pressure">The lower limit of the Hepatic Artery pressure warning should not be lower than 0mmHg</string>
+	<!-- 常温灌注下，门静脉压力警报上限值不得大于14mmHg -->
+	<string name="error_upper_limit_of_the_vein_pressure_nmp">In NMP,the upper limit of the Portal Vein pressure warning should not exceed 14mmHg</string>
+	<!-- 常温灌注下，门静脉压力警报上限值不得大于8mmHg -->
+	<string name="error_upper_limit_of_the_vein_pressure_hmp">In HMP,the upper limit of the Portal Vein pressure warning should not exceed 8mmHg</string>
+	<string name="error_lower_limit_of_the_vein_pressure">The lower limit of the Portal Vein pressure warning should not be lower than 0mmHg</string>	
+	
+		
+	<!-- 泵速设置提示 -->
+	<string name="error_upper_limit_of_the_artery_speed">The upper limit of the Hepatic Artery Speed warning should not exceed 3000r/min</string>
+	<string name="error_upper_limit_of_the_vein_speed">The upper limit of the Portal Vein Speed warning should not exceed 3000r/min</string>
+	<string name="error_lower_limit_of_the_artery_speed">The lower limit of the Hepatic Artery Speed warning should not be lower than 1500r/min</string>
+	<string name="error_lower_limit_of_the_vein_speed">The lower limit of the Portal Vein Speed warning should not be lower than 1200r/min</string>	
+	<string name="error_upper_set_artery_speed">The Hepatic Artery pump speed shall not exceed 3000r/min</string>
+	<string name="error_lower_set_artery_speed">The Hepatic Artery pump speed shall not lower than 0r/min</string>
+	<string name="error_upper_set_vein_speed">The Portal Vein pump speed shall not exceed 3000r/min</string>
+	<string name="error_lower_set_vein_speed">The Portal Vein pump speed shall not lower than 0r/min</string>
+	
+				
+	<string name="error_target_pre_vein_min_tip">The target pressure of Portal Vein is no less than 0 mmHg</string>
+	<string name="error_target_pre_artery_min_tip">The target pressure of Hepatic Artery is no less than 0 mmHg</string>
+	<string name="error_target_flow_zero_artery_tip">The flow of Hepatic Artery is no less than 0 mL/min</string>
+	<string name="error_target_flow_zero_vein_tip">The flow of Portal Vein is no less than 0 mL/min</string>
+	
+	<string name="error_target_temp_empty">Please set the perfusion target temperature</string>
+	<string name="error_target_temp_max_tip">The target temperature is no more than 37℃</string>
+	<string name="error_target_temp_min_tip">The target temperature is no less than 0℃</string>
+	<!-- 报警语 -->
+	<string name="disconnect_pump_artery">Hepatic Artery Disconnected</string>
+	<string name="disconnect_pump_vein">Portal Vein Disconnected</string>
+	<string name="disconnect_pump_artrey_pressure">Hepatic Artery Pressure Disconnected</string>
+	<string name="disconnect_pump_vein_pressure">Portal Vein Pressure Disconnected</string>	
+	<string name="disconnect_pump_left_kidney_artery">Left Kidney Artery Disconnected</string>
+	<string name="disconnect_pump_right_kidney_artery">Right Kidney Artery Disconnected</string>
+	<string name="disconnect_pump_left_kidney_artrey_pressure">Left Kidney Artery Pressure Disconnected</string>
+	<string name="disconnect_pump_right_kidney_pressure">Right Kidney Artery Pressure Disconnected</string>		
+	
+	<!-- 同时压力信息断连 -->
+	<string name="disconnect_pump_artery_vein_pressure">Hepatic Artery/Portal Vein Pressure Disconnected</string>
+	<string name="disconnect_pump_artrey_flow">Hepatic Artery Flow Disconnected</string> 
+	<string name="abnormal_pump_artery_flow">Hepatic Artery Flow Abnormal</string>
+	<string name="abnormal_pump_vein_flow">Portal Vein Flow Abnormal</string>
+	<string name="disconnect_pump_vein_flow">Portal Vein Flow Disconnected</string> 
+	<!-- kidney -->
+	<string name="disconnect_pump_left_kidney_artrey_flow">Left Kidney Artery Flow Disconnected</string> 
+	<string name="abnormal_pump_left_kidney_artery_flow">Left Kidney Artery Flow Abnormal</string>
+	<string name="abnormal_pump_right_kidney_artery_flow">Right Artery Flow Abnormal</string>
+	<string name="disconnect_pump_right_kidney_artery_flow">Right Kidney Artery Flow Abnormal</string>	
+	
+	
+	<!-- 同时流量信息断连 -->
+	<string name="disconnect_pump_artery_vein_flow">Hepatic Artery/Portal Vein Flow Disconnected</string>
+	<!-- 同时断连 -->
+	<string name="disconnect_pump_artery_vein">Hepatic Artery/Portal Vein Disconnected</string>
+	<string name="disconnect_pump_left_right_artery">Left Kidney Artery/Right Kidney Artery Disconnected</string>	
+	<!-- 同时气泡 -->
+	<string name="error_bubble_one">Hepatic Artery Bubble Detected</string>
+	<string name="error_bubble_two">Portal Vein Bubble Detected</string>
+	<string name="error_bubble_artery_vein">Hepatic Artery/Portal Bubble Detected</string>
+	<string name="error_artery_backflow">Hepatic Artery BackFlow</string>
+	<string name="error_vein_backflow">Portal Vein BackFlow</string>
+	<string name="error_artery_vein_backflow">Hepatic Artery/Portal Vein BackFlow</string>
+	<!-- kidney -->
+	<string name="error_bubble_left_kidney_artery">Left Kidney Artery Bubble Detected</string>
+	<string name="error_bubble_right_kidney_artery">Right Kidney Artery Bubble Detected</string>
+	<string name="error_bubble_left_right_kidney_artery">Left Kidney Artery/Right Kidney Artery Bubble Detected</string>
+	<string name="error_backflow_left_kidney_artery">Left Kidney Artery BackFlow</string>
+	<string name="error_backflow_right_kidney_artery">Right Kidney Artery BackFlow</string>
+	<string name="error_backflow_left_right_kidney_artery">Left Kidney Artery/Right Kidney Artery BackFlow</string>		
+	
+	
+		
+	<!-- 水温过高报警 -->
+	<string name="error_temp_over">Over Temperature</string>
+	<string name="error_temp_abnormal">Temperature Abnormal</string>
+	<!-- 液位报警 -->
+	<string name="error_low_water_reservoir">Low water reservoir</string>
+	<!-- 急停报警 -->
+	<string name="error_emergency_stop">System emergency stop</string>
+	<!-- 断电报警 -->
+	<string name="error_ac_power_off">AC power off</string>
+	<!-- 通信中断报警 -->
+	<string name="error_system_communication_interrupt">System Communication Interrupt</string>
+	<!-- 管路未关紧 -->
+	<string name="error_artery_pre_close">Hepatic Artery Pressure Pipe OPEN</string>
+	<string name="error_vein_pre_close">Portal Vein Pressure Pipe OPEN</string>
+	<string name="error_artery_vein_pre_close">Hepatic Artery/Portal Vein Pressure Pipe OPEN</string>
+	<!-- 安卓扇热异常 -->
+	<string name="error_android_heat_dissipation">Abnormal heat dissipation(screen)</string>
+	<!-- 电源扇热异常 -->
+	<string name="error_power_heat_dissipation">Abnormal heat dissipation(power)</string>
+	<!-- 半导体扇热异常 -->
+	<string name="error_semi_heat_dissipation">Abnormal heat dissipation(semiconductor)</string>	
+	<string name="error_flow_artery_low_flow">Hepatic Artery Low Flow</string>
+	<string name="error_flow_artery_high_flow">Hepatic Artery High Flow</string>
+	<string name="error_flow_vein_low_flow">Portal Vein Low Flow</string>
+	<string name="error_flow_vein_high_flow">Portal Vein High Flow</string>
+	<string name="error_pre_artery_low_pre">Hepatic Artery Low Pressure</string>
+	<string name="error_pre_artery_high_pre">Hepatic Artery High Pressure</string>
+	<string name="error_pre_vein_low_pre">Portal Vein Low Pressure</string>
+	<string name="error_pre_vein_high_pre">Portal Vein High Pressure</string>
+	<!-- kidney -->
+	<string name="error_flow_left_kidney_artery_low_flow">Left Kidney Artery Low Flow</string>
+	<string name="error_flow_left_kidney_artery_high_flow">Left Kidney Artery High Flow</string>
+	<string name="error_flow_right_kidney_artery_low_flow">Right Kidney Artery Low Flow</string>
+	<string name="error_flow_right_kidney_artery_high_flow">Right Left Kidney Artery High Flow</string>
+	<string name="error_pre_left_kidney_artery_low_pre">Left Kidney Artery Low Pressure</string>
+	<string name="error_pre_left_kidney_artery_high_pre">Left Kidney Artery High Pressure</string>
+	<string name="error_pre_right_kidney_artery_low_pre">Right Kidney Artery Low Pressure</string>
+	<string name="error_pre_right_kidney_artery_high_pre">Right Kidney Artery High Pressure</string>		
+	
+	
+	
+	
+	
+	
+	<!-- 同时高流量警报 -->
+	<string name="alert_pump_artery_vein_high_flow">Hepatic Artery/Portal Vein High Flow</string>
+	<string name="alert_pump_artery_vein_low_flow">Hepatic Artery/Portal Vein Low Flow</string>
+	<!-- 同时高压 -->
+	<string name="alert_pump_artery_vein_high_pressure">Hepatic Artery/Portal Vein High Pressure</string>
+	<string name="alert_pump_artery_vein_low_pressure">Hepatic Artery/Portal Vein Low Pressure</string>
+
+
+	<string name="loading">Loading</string>
+	<string name="sereial_log_title">Information Record</string>
+	
+	<string name="bioindex_log_title">Blood Biochemical Records</string>
+	<string name="patient_id">Patient ID</string>
+	<string name="operator_id">Operater ID</string>
+	<!-- 详情 -->
+	<string name="parameter">Observation subID</string>
+	<string name="result">Observation Value</string>
+	<string name="result_type">Observation Indentifer</string>
+	<string name="unit">Units</string>
+	<string name="reference_range">Reference Range</string>
+	<string name="user_define_access_check">User Defined Aeccess checks</string>
+	<string name="result_type_detail">Detail Information</string>	
+	<string name="date_time">Date Time</string>
+	<string name="specimen_id">Specimen Index</string>
+	<string name="specimen_source">Specimen Source</string>
+
+	<!-- 预灌注 -->
+	<string name="pre_perfusion">Pre Perfusion</string>
+	<string name="end_prefusion">End Pre-prefusion</string>
+	<string name="pump_speed_set">Set Pump Speed</string>
+	<string name="custom_pumpspeed">Custom Pump Speed</string>
+	<string name="low_pumpspeed">600</string>
+	<string name="mid_pumpspeed">800</string>
+	<string name="high_pumpspeed">1000</string>
+	<string name="large_high_pumpspeed">1200</string>	
+	<string name="pre_temp_4">4</string>
+	<string name="pre_temp_8">8</string>
+	<string name="pre_temp_18">18</string>
+	<string name="pre_temp_25">25</string>
+	<string name="pre_temp_37">37</string>	
+	<string name="custom_temp">Input Temp</string>
+	<string name="custom_flow">Input Flow</string>	
+	<string name="custom_pressure">Input Pre.</string>		
+	<!-- 血气分析结果 -->
+	<string name="blood_gas">Blood Gas</string>
+	<string name="blood_oxygen">Blood Oxygen</string>
+	<string name="electrolyte">Electrolyte</string>
+	<string name="metabolite">Metabolite</string>
+	<string name="others">Others</string>
+	<string name="time_detect">Detection Time</string>
+	<string name="ph">pH</string>
+	<string name="pCO2">pCO2</string>
+	<string name="pO2">pO2</string>
+	<string name="hct">Hct</string>
+	<string name="sO2">sO2(est),r</string>
+	<string name="Na">Na+</string>
+	<string name="K">K+</string>
+	<string name="Ca">Ca++</string>
+	<string name="Cl">Cl+</string>
+	<string name="Glu">Glu</string>
+	<string name="Lac">Lac</string>
+	<string name="acid_base_status">Acid Base</string>
+	<string name="ASAT">AST</string>
+	<string name="ALAT">ALT</string>
+	<string name="Bicarbonate">HCO3-</string>
+	<string name="sampling_time">Sampling Time</string>
+	
+	<string name="set_item_temp">Target Temperature(℃)</string>
+	<string name="set_item_timer">Timer Setting</string>
+	<string name="set_item_date">Date Setting</string>
+	<string name="set_close_temp_control">Temp. Control</string>
+	
+	<!-- pattern Activity -->
+	
+	<string name="min">min</string>
+	<string name="max">max</string>
+	<string name="constant_pressure">Constant pressure</string>
+	<string name="btn_temp">Temp</string>
+	<string name="btn_lock">Lock</string>
+	<string name="btn_unlock">Unlock</string>
+	<string name="btn_perfusion">Perfusion</string>
+	<string name="btn_bloodgas">Blood-gas</string>
+	<string name="btn_alarm">Alarm</string>
+	<string name="btn_record">Record</string>
+	
+	<!-- preset activity -->
+	<string name="param_correct_hint">Rotating the hepatic artery and portal vein pressure sensors connected to atmosphere, clicking the zero button</string>
+	<string name="unit_bubble">mm</string>
+	<!-- main perfusion activity-->
+	<string name="perfusion_art_pre_title">HA Pressure</string>
+	<string name="perfusion_left_kidney_art_pre_title">LA Pressure</string>	
+	<string name="perfusion_right_kidney_art_pre_title">RA Pressure</string>	
+	<string name="perfusion_art_pre_sec_title">SYS/DIA(M)</string>
+	<!-- 收缩压/舒张压 -->
+	<string name="perfusion_art_tar_pre_title">TargetPressure</string>
+	<string name="perfusion_left_kidney_art_tar_pre_title">LA TargetPressure</string>
+	<string name="perfusion_right_kidney_art_tar_pre_title">RA TargetPressure</string>	
+	<string name="perfusion_art_tar_sec_pre_title">Max/Min</string>
+	<string name="perfusion_art_real_tar_flow_title">HAF/HA EHBF</string>
+	<string name="perfusion_left_kidney_art_real_tar_flow_title">LAF/LA EHBF</string>		
+	<string name="perfusion_art_speed_title">HA Pump Speed</string>
+	<string name="perfusion_left_kidney_art_speed_title">LA Pump Speed</string>	
+	<string name="perfusion_left_right_kidney_art_speed_title">LA/RA Pump Speed</string>			
+	<string name="perfusion_art_pulse_rate">HA PulseRate</string>
+	<string name="perfusion_left_kidney_art_pulse_rate">LA PulseRate</string>	
+	<string name="perfusion_title_left_kidney_art_tarflow">LA TargetFlow</string>	
+	<string name="perfusion_title_right_kidney_art_tarflow">RA TargetFlow</string>			
+	<string name="perfusion_vein_real_tar_pre_title">PV Real/TargetPressure</string>
+	<string name="perfusion_right_kidney_artery_real_tar_pre_title">RA SYS/DIA(M)</string>		
+	<string name="perfusion_vein_real_tar_flow_title">PV Flow/PV EHBF</string>
+	<string name="perfusion_right_kidney_artery_real_tar_flow_title">RA Flow/RA EHBF</string>	
+	<string name="perfusion_vein_speed_title">PV Pump Speed</string>
+	<string name="perfusion_right_kidney_artery_speed_title">RA Pump Speed</string>
+	<string name="perfusion_bubble_bile_title">HA Bubble/PV Bubble</string>
+	<string name="perfusion_percent_flow_title">HA/PV FlowPercent</string>
+	<string name="perfusion_title_resistance_index">HA/PV Resistance Index</string>
+	<string name="perfusion_title_kidney_resistance_index">LA/RA Resistance Index</string>	
+	<string name="perfusion_ebile_title">Ebile</string>
+	<string name="perfusion_error_disconnect">Error1</string>
+	<string name="perfusion_error_abnormal">Error2</string>
+	<string name="perfusion_error_pumpspeed">pump speed can not exceed 3000</string>
+	<string name="perfusion_system_state_running">Running</string>
+	<string name="perfusion_system_state_stop">Stop</string>
+		
+	<string name="blood_gas_sampltime">Sampling</string>
+	<string name="dialog_title_sample_time">Prompt</string>
+	<string name="setting_sub_title_perfusion">Perfusion Setting</string>
+	<string name="setting_sub_title_alert">Alert Setting</string>
+	<string name="setting_sub_title_system">System Setting</string>
+	<string name="error_sample_time">Reselect sampling time</string>
+	
+
+	<string name="preset_pvp">PVP</string>
+	<string name="preset_hap">HAP</string>
+	<string name="preset_pvf">PVF</string>
+	<string name="preset_haf">HAF</string>
+	<string name="preset_rap">RAP</string>
+	<string name="preset_lap">LAP</string>
+	<string name="preset_sensor_line_title">Link Status</string>
+  	<string name="preset_alert_msg_sensor_check">Unnormal</string>
+  	<string name="preset_alert_msg_sensor_ok">Normal</string>
+	<string name="preset_sensor_title">Sensor</string>
+	<string name="preset_sensor_artery_pressure">Artery Pressure Sensor</string>
+    <string name="preset_sensor_vein_pressure">Vein Pressure Sensor</string>
+    <string name="preset_sensor_artery_flow">Artery Flow Sensor</string>
+    <string name="preset_sensor_vein_flow">Vein Flow Sensor</string>
+    <string name="preset_sensor_left_artery_flow">Left Kidney Artery Flow Sensor</string>
+    <string name="preset_sensor_right_artery_flow">Right Kidney Artery Flow Sensor</string>
+    <string name="preset_sensor_left_artery_pressure">Left Kidney Artery Pressure Sensor</string>
+    <string name="preset_sensor_right_artery_pressure">Right Kidney Artery Pressure Sensor</string>    
+    <string name="preset_sensor_temperature">Temperature Sensor</string>
+	<string name="zero_text">zero</string>
+	<string name="preset_turn_right_hint">Hint:3 seconds after successful zeroing, Turn the Three-way Stopcock clockwise</string>
+	<string name="preset_param_liver_hint">Input the liver weight and LiverID</string>		
+	<string name="preset_param_kidney_hint">Input the kidney weight and KidneyID</string>
+	<string name="preset_turn_left">Turn the Three-way Stopcock counterclockwise ,pressure sensor is connected to atmospheric pressure</string>
+	<string name="preset_turn_right">Zero success,Turn the Three-way Stopcock clockwise,pressure sensor is connected to line pressure</string>
+	<string name="preset_zero_procedure">Procedure:</string>
+	<string name="preset_how_to_zero">Valve Turn Left-Click Zero Button-Valve Turn Right</string>
+	<string name="preset_zero_pressure_success">Pressure Zero Success</string>
+	<string name="preset_artey_mode">HA Perfusion Mode</string>
+	<string name="preset_vein_mode">PV Perfusion Mode</string>
+	<string name="preset_left_kidney_artery_mode">LA Perfusion Mode</string>
+	<string name="preset_right_kidney_artery_mode">RA Perfusion Mode</string>
+	<string name="preset_artery_const_pressure">ConstantPressure</string>
+	<string name="preset_artery_pulse_pressure">PulsePressure</string>
+	<string name="preset_vein_const_pressure">ConstantPressure</string>
+	<string name="preset_vein_const_flow">ConstantFlow</string>
+	<string name="preset_temp_mode">Perfusion Temp Mode</string>
+	<string name="preset_temp_normal_mode">NMP</string>
+	<string name="preset_temp_cold_mode">HMP</string>	
+	<string name="preset_mode_pulse">Pulse Pressure</string>
+	<string name="preset_mode_const_pressure">Const Pressure</string>
+	<string name="preset_mode_const_flow">Const Flow</string>
+	<!-- setting -->
+	<string name="setting_liver_num">Liver Number</string>
+	<string name="setting_kidney_num">Kidney Number</string>
+	<string name="setting_liver_weight">Liver Weight(g)</string>
+	<string name="setting_kidney_weight">Left Kidney Weight(g)</string>
+	<string name="setting_kidney_right_weight">Right Kidney Weight(g)</string>
+	<string name="setting_current_temp">Current Target Temp.</string>
+	<string name="setting_current_flow">Current Flow(ml/min)</string>
+	<string name="setting_current_pressure">Current Pressure(mmHg)</string>
+	<string name="setting_set_target_flow">Target Flow(mL/min)</string>
+	<string name="setting_set_target_min_pressure">Min Target Pressure(mmHg)</string>
+	<string name="setting_set_target_max_pressure">Max Target Pressure(mmHg)</string>
+	<string name="setting_set_target_pressure">Target Pressure(mmHg)</string>
+	<string name="setting_set_target_time">Target Temp.</string>
+	<string name="setting_init_temp">37.0</string>
+	<string name="setting_init_pressure">0.0</string>
+	<string name="setting_init_flow">0.0</string>
+	<string name="setting_init_artery_speed">1500</string>
+	<string name="setting_init_vein_speed">1200</string>
+	<string name="setting_end_perfusion">End Perfusion</string>
+	<string name="setting_alert_save_ok">Save success</string>
+	<string name="set_current_pressure">CurP:</string>
+	<string name="set_current_flow">CurF:</string>
+	<string name="set_prealarm">Alarm Setting</string>
+	<string name="set_pre_up">Pressure rises to:</string>
+	<string name="set_pre_down">Pressure drops to:</string>
+	<string name="set_flow_up">Flow rises to:</string>
+	<string name="set_flow_down">Flow drops to:</string>
+	<string name="set_speed_limit">Speed Limit:</string>	
+	<string name="set_save_sucess">Save Success</string>
+	 
+	<!-- 气泡急停 -->
+	<string name="setting_title_item_bubble_stop">Bubble Stop Function</string>
+	
+	<!-- bloodgas -->
+	<string name="bloodgas_toast_input_imcomplete">Please enter the full parameters</string>
+	
+	<!-- title -->
+	<string name="title_alt_chart">ALT</string>
+	<!-- unit -->
+	<string name="unit_speed">(r/min)</string>
+	<string name="unit_alt">U/L</string>
+	<string name="unit_ast">U/L</string>
+	<string name="unit_glu">mmol/L</string>
+	<string name="unit_pco2">mmHg</string>
+	<string name="unit_po2">mmHg</string>
+	<string name="unit_hct">%</string>
+	<string name="unit_pressure">mmHg</string>
+	<string name="flow_unit">(mL/min)/(mL/min/100g)</string>
+	<string name="unit_resistance">mmHg/mL/min</string>
+	<string name="unit_flow_pecent">(mL/min)/(mL/min/100g)</string>
+	<string name="unit_flow">(mL/min)</string>
+	<string name="unit_perhour_bile">(Drop/hour)</string>
+	<string name="unit_degree">℃</string>		
+	<string name="popup_delete">Delete</string>
+	<string name="popup_edit">Edit</string>
+	
+	<string name="disconnect_img_artery">A</string>
+	<string name="disconnect_img_vein">V</string>
+	
+	<!-- record history-->
+	<string name = "excel_name">Perfusion_Record</string>
+	<string name = "record_pufersion_history_title">Perfusion History</string>
+	<string name = "record_output">Export Record</string>
+	<string name = "record_perfusion_id">Perfusion ID</string>
+	<string name = "record_perfusion_duration">Perfusion Duration</string>
+	<string name = "record_perfusion_export_check">Export Check</string>
+	<string name = "record_perfusion_weight">Liver Weight(g)</string>
+	<string name = "record_perfusion_left_kidney_weight">Left Kideny Weight(g)</string>	
+	<string name = "record_perfusion_right_kidney_weight">Right Kideny Weight(g)</string>		
+	<string name = "record_perfusion_to">To</string>
+	<string name = "record_perfusion_search">Search</string>
+	<string name = "record_perfusion_delete">Delete</string>
+	<string name = "record_perfusion_export_hint">Are you sure to export the selected record?</string>
+	<string name = "record_perfusion_delete_hint">Are you sure to delete the selected record?</string>
+	<string name = "perfusion_const_pressure">Const Pressure</string>
+	<string name = "perfusion_pulse_pressure">Pulse Pressure</string>
+	<string name = "perfusion_const_flow">Const Flow</string>
+	<string name = "toast_export_record_success">Export Success</string>
+	<string name = "toast_delete_record_success">Delete Success</string>
+	<string name = "toast_export_record_fail">Export Fail</string>
+	<string name = "toast_delete_record_fail">Delete Fail</string>
+	<string name = "toast_usb_nofound">Usb Disk not found</string>
+	<string name = "toast_fail_create_exportdir">Failed to create export directory in U disk</string>
+	<string name = "usb_state">Usb disk state:</string>
+	<string name = "hint_usb_plung">Usb disk has been plug in</string>
+	<string name = "hint_usb_detached">Usb disk has been detached</string>
+	<string name = "toast_endtime_not_earlier_than_begin">The end time cannot be earlier than the start time</string>
+	
+	<!-- 系统设置 -->
+	<string name="system_set_title">System Setting</string>
+	<string name="system_set_time">Time</string>
+	<string name="system_set_zone">Set Date,Set Time</string>
+	<string name="system_set_wifi">Set Wifi</string>
+	<string name="system_set_export">Export</string>
+	<string name="system_set_disinfection_mode">Disinfection mode</string>
+	<string name="system_set_export_content">Export Perfusion Record</string>
+	<!-- wlan -->
+	<string name = "wlan_title">WLAN</string>
+	<string name = "wlan_close">Close</string>
+	<string name = "wlan_open">Open</string>
+	<string name = "wlan_connect">Connected</string>
+	<string name = "wlan_connecting">Connecting</string>
+	<string name = "wlan_encrypted">Encrypted</string>
+	<string name = "wlan_save">Saved</string>
+	<string name = "wlan_status_title">Status</string>
+	<string name = "wlan_signal_strength_title">Signal strength</string>
+	<string name = "wlan_security_title">Security</string>
+	<string name = "wlan_searching">searching for wifi networks(…, &#8230;)</string>
+	<string name = "wlan_turn_off_status_hint">To see avaliable networks, turn Wi-Fi on</string>
+	<string name = "password">Password</string>
+	<string name = "dialog_wifi_checkbox_pwd">Show Password</string>
+	<string name = "dialog_wifi_checkbox_advanced">Advanced Options</string>
+	<string name = "toast_wifi_null">Wifi password can not be empty</string>	
+	<string name = "toast_wifi_length">Wifi password length cannot be less than 8 digits</string>	
+	<!-- Date time -->
+	<string name = "date_title">DATE AND TIME</string>
+	<string name = "time_set_time">Set time</string>
+	<string name = "time_set_date">Set date</string>
+	<string name = "time_select_time_zone">Select time zone</string>
+	<string name = "time_timezone_title">SELECT TIME ZONE</string>
+	<!-- 关于我们 -->
+	<string name = "module_aboutus_title">About Us</string>
+	
+		
+	<!-- dialog title-->
+	<string name = "dialog_title_choice_date">Choice Date</string>
+	<string name = "dialog_title_choice_time">Choice Time</string>
+	<string name = "dialog_export_record">Exporting record from database</string>
+	<string name = "dialog_delete_record">Deleting record from database</string>	
+	<string name = "dialog_title_change_artery_mode">Artery Mode</string>
+	<string name = "dialog_title_change_left_kidney_artery_mode">Left Kidney Mode</string>
+	<string name = "dialog_title_change_right_kidney_artery_mode">Right Kidney Mode</string>		
+	<string name = "dialog_title_change_vein_mode">Vein Mode</string>
+	<string name = "dialog_title_blood_gas_time">SamplingTime</string>
+	<string name = "dialog_title_set_temp">Set Target Temperature</string>
+	<string name = "dialog_title_set_artery_speed">Set Artery Speed</string>
+	<string name = "dialog_title_set_vein_speed">Set Vein Speed</string>
+	<string name = "dialog_forget">Forget</string>
+	<string name = "dialog_title_warning">Warning</string>
+	
+	<!-- dialog message -->
+	<string name = "dialog_msg_perfusion_add_bloodgas_sampletime">Whether to save the current time as the blood sampling time?</string>
+	<string name = "dialog_msg_perfusion_exit_perfusion">Are you sure to exit perfusion?</string>
+	<string name = "dialog_restart_message">Are you sure to restart the perfusion system?</string>
+	<string name = "dialog_stop_message">Are you sure to stop the perfusion system?</string>
+	<string name = "dialog_preset_notice_dialog_message">Make sure the pressure sensor is rotated back to its original position</string>
+	<string name = "dialog_notice_cistern">Make sure the water tank is filled with water</string>
+	<string name = "dialog_notice_emergencystop">System emergency stop</string>	
+	<string name = "dialog_notice_low_battery">Low battery, please charge the battery</string>	
+	<string name = "dialog_notice_disinfection">Are you sure to use the water tank disinfection mode?</string>	
+	<string name = "dialog_notice_zero_artery_pressure">Make sure turn the Three-way Stopcock counterclockwise,hepatic artery pressure sensor is connected to atmospheric pressure</string>	
+	<string name = "dialog_notice_zero_vein_pressure">Make sure turn the Three-way Stopcock counterclockwise,portal vein pressure sensor is connected to atmospheric pressure</string>
+	<string name = "dialog_notice_zero_left_kidney_artery_pressure">Make sure turn the Three-way Stopcock counterclockwise,Left Kidney Artery pressure sensor is connected to atmospheric pressure</string>	
+	<string name = "dialog_notice_zero_right_kidney_artery_pressure">Make sure turn the Three-way Stopcock counterclockwise,Right Kidney Artery pressure sensor is connected to atmospheric pressure</string>	
+	<string name="preset_pattern_left_target_artery_flow">Left Kidney Artery Target Flow(mL/min)</string>	
+	<string name = "dialog_notice_zero_flow">Before the flow is zeroed, please stop running</string>			
+	<!-- alarm -->
+	<string name = "alarm_msg_pump_artery_speed">Artery Speed Abnormal</string>
+	<string name = "alarm_msg_pump_vein_speed">Vein Speed Abnormal</string>
+	<string name = "alarm_msg_pump_artery_vein_speed">Artery/Vein Speed Abnormal</string>
+	<!-- kidney -->
+	<string name = "alarm_msg_pump_left_kidney_artery_speed">Left Kidney Artery Speed Abnormal</string>
+	<string name = "alarm_msg_pump_right_kidney_artery_speed">Right Kidney Artery Speed Abnormal</string>
+	<string name = "alarm_msg_pump_left_right_kidney_artery_speed">Left Kidney/Right Kidney Artery Speed Abnormal</string>	
+	
+	
+	
+	<string name = "alarm_msg_battery_low">Low battery</string>
+	
+	<!-- about -->
+	<string name= "about_copyright">CopyRight © 2017-2021 Devocean All Rights Reserved.</string>	
+	<string name= "about_software_model">Devocean-Liver&#038;Kidney 3000</string>
+	<string name= "about_software_name">Liver&#038;Kidney Perfusion System Software(离体肝肾灌注系统软件)</string>
+	<string name= "about_title_version">Version:</string>
+	<string name= "about_title_model">Model:</string>	
+	<string name= "about_title_production_date">Production Date:</string>	
+	
+	<string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	
+	<string name = "number_0">0</string>
+	<string name = "number_200">200</string>
+	<string name = "number_400">400</string>
+	<string name = "number_600">600</string>
+	<string name = "number_800">800</string>
+	<string name = "number_1000">1000</string>
+	<string name = "number_1200">1200</string>
+	<string name = "number_4">4</string>
+	<string name = "number_6">6</string>
+	<string name = "number_8">8</string>
+	<string name = "number_12">12</string>
+	<string name = "number_20">20</string>
+	<string name = "number_40">40</string>
+	<string name = "number_60">60</string>
+	<string name = "number_80">80</string>	
+	<string name = "number_100">100</string>
+	<string name = "system_set_disinfect">Disinfecting mode is not available</string>
+	
+	<!-- kidney -->
+	<string name="error_target_left_kidney_pre_null">Please input the target pressure of Left Kidney Artery</string>
+	<string name="error_target_left_kieney_pre_value_format_error">Left Kidney Artery target pressure value format error</string>
+	<string name="error_max_value_normal_perfusion_target_const_left_kidney_artery_pre">In NMP, the target pressure of Left Kidney Artery can not be greater than 100mmHg</string>
+    <string name="error_max_value_cold_perfusion_target_const_left_kidney_artery_pre">
+    In HMP, the target pressure of Left Kidney Artery can not be greater than 40mmHg</string>
+	<string name="error_target_left_kidney_pre_min_null">Please input the min target pressure of Left Kidney Artery</string>    
+    <string name="error_target_left_kidney_pre_max_null">Please input the max target pressure of Left Kidney Artery</string>   
+	<string name="error_target_left_kidney_pre_max_limit">the maximum target pressure of Left Kidney Artery should not exceed 120mmHg</string>	   
+	<string name="error_target_left_kidney_pre_min_limit">the minimum target pressure of Left Kidney Artery should not exceed 100mmHg</string>	    
+	<string name="error_target_left_kidney_pre_min_max_compare">The maximum target pressure of the Left Kidney Artery should not be less than the minimum pressure</string>    
+	<string name="error_target_left_kidney_pre_min_max_difference">The difference between the maximun pressure and the minium pressure of the Left Kidney Artery cannot be greater than 40mmHg</string>	    
+	<string name="error_target_left_kidney_flow_null">Please input the target flow of Left Kidney Artery</string>
+	<string name="error_max_value_left_kidney_target_flow">the target flow of Left Kidney Artery should not exceed 1500ml/min</string>		
+	<string name="error_value_cold_perfusion_left_kidney_target_pre">In HMP, the target pressure of Left Kidney Artery can not be null</string>		
+	<string name="error_value_normal_perfusion_left_kidney_target_pre_min_null">In NMP, the min target pressure of Left Kidney Artery can not be null</string>
+	<string name="error_value_normal_perfusion_left_kidney_target_pre_max_null">In NMP, the max target pressure of Left Kidney Artery can not be null</string>	
+	<string name="error_upper_limit_of_left_kidney_artery_pressure_nmp">In NMP,the upper limit of the Left Kidney Artery pressure warning should not exceed 100mmHg</string>
+	<string name="error_upper_limit_of_left_kidney_artery_pressure_hmp">In HMP,the upper limit of the Left Kidney Artery pressure warning should not exceed 40mmHg</string>
+	<string name="error_lower_limit_of_left_kidney_artery_pressure">The lower limit of the Left Kidney Artery pressure warning should not be lower than 0mmHg</string>	
+<string name="error_lower_limit_of_left_kidney_artery_flow">The lower limit of the Left Kidney Artery flow warning should not be lower than 0ml/min</string>		
+	<string name="error_upper_limit_of_left_kidney_artery_flow">The upper limit of the Left Kidney Artery flow warning should not exceed 1000mL/min</string>
+	<string name="error_upper_limit_of_left_kidney_artery_speed">The upper limit of the Left Kidney Artery Speed warning should not exceed 3000r/min</string>
+	<string name="error_lower_limit_of_left_kidney_artery_speed">The lower limit of the Left Kidney Artery Speed warning should not be lower than 1500r/min</string>		
+	
+	
+	
+	<string name="error_target_right_kidney_pre_null">Please input the target pressure of Right Kidney Artery</string>   
+	<string name="error_target_right_kieney_pre_value_format_error">Right Kidney Artery target pressure value format error</string>    	 
+    <string name="error_max_value_normal_perfusion_target_const_right_kidney_artery_pre">In NMP, the target pressure of Right Kidney Artery can not be greater than 100mmHg</string>   
+	<string name="error_max_value_cold_perfusion_target_const_right_kidney_artery_pre">
+    In HMP, the target pressure of Right Kidney Artery can not be greater than 40mmHg</string>    
+	<string name="error_target_right_kidney_pre_min_null">Please input the min target pressure of Right Kidney Artery</string>    
+    <string name="error_target_right_kidney_pre_max_null">Please input the max target pressure of Right Kidney Artery</string> 
+    <string name="error_target_right_kidney_pre_max_limit">the maximum target pressure of Right Kidney Artery should not exceed 120mmHg</string>	   
+	<string name="error_target_right_kidney_pre_min_limit">the minimum target pressure of Right Kidney Artery should not exceed 100mmHg</string>
+	<string name="error_target_right_kidney_pre_min_max_compare">The maximum target pressure of the Right Kidney Artery should not be less than the minimum pressure</string>    	
+	<string name="error_target_right_kidney_pre_min_max_difference">The difference between the maximun pressure and the minium pressure of the Right Kidney Artery cannot be greater than 40mmHg</string>	    
+	<string name="error_target_right_kidney_flow_null">Please input the target flow of Right Kidney Artery</string>	
+	<string name="error_max_value_right_kidney_target_flow">the target flow of Right Kidney Artery should not exceed 1500ml/min</string>		    
+ 	<string name="error_value_right_kidney_artery_target_flow_null">the target flow of Right Kidney Artery can not be null</string>
+	<string name="error_value_right_kidney_artery_target_pressure_null">the target pressure of Right Kidney Artery can not be null</string>	   
+	<string name="error_value_normal_perfusion_right_kidney_target_pre_min_null">In NMP, the min target pressure of Right Kidney Artery can not be null</string>
+	<string name="error_value_normal_perfusion_right_kidney_target_pre_max_null">In NMP, the max target pressure of Right Kidney Artery can not be null</string>	
+	<string name="error_upper_limit_of_right_kidney_artery_pressure">The upper limit of the Right Kidney Artery pressure warning should not exceed 100mmHg</string>
+	<string name="error_lower_limit_of_right_kidney_artery_pressure">The lower limit of the Right Kidney Artery pressure warning should not be lower than 0mmHg</string>	
+	<string name="error_lower_limit_of_right_kidney_artery_flow">The lower limit of the Right Kidney Artery flow warning should not be lower than 0ml/min</string>		
+ 	<string name="error_upper_limit_of_right_kidney_artery_flow">The upper limit of the Right Kidney Artery flow warning should not exceed 1000mL/min</string>	   
+ 	<string name="error_upper_limit_of_right_kidney_artery_speed">The upper limit of the Right Kidney Artery Speed warning should not exceed 3000r/minn</string>
+	<string name="error_lower_limit_of_right_kidney_artery_speed">The lower limit of the Right Kidney Artery  Speed warning should not be lower than 1500r/min</string>   
+	<string name="error_upper_limit_of_right_kidney_artery_pressure_nmp">In NMP,the upper limit of the Right Kidney Artery pressure warning should not exceed 14mmHg</string>
+	<!-- 常温灌注下，门静脉压力警报上限值不得大于8mmHg -->
+	<string name="error_upper_limit_of_right_kidney_artery_pressure_hmp">In HMP,the upper limit of the Right Kidney Artery pressure warning should not exceed 8mmHg</string>	    
+    
+    
+    
+</resources>

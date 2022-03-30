@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" 
+    android:orientation="horizontal"
+    android:background="@color/color_blood_gas_item_odd">
+    
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:layout_width="148dp"
+	    android:id="@+id/item_bloodgas_sampletime"
+	    android:text="2018-03-09 00:00:00"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_ph"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_po2"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_pco2"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_bicarbonate"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_hct"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_ast"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_alt"/>
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_glu"/>
+
+	<View 
+	    style="@style/vertical_line"/>
+	<TextView 
+	    style="@style/style_item_bloodgas_list_txt"
+	    android:id="@+id/item_bloodgas_lac"/>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blood_gas_bg">
+    <RadioGroup
+        android:id="@+id/setting_rg_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:background="@color/color_blood_gas_bg"
+        android:orientation="horizontal">
+    	<RadioButton 
+    	    style="@style/style_setting_tab"	
+    	    android:id="@+id/setting_sub_title_perfusion_rb"
+    	    android:layout_width="258dp"
+    	    android:layout_height="fill_parent"
+    	    android:checked="true"
+    	    android:gravity="center"
+    	    android:text="@string/setting_sub_title_perfusion"/>
+		<RadioButton 
+		    style="@style/style_setting_tab"
+    	    android:id="@+id/setting_sub_title_alert_rb"
+    	    android:layout_width="185dp"
+    	    android:layout_height="fill_parent"
+    	    android:gravity="center"
+    	    android:text="@string/setting_sub_title_alert"/>
+		<RadioButton 
+		    style="@style/style_setting_tab"
+    	    android:id="@+id/setting_sub_title_system_rb"
+    	    android:layout_width="226dp"
+    	    android:layout_height="fill_parent"
+    	    android:gravity="center"
+    	    android:text="@string/setting_sub_title_system"/>
+	</RadioGroup>
+	<FrameLayout 
+	    android:id="@+id/setting_parent_container"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/setting_rg_tab">
+	    
+	</FrameLayout>
+
+</RelativeLayout>

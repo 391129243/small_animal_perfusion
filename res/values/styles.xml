@@ -1,0 +1,629 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="style_AlertDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+   		<item name="android:windowIsFloating">true</item>
+	    <item name="android:windowIsTranslucent">true</item>
+  	    <item name="android:windowNoTitle">true</item> <!--是否启用标题栏-->
+	    <item name="android:background">@color/color_dialog_bg</item>
+ 	    <item name="android:windowBackground">@color/black</item>
+ 	    <item name="android:backgroundDimEnabled">true</item> <!--是否使用背景半透明-->    
+    </style>
+
+    <!-- 竖分割线 -->
+    <style name="vertical_line">
+    	<item name="android:layout_width">1px</item>
+    	<item name="android:layout_height">fill_parent</item>
+    	<item name="android:background">@color/color_vein</item>
+    </style>	
+    <!-- 横分割线 -->
+    <style name="horizontal_line">
+        <item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">1px</item>
+    	<item name="android:background">@color/color_common_line</item>
+    </style>
+    
+    <!-- 清零按钮的样式 -->
+   <style name="style_btn_zero">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:background">@drawable/selector_pressure_zero_bg</item>
+    	<item name="android:padding">8dp</item>
+    	<item name="android:text">@string/zero_text</item>
+    	<item name="android:textColor">@color/color_zero_pressure_text_selector</item>
+    	<item name="android:textSize">16sp</item>
+    	<item name="android:gravity">center_vertical|right</item>
+    </style>
+    
+   
+    <!-- 回溯信息列表的item -->
+    <style name="serialmsg_item_title">
+        <item name="android:layout_width">156dp</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_centerVertical">true</item>
+    	<item name="android:textColor">@color/black</item>
+    	<item name="android:textSize">20sp</item>
+    </style>
+    <style name="serialmsg_item_content">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">@color/color_bubble</item>
+    	<item name="android:textSize">18sp</item>
+    	<item name="android:gravity">center</item>
+    </style>
+    
+    <!-- 报警记录列表标题样式 -->
+    <style name="alarm_list_title_style">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">@color/white</item>
+    	<item name="android:textSize">22sp</item>
+    	<item name="android:gravity">center</item>
+    </style>
+   <!--报警信息列表 -->
+   <style name="style_alarm_log_txt" >
+       <item name="android:textColor">@color/color_msg_item</item>
+       <item name="android:textSize">22sp</item>
+       <item name="android:gravity">center</item>
+   </style>
+   
+    <!-- 信息记录列表标题样式 -->
+    <style name="serialmsg_list_title_style">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">@color/white</item>
+    	<item name="android:textSize">16sp</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:textStyle">bold</item>
+    </style>
+    
+        <!-- 信息记录列表标题样式 -->
+    <style name="serialmsg_list_item_style">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">@color/color_msg_item</item>
+    	<item name="android:textSize">16sp</item>
+    	<item name="android:gravity">center</item>
+    </style>
+    
+    <style name="Widget.RadioButton.Custom" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/radiobutton_bg_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">6dp</item>
+	    <item name="android:textColor">@color/button_color_seletor</item>
+	    <item name="android:textSize">24sp</item>	
+    </style>
+    
+	<!-- 对话框样式 -->
+    <style name="Dialog">   
+		<item name="android:windowBackground">@android:color/transparent</item>  		
+		<item name="android:windowNoTitle">true</item>  
+		<item name="android:windowIsFloating">true</item> 
+		<item name="android:windowFullscreen">true</item>  
+	</style>
+
+	 <!-- seekbar的样式 -->
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="android:thumb">@drawable/ic_seek_trumb</item>
+        <item name="android:thumbOffset">2dp</item>
+        <item name="android:progressDrawable">@drawable/layer_seekbar_horizontal</item>       
+    </style>
+
+    
+    <style name="style_preset_activity_btn">
+        <item name="android:layout_width">186dp</item>
+   		<item name="android:layout_height">56dp</item>
+   		<item name="android:gravity">center</item>
+   		<item name="android:background">@drawable/common_btn_zero_bg_selector</item>
+   		<item name="android:textSize">24sp</item>
+    </style>
+	<!-- 一级标题 -->   
+	<style name="style_primary_title_txt">
+	    <item name="android:layout_width">wrap_content</item>
+   		<item name="android:layout_height">wrap_content</item>
+   		<item name="android:gravity">center_vertical</item>
+   		<item name="android:textColor">@color/common_sys_title_color</item>
+   		<item name="android:textSize">@dimen/font_size_large_24sp</item>
+	</style> 
+	
+	<style name="style_title_txt">
+	    <item name="android:layout_width">wrap_content</item>
+   		<item name="android:layout_height">wrap_content</item>
+   		<item name="android:gravity">center_vertical</item>
+   		<item name="android:textColor">@color/common_sys_title_color</item>
+   		<item name="android:textSize">@dimen/font_size_large_20sp</item>
+	</style>
+	<style name="style_title_text2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_large_20sp</item>
+    </style>
+    <!-- 泵速的标题 -->
+    <style name="style_speed_title" parent="@style/style_title_txt">
+   		<item name="android:drawableLeft">@drawable/icon_artery_flow</item>
+   		<item name="android:drawablePadding">4dp</item>
+	 </style>
+	 
+	<!-- 泵压强的标题 -->
+    <style name="style_pessure_title"  parent="@style/style_title_txt">
+   		<item name="android:drawableLeft">@drawable/icon_artery_pressure</item>
+   		<item name="android:drawablePadding">4dp</item>
+	 </style>
+	 
+     <style name="style_common_pessure_title"  parent="@style/style_title_txt">
+   		<item name="android:layout_width">158dp</item>
+	 </style>
+	 
+	<!-- 流速的标题 -->
+    <style name="style_flow_title" parent="@style/style_title_txt">
+   		<item name="android:layout_width">114dp</item>
+   		<item name="android:text">@string/display_pump_speed</item>
+	 </style>
+	 
+     <!-- 泵气泡的标题 -->
+     <style name="style_bubble_title" parent="@style/style_title_txt">
+   		<item name="android:layout_width">114dp</item> 
+   		<item name="android:text">@string/cm</item>
+	 </style>
+	 
+     <!-- 表格的样式 -->
+     <style name="style_chart">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_bg_chart</item>
+        <item name="android:orientation">vertical</item>
+     </style>
+    <style name="style_divider_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/common_dis_bg</item>
+    </style>
+    
+    <style name="sys_settings_common_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_sys_title_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 编辑框 -->
+    <style name="style_common_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_sys_title_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_commom_et_normal_bg</item>
+    </style>
+    <!-- 状态栏 -->
+    <style name="style_status_btn" >
+        <item name="android:layout_width">76dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+ 
+   
+  	<!-- 系统设置界面的每一项标题-->
+ 	<style name="style_set_item_textview">
+ 		<item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:textColor">@color/white</item>
+ 		<item name="android:textSize">@dimen/font_size_large_22sp</item>
+ 	</style>
+
+  	<style name="style_set_item_background">
+  		<item name="android:layout_width">fill_parent</item>
+  		<item name="android:layout_height">84dp</item>
+  		<item name="android:padding">12dp</item>
+  		<item name="android:background">@color/white</item>
+  		<item name="android:gravity">center_vertical</item>
+  	</style>
+  	
+    <!-- 对话框的样式 -->
+   <style name="style_dialog_message_txt">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">@color/common_sys_title_color</item>
+    	<item name="android:textSize">20sp</item>
+    </style>
+
+   <style name="style_dialog_title_txt">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:textColor">@color/common_sys_title_color</item>
+    	<item name="android:textSize">24sp</item>
+   </style>
+   
+
+	
+   <!-- 显示界面所有的显示框 -->
+   <style name="style_display_value_txt">
+    	<item name="android:layout_width">78dp</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:background">@drawable/target_pre_bg</item>
+    	<item name="android:textColor">@color/common_sys_title_color</item>
+    	<item name="android:textSize">24sp</item>
+   </style>
+   
+   <!-- 倒计时控件 -->
+    <style name="style_CountdownView">
+    	<item name="android:layout_width">124dp</item>
+    	<item name="android:layout_height">32dp</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:background">@drawable/shape_counter_bg</item>
+    	<item name="android:textSize">@dimen/font_size_large_22sp</item>
+    	<item name="android:textColor">@color/white</item>
+   </style>
+   <!--  小号的标题字体-->
+   <style name = "style_fragment_para_title">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:textSize">14sp</item>
+    	<item name="android:textColor">@color/white</item>
+   </style>
+   <!-- 门静脉参数内容 -->
+   <style name="style_vein_parameter">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:textSize">30sp</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:textColor">@color/color_axescolor</item>
+   </style>
+   <!-- 肝动脉参数内容 -->
+   <style name="style_artery_parameter">
+        <item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:textSize">30sp</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:textColor">@color/color_mean_dia_sys</item>
+   </style>
+   
+   <style name="style_set_alarm_title">
+ 		<item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:textColor">@color/white</item>
+ 		<item name="android:textSize">@dimen/font_size_large_20sp</item>
+
+   </style>
+
+   <style name="style_tab_main_btn">
+        <item name="android:layout_width">98dp</item>
+ 		<item name="android:layout_height">38dp</item>
+ 		<item name="android:paddingLeft">2dp</item>
+ 		<item name="android:paddingRight">2dp</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:textColor">@color/white</item>
+ 		<item name="android:textSize">@dimen/font_size_normal_18sp</item>
+ 		<item name="android:background">@drawable/tab_main_btn_bg</item>
+   </style>
+   
+   <style name="style_ic_sub">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:padding">4dp</item>
+ 		<item name="android:src">@drawable/icon_sub</item>
+ 		<item name="android:contentDescription">@null</item>
+   </style>
+   <style name="style_ic_add">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:padding">4dp</item>
+ 		<item name="android:src">@drawable/icon_add</item>
+ 		<item name="android:contentDescription">@null</item>
+   </style>
+   
+   <style name="style_main_tab_btn_bg">
+        <item name="android:layout_width">90dp</item>
+ 		<item name="android:layout_height">42dp</item>
+ 		<item name="android:paddingTop">5dp</item>
+ 		<item name="android:textSize">10sp</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:background">@drawable/tab_main_btn_bg</item>
+   </style>
+   
+   <!-- 预灌注泵速设置的text -->
+   <style name="style_set_speed_bg">
+       	<item name="android:layout_width">102dp</item>
+ 	   	<item name="android:layout_height">52dp</item>
+ 		<item name="android:padding">5dp</item>
+ 		<item name="android:textSize">@dimen/font_size_large_20sp</item>
+ 		<item name="android:textStyle">bold</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:background">@drawable/temp_choice_bg_selector</item>
+   </style>
+   
+
+    <!-- 温度数值选择背景 -->
+    <style name="preset_setting_temp_radiobutton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/temp_choice_bg_selector</item>
+        <item name="android:layout_width">102dp</item>
+	    <item name="android:layout_height">52dp</item>
+	    <item name="android:padding">5dp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textColor">@color/color_temp_choice_selector</item>
+	    <item name="android:textSize">@dimen/font_size_large_20sp</item>
+	    <item name="android:textStyle">bold</item>	
+    </style>
+   <!-- 血气结果每个item中的文本样式 -->
+   <style name="style_item_important_obxmessage">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:textColor">@color/white</item>
+ 		<item name="android:textSize">@dimen/font_size_normal_19sp</item>
+   </style>
+   
+   <!-- 血气结果每个item中的文本样式 -->
+   <style name="style_item_others_obxmessage">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:textColor">@color/color_general_msg</item>
+ 		<item name="android:textSize">@dimen/font_size_small_14sp</item>
+   </style>
+   
+   <!-- 系统预设预设值带图标 -->
+   <style name="style_pre_setting_iconedit">
+        <item name="android:layout_width">340dp</item>
+ 		<item name="android:layout_height">56dp</item>
+ 		<item name="android:paddingLeft">8dp</item>
+ 		<item name="android:gravity">center_vertical</item>
+ 		<item name="android:textColorHint">@color/color_preset_param_edit</item>
+ 		<item name="android:textColor">@color/white</item>
+ 		<item name="android:textSize">22sp</item>
+ 		<item name="android:singleLine">true</item>
+ 		<item name="android:background">@drawable/temp_choice_bg_selector</item>       
+   </style>
+   <style name="style_pre_setting_title_txt">
+	    <item name="android:layout_width">wrap_content</item>
+   		<item name="android:layout_height">wrap_content</item>
+   		<item name="android:textStyle">bold</item>
+   		<item name="android:gravity">center_vertical</item>
+   		<item name="android:textColor">@color/white</item>
+   		<item name="android:textSize">22sp</item>
+	</style>
+	
+   <style name="style_perfusion_right_btn">
+        <item name="android:layout_width">138dp</item>
+ 		<item name="android:layout_height">48dp</item>
+ 		<item name="android:paddingTop">8dp</item>
+ 		<item name="android:paddingBottom">8dp</item>
+ 		<item name="android:paddingLeft">4dp</item>
+ 		<item name="android:paddingRight">4dp</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:textColor">@color/color_perfusion_right_btn_selector</item>
+ 		<item name="android:textSize">20sp</item>
+ 		<item name="android:textStyle">bold</item>
+ 		<item name="android:background">@drawable/selector_perfusion_right_btn_normal_bg</item>
+   </style>
+  
+   <style name="style_perfusion_bottom_btn">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">62dp</item>
+ 		<item name="android:paddingTop">8dp</item>
+ 		<item name="android:paddingBottom">8dp</item>
+ 		<item name="android:paddingLeft">4dp</item>
+ 		<item name="android:paddingRight">4dp</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:textSize">@dimen/font_size_large_22sp</item> 		
+ 		<item name="android:background">@drawable/shape_perfusion_bottom_btn_normal_bg</item> 		
+    </style>
+    <style name="style_perfusion_bottom_add_gas_btn">
+        <item name="android:layout_width">58dp</item>
+ 		<item name="android:layout_height">58dp</item>
+ 		<item name="android:paddingTop">4dp</item>
+ 		<item name="android:paddingBottom">4dp</item>
+ 		<item name="android:paddingLeft">4dp</item>
+ 		<item name="android:paddingRight">4dp</item>
+ 		<item name="android:gravity">center</item>
+ 		<item name="android:textSize">28sp</item> 		
+ 		<item name="android:background">@drawable/shape_perfusion_bottom_btn_normal_bg</item>		
+    </style>
+   
+  	<!-- 血气分析列表的样式 -->
+  	<style name="style_item_bloodgas_list_txt">
+  	    <item name="android:layout_width">104dp</item>
+ 		<item name="android:layout_height">fill_parent</item>
+ 		<item name="android:textColor">@color/black</item>
+ 		<item name="android:textSize">@dimen/font_size_normal_18sp</item>
+ 		<item name="android:gravity">center</item>
+  	</style>
+
+  	<!-- setting的子tab页 -->
+  	<style name="style_setting_tab" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/radiobutton_setting_tab_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">4dp</item>	    
+	    <item name="android:paddingRight">4dp</item>
+	    <item name="android:textColor">@color/setting_sub_title_color_selector</item>
+	    <item name="android:textSize">26sp</item>	
+    </style>
+    <!-- 只有两个radiobtn切换的 -->
+    <style name="style_right_rb_tab" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/record_rb_right_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">6dp</item>
+	    <item name="android:textColor">@color/button_color_seletor</item>
+	    <item name="android:textSize">24sp</item>	
+    </style>
+    
+  	<style name="style_left_rb_tab" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/record_rb_left_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">6dp</item>
+	    <item name="android:textColor">@color/button_color_seletor</item>
+	    <item name="android:textSize">24sp</item>	
+    </style>
+    
+  	<style name="style_middle_rb_tab" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/record_rb_middle_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">6dp</item>
+	    <item name="android:textColor">@color/button_color_seletor</item>
+	    <item name="android:textSize">24sp</item>	
+    </style>
+    
+    <!-- setting perfusion edit -->
+    <style name= "style_parent_setting_edit_bg">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">121dp</item>
+	    <item name="android:layout_height">38dp</item>
+	    <item name="android:paddingLeft">4dp</item>	    
+	    <item name="android:paddingRight">4dp</item>
+	    <item name="android:textColor">#141313</item>
+	    <item name="android:textSize">24sp</item>
+    </style>
+    
+     <style name="style_setting_perfusion_edit" parent="@style/style_parent_setting_edit_bg">
+        <item name="android:background">@drawable/shape_setting_perfusion_edit_bg</item>	
+    </style>
+    
+    <style name="style_setting_add_sub_edit" parent="@style/style_parent_setting_edit_bg">
+        <item name="android:background">@drawable/shape_setting_add_sub_edit_bg</item>
+    </style>
+    
+    <style name="style_setting_perfusion_title_txt" >
+        <item name="android:layout_width">196dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:textColor">#141313</item>
+	    <item name="android:textSize">20sp</item>	
+    </style>
+    
+    <style name="style_setting_sub_img">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:padding">4dp</item>
+ 		<item name="android:src">@drawable/selector_setting_sub_bg</item>
+ 		<item name="android:contentDescription">@null</item>
+    </style>
+    
+    <!-- style of settting add image  -->
+    <style name="style_setting_add_img">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">wrap_content</item>
+ 		<item name="android:padding">4dp</item>
+ 		<item name="android:src">@drawable/selector_setting_add_bg</item>
+ 		<item name="android:contentDescription">@null</item>
+    </style>
+    <!-- 设置灌注对话框设置的数值 -->
+    <style name="style_setting_dlg_text">
+        <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:layout_height">30dp</item>
+ 		<item name="android:gravity">center_vertical</item>
+ 		<item name="android:textStyle">bold</item>
+ 		<item name="android:textColor">#FFD700</item>
+ 		<item name="android:textSize">26sp</item>
+    </style>
+    <!-- 设置灌注模式style -->
+    <style name="style_setting_mode_rb">
+        <item name="android:layout_width">0dp</item>
+ 		<item name="android:layout_height">fill_parent</item>
+ 		<item name="android:button">@null</item>
+ 		<item name="android:textStyle">bold</item>
+ 		<item name="android:textColor">@color/white</item>
+ 		<item name="android:textSize">@dimen/font_size_large_22sp</item>
+ 		<item name="android:drawableRight">@drawable/radiobutton_setting_perfusion_bg</item>
+    </style>
+    
+    <style name="on_off_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+  		 <item name="android:button">@drawable/checkbox_on_off</item>
+ 	</style>
+ 	
+    <style name="preset_on_off_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+  		 <item name="android:button">@drawable/preset_check_on_off</item>
+ 	</style>
+ 	<!-- 温度控制的checkbox -->
+ 	<style name="on_off_temp_control_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+         <item name="android:button">@drawable/checkbox_temp_control</item>
+    </style>
+    
+    <style name="record_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+  		 <item name="android:button">@drawable/checkbox_on_off</item>
+ 	</style>
+ 	
+ 	<style name="bubble_checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+  		 <item name="android:button">@drawable/checkbox_bubble_on_off</item>
+ 	</style>
+    <!-- listview item checkbox -->
+    <style name="item_checkbox_theme" parent="@android:style/Widget.CompoundButton.CheckBox">
+  		 <item name="android:button">@drawable/item_checkbox_selector</item>
+ 	</style>
+ 	<!-- picker的样式 -->
+    <style name="Theme.picker" parent="@android:style/Theme.Holo.Light">
+        <item name="android:editTextStyle">@style/Widget.EditText.White</item>
+    </style>
+
+    <style name="Widget.EditText.White" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    
+    <!-- 自定义loading dialog -->
+ 	<style name="loading_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>   
+        <item name="android:windowBackground">@color/white</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>   	    
+ 	</style>
+ 	
+
+  <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+     <item name="android:windowFrame">@color/transparent</item>
+     <!-- 边框 -->
+     <item name="android:windowIsFloating">true</item>
+     <!-- 是否浮现在activity之上 -->
+     <item name="android:windowIsTranslucent">true</item>
+     <!-- 半透明 -->
+     <item name="android:windowNoTitle">true</item>
+     <!-- 无标题 -->
+     <item name="android:background">@color/transparent</item>
+     <!-- 背景色 -->
+     <item name="android:windowBackground">@color/white</item>
+     <!-- 背景透明 -->
+     <item name="android:backgroundDimEnabled">true</item>
+     <!-- 模糊 -->
+     <item name="android:windowFullscreen">true</item>
+     <!-- 全屏 -->
+ </style>
+
+ 	<style name="AnimationFade">
+    	<item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+   	    <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+	</style>
+ </resources>

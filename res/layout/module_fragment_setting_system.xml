@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    xmlns:custom="http://schemas.android.com/apk/res/com.gidi.bio_console">
+	<com.gidi.bio_console.view.CustomSystemSetItem
+	    android:id="@+id/system_setting_bubble_stop_item"
+	    android:layout_width="fill_parent"
+	    
+	    android:layout_height="wrap_content"/>
+	<TextView 
+	    style="@style/horizontal_line"
+	    android:layout_height="1dp"/>
+	<com.gidi.bio_console.view.SystemSettingItem 
+	       android:id="@+id/system_setting_wifi_item"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:visibility="gone"
+	       custom:title_icon="@drawable/system_set_wifi"
+	       custom:title_text="@string/wlan_title"
+	       custom:content_text="@string/system_set_wifi">       
+	</com.gidi.bio_console.view.SystemSettingItem>
+	<TextView 
+	    style="@style/horizontal_line"
+	    android:visibility="gone"
+	    android:layout_height="1dp"/>
+	<com.gidi.bio_console.view.SystemSettingItem 
+        android:id="@+id/system_setting_time_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:title_icon="@drawable/system_set_time"
+        custom:title_text="@string/system_set_time"
+        custom:content_text="@string/system_set_zone">       
+    </com.gidi.bio_console.view.SystemSettingItem>
+	<TextView 
+	    style="@style/horizontal_line"
+	    android:layout_height="1dp"/>
+	<View 
+	    android:layout_width="match_parent"    
+	    android:layout_height="match_parent"
+	    android:background="@color/white"/>
+</LinearLayout>

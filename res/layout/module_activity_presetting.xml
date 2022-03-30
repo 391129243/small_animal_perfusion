@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include 
+        layout="@layout/module_include_base_title_layout"
+        android:id="@+id/guide_title_layout"/>
+    <!-- 警报和报警状态 -->
+
+    <View 
+        style="@style/style_divider_line"
+        android:layout_below="@id/guide_title_layout"
+        android:id="@+id/divider_line_one"
+        android:background="@color/blue"/>
+    <FrameLayout 
+        android:id="@+id/guide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider_line_one">
+       
+    </FrameLayout>
+
+</RelativeLayout>
